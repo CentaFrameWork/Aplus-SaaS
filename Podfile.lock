@@ -37,10 +37,11 @@ PODS:
     - SDWebImage/Core (= 4.1.0)
   - SDWebImage/Core (4.1.0)
   - VPImageCropper (0.0.4)
+  - YRequestManager (1.1.0):
+    - AFNetworking (~> 3.1.0)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
-  - AFNetworking (= 3.1.0)
   - BaiduMapKit (= 3.4.2)
   - CustomActionsheet (= 0.1.1)
   - DropdownMenu (= 1.0.0)
@@ -56,6 +57,7 @@ DEPENDENCIES:
   - ReactiveObjC (= 3.0.0)
   - SDWebImage (= 4.1.0)
   - VPImageCropper (= 0.0.4)
+  - YRequestManager
   - YYModel (= 1.0.4)
 
 SPEC REPOS:
@@ -77,6 +79,7 @@ SPEC REPOS:
     - ReactiveObjC
     - SDWebImage
     - VPImageCropper
+    - YRequestManager
     - YYModel
 
 SPEC CHECKSUMS:
@@ -97,8 +100,9 @@ SPEC CHECKSUMS:
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
   SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
   VPImageCropper: f4895315460bd05fbb22dbee6b063bdd43f25797
+  YRequestManager: 3013e469be40c25eb35988913019f2868b3501b3
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 6f583150ca20684cf1a1d22445a152e42974201a
+PODFILE CHECKSUM: 26aabf60a3b76630b41d4b8c41b0fd6498abf995
 
 COCOAPODS: 1.5.3

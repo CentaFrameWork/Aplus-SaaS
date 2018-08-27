@@ -7,7 +7,11 @@
 //
 
 #import "ZYTabBarController.h"
-
+#import "ZYNavigationController.h"
+#import "ZYHomeController.h"
+#import "ZYMessageController.h"
+#import "ZYWorkController.h"
+#import "ZYMyController.h"
 @interface ZYTabBarController ()
 
 @end
@@ -16,22 +20,39 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self addControls];
+}
+- (void)addControls {
+    
+    [self control:[ZYHomeController new] ImageName:@"首页icon-默认" andTitle:@"首页"];
+    
+    [self control:[ZYMessageController new] ImageName:@"首页icon-默认" andTitle:@"消息"];
+    
+    [self control:[ZYWorkController new] ImageName:@"首页icon-默认" andTitle:@"工作"];
+    
+    [self control:[ZYMyController new] ImageName:@"首页icon-默认" andTitle:@"我"];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (void)control:(UIViewController*)control ImageName:(NSString*)ImageName andTitle:(NSString*)title {
+    
+    self.tabBar.tintColor = [UIColor redColor];
+    
+    ZYNavigationController *nav = [[ZYNavigationController alloc] initWithRootViewController:control];
+    
+    control.title = title;
+    
+    control.tabBarItem.image = [UIImage imageNamed:ImageName];
+    
+    NSString *str = [NSString stringWithFormat:@"%@_highlighted",ImageName];
+    
+    control.tabBarItem.selectedImage = [UIImage imageNamed:str] ;
+    
+    
+    [control.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor redColor],NSFontAttributeName:[UIFont systemFontOfSize:20]}];
+    
+    [self addChildViewController:nav];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

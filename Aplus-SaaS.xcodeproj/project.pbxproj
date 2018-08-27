@@ -148,7 +148,7 @@
 				84AC7378212CFBF0007A47AA /* Class */,
 				77FF445F212AC765006DA5B5 /* ZYMain */,
 				77FF4475212AC766006DA5B5 /* ZYDefine */,
-				77FF445C212AC765006DA5B5 /* ZYCategory */,
+				77FF445C212AC765006DA5B5 /* Category */,
 				77FF446F212AC766006DA5B5 /* ZYCustomView */,
 				77FF445D212AC765006DA5B5 /* ZYLib */,
 				77FF4470212AC766006DA5B5 /* ZYThirdCustomView */,
@@ -168,11 +168,11 @@
 			path = "Aplus-SaaSTests";
 			sourceTree = "<group>";
 		};
-		77FF445C212AC765006DA5B5 /* ZYCategory */ = {
+		77FF445C212AC765006DA5B5 /* Category */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = ZYCategory;
+			path = Category;
 			sourceTree = "<group>";
 		};
 		77FF445D212AC765006DA5B5 /* ZYLib */ = {

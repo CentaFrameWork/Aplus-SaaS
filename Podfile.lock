@@ -57,7 +57,7 @@ DEPENDENCIES:
   - ReactiveObjC (= 3.0.0)
   - SDWebImage (= 4.1.0)
   - VPImageCropper (= 0.0.4)
-  - YRequestManager
+  - YRequestManager (= 1.1.0)
   - YYModel (= 1.0.4)
 
 SPEC REPOS:
@@ -103,6 +103,6 @@ SPEC CHECKSUMS:
   YRequestManager: 3013e469be40c25eb35988913019f2868b3501b3
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 26aabf60a3b76630b41d4b8c41b0fd6498abf995
+PODFILE CHECKSUM: 03223a7c2a640aa7e5192867f4a76575fc373678
 
 COCOAPODS: 1.5.3

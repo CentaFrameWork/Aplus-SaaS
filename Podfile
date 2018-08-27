@@ -20,5 +20,6 @@ pod 'JPush', '3.0.6'
 #pod 'UMengSocial', '5.0'
 pod 'iflyMSC', '1.144'
 pod 'BaiduMapKit', '3.4.2'
-pod 'YRequestManager'
+pod 'YRequestManager',  '1.1.0'
+
 end

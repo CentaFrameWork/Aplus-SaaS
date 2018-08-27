@@ -10,18 +10,24 @@
 #define ZYAPlusHeader_pch
 
 
-
 #ifdef DEBUG
-#define NSLog(FORMAT, ...) fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#define NSLog(format, ...) printf("[%s] %s [第%d行] %s\n", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);
 #else
-#define NSLog(...)
+#define NSLog(format, ...)
 #endif
+
+//#ifdef DEBUG
+//#define NSLog(FORMAT, ...) fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+//#else
+//#define NSLog(...)
+//#endif
 
 //此处以下引入头文件
 #import "ZYBaseClass.h"
 #import "ZYColor.h"
 #import "ZYAppUI.h"
 #import "ZYThirdFrameWork.h"
+#import "ZYServerUrl.h"
 
 
 

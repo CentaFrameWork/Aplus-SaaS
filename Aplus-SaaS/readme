@@ -1,0 +1,65 @@
+ZYClass此处开始分功能模块
+
+    1、HomePage-首页，首页扩展出来的二级三级页面在HomePage内写入
+
+    2、功能模块二，功能模块二扩展出来的二级三级页面在功能模块内写入
+
+ZYModel文件夹下：
+    所有的数据模型卸载此处文件夹下，根据功能不同创建文件夹，
+    比如：
+    房源相关的全部放在House下，ZYHouse开头，
+    账号相关的全部放在Account下，ZYAccount开头，
+
+ZYCategory文件夹下：
+    根据创建的类型不同，分文件夹放置
+
+ZYLib文件夹下：
+    类库：
+    比如腾讯QQ登陆使用到的类库
+    比如支付宝支付使用到的类库
+    比如信鸽推送使用到的类库
+
+ZYThirdTool文件夹下：
+    第三方工具类
+
+ZYTool文件夹下：
+    咱们开发人员封装的工具类
+
+
+ZYThirdCustomView文件夹下：
+    第三方控件
+
+ZYCustomView文件夹下：
+    咱们开发人员封装的控件
+
+ZYMain文件夹下：
+
+model：
+    初始需要的一些数据，比如定位、系统版本、系统名称之类的在ZYInitialData文件中写入
+
+view：
+    tableview、collecitonview，以后编写代码创建的组件集成这两个文件，方便统一进行处理，
+
+controller：
+    baseViewController、tabbarController、navController
+
+ZYDefine文件夹下：
+    pch、一些常用宏定义
+    ZYAPlusHeader.pch       此文件只引用汇总的文件.h文件
+    ZYBaseClass.h           class   .h文件
+    ZYColor.h               颜色
+    ZYAppUI.h               跟UI相关的，宽、高、等
+    ZYThirdFrameWork.h      引入的第三方框架、Lib库、Tool库、CustomView文件
+    ZYServerUrl.h           需要请求使用到的链接
+
+ZYSource文件夹下：
+    1、AppDelegate、Assets.xcassets、LaunchScreen.storyboard、info.plist、main.m
+    2、
+
+
+
+
+
+
+
+

@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7744CD9D2133DE51009DE372 /* ZYBasePresent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744CD9C2133DE51009DE372 /* ZYBasePresent.m */; };
+		7744CDA02133DF0A009DE372 /* ZYHouseRequestApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744CD9F2133DF0A009DE372 /* ZYHouseRequestApi.m */; };
+		7744CDA32133E373009DE372 /* ZYHousePageFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744CDA22133E373009DE372 /* ZYHousePageFunc.m */; };
+		7744CDAB2133E519009DE372 /* NSObject+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744CDA52133E519009DE372 /* NSObject+Description.m */; };
+		7744CDAF2133E776009DE372 /* readme-lib in Resources */ = {isa = PBXBuildFile; fileRef = 7744CDAE2133E776009DE372 /* readme-lib */; };
+		7744CDB12133E781009DE372 /* readme-tool in Resources */ = {isa = PBXBuildFile; fileRef = 7744CDB02133E781009DE372 /* readme-tool */; };
+		7744CDB32133E78C009DE372 /* readme-thirdtool in Resources */ = {isa = PBXBuildFile; fileRef = 7744CDB22133E78C009DE372 /* readme-thirdtool */; };
+		7744CDB52133E794009DE372 /* readme-customview in Resources */ = {isa = PBXBuildFile; fileRef = 7744CDB42133E794009DE372 /* readme-customview */; };
+		7744CDB72133E79E009DE372 /* readme-thirdcustomview in Resources */ = {isa = PBXBuildFile; fileRef = 7744CDB62133E79E009DE372 /* readme-thirdcustomview */; };
+		7744CDBA2133EBA5009DE372 /* ZYAgencyBaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744CDB92133EBA5009DE372 /* ZYAgencyBaseEntity.m */; };
 		77FF442A212AC72C006DA5B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FF4429212AC72C006DA5B5 /* AppDelegate.m */; };
 		77FF4432212AC72D006DA5B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77FF4431212AC72D006DA5B5 /* Assets.xcassets */; };
 		77FF4435212AC72D006DA5B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77FF4433212AC72D006DA5B5 /* LaunchScreen.storyboard */; };
@@ -19,6 +29,9 @@
 		77FF448B212AC766006DA5B5 /* ZYInitialData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FF4468212AC765006DA5B5 /* ZYInitialData.m */; };
 		77FF448C212AC766006DA5B5 /* ZYMainCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FF446B212AC765006DA5B5 /* ZYMainCollectionView.m */; };
 		77FF448D212AC766006DA5B5 /* ZYMainTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FF446E212AC766006DA5B5 /* ZYMainTableView.m */; };
+		77FF44932133D911006DA5B5 /* readme in Resources */ = {isa = PBXBuildFile; fileRef = 77FF44922133D911006DA5B5 /* readme */; };
+		77FF44A72133DBD5006DA5B5 /* ZYAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FF44A62133DBD5006DA5B5 /* ZYAccount.m */; };
+		77FF44AE2133DC7B006DA5B5 /* ZYHomeControllerPresent.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FF44AD2133DC7B006DA5B5 /* ZYHomeControllerPresent.m */; };
 		84AC738E212CFD9D007A47AA /* ZYHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC738D212CFD9D007A47AA /* ZYHomeController.m */; };
 		84AC7391212CFDBA007A47AA /* ZYWorkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC7390212CFDBA007A47AA /* ZYWorkController.m */; };
 		84AC7394212CFDCE007A47AA /* ZYMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC7393212CFDCE007A47AA /* ZYMessageController.m */; };
@@ -45,6 +58,21 @@
 
 /* Begin PBXFileReference section */
 		0A44D7B35669FBD1EBB0BDA0 /* Pods-Aplus-SaaS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aplus-SaaS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aplus-SaaS/Pods-Aplus-SaaS.debug.xcconfig"; sourceTree = "<group>"; };
+		7744CD9B2133DE51009DE372 /* ZYBasePresent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYBasePresent.h; sourceTree = "<group>"; };
+		7744CD9C2133DE51009DE372 /* ZYBasePresent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYBasePresent.m; sourceTree = "<group>"; };
+		7744CD9E2133DF0A009DE372 /* ZYHouseRequestApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYHouseRequestApi.h; sourceTree = "<group>"; };
+		7744CD9F2133DF0A009DE372 /* ZYHouseRequestApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYHouseRequestApi.m; sourceTree = "<group>"; };
+		7744CDA12133E373009DE372 /* ZYHousePageFunc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYHousePageFunc.h; sourceTree = "<group>"; };
+		7744CDA22133E373009DE372 /* ZYHousePageFunc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYHousePageFunc.m; sourceTree = "<group>"; };
+		7744CDA52133E519009DE372 /* NSObject+Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Description.m"; sourceTree = "<group>"; };
+		7744CDA82133E519009DE372 /* NSObject+Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Description.h"; sourceTree = "<group>"; };
+		7744CDAE2133E776009DE372 /* readme-lib */ = {isa = PBXFileReference; lastKnownFileType = text; path = "readme-lib"; sourceTree = "<group>"; };
+		7744CDB02133E781009DE372 /* readme-tool */ = {isa = PBXFileReference; lastKnownFileType = text; path = "readme-tool"; sourceTree = "<group>"; };
+		7744CDB22133E78C009DE372 /* readme-thirdtool */ = {isa = PBXFileReference; lastKnownFileType = text; path = "readme-thirdtool"; sourceTree = "<group>"; };
+		7744CDB42133E794009DE372 /* readme-customview */ = {isa = PBXFileReference; lastKnownFileType = text; path = "readme-customview"; sourceTree = "<group>"; };
+		7744CDB62133E79E009DE372 /* readme-thirdcustomview */ = {isa = PBXFileReference; lastKnownFileType = text; path = "readme-thirdcustomview"; sourceTree = "<group>"; };
+		7744CDB82133EBA5009DE372 /* ZYAgencyBaseEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYAgencyBaseEntity.h; sourceTree = "<group>"; };
+		7744CDB92133EBA5009DE372 /* ZYAgencyBaseEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYAgencyBaseEntity.m; sourceTree = "<group>"; };
 		77FF4425212AC72C006DA5B5 /* Aplus-SaaS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aplus-SaaS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77FF4428212AC72C006DA5B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77FF4429212AC72C006DA5B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -75,6 +103,11 @@
 		77FF4479212AC766006DA5B5 /* ZYBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBaseClass.h; sourceTree = "<group>"; };
 		77FF447A212AC766006DA5B5 /* ZYColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYColor.h; sourceTree = "<group>"; };
 		77FF447B212AC766006DA5B5 /* ZYAppUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYAppUI.h; sourceTree = "<group>"; };
+		77FF44922133D911006DA5B5 /* readme */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
+		77FF44A52133DBD5006DA5B5 /* ZYAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYAccount.h; sourceTree = "<group>"; };
+		77FF44A62133DBD5006DA5B5 /* ZYAccount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYAccount.m; sourceTree = "<group>"; };
+		77FF44AC2133DC7B006DA5B5 /* ZYHomeControllerPresent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYHomeControllerPresent.h; sourceTree = "<group>"; };
+		77FF44AD2133DC7B006DA5B5 /* ZYHomeControllerPresent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYHomeControllerPresent.m; sourceTree = "<group>"; };
 		84AC738C212CFD9D007A47AA /* ZYHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYHomeController.h; sourceTree = "<group>"; };
 		84AC738D212CFD9D007A47AA /* ZYHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYHomeController.m; sourceTree = "<group>"; };
 		84AC738F212CFDBA007A47AA /* ZYWorkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYWorkController.h; sourceTree = "<group>"; };
@@ -121,6 +154,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7744CD962133DD34009DE372 /* ZYCategory */ = {
+			isa = PBXGroup;
+			children = (
+				7744CDA42133E519009DE372 /* NSObject+Category */,
+			);
+			path = ZYCategory;
+			sourceTree = "<group>";
+		};
+		7744CD9A2133DE3A009DE372 /* Present */ = {
+			isa = PBXGroup;
+			children = (
+				7744CD9B2133DE51009DE372 /* ZYBasePresent.h */,
+				7744CD9C2133DE51009DE372 /* ZYBasePresent.m */,
+			);
+			path = Present;
+			sourceTree = "<group>";
+		};
+		7744CDA42133E519009DE372 /* NSObject+Category */ = {
+			isa = PBXGroup;
+			children = (
+				7744CDA82133E519009DE372 /* NSObject+Description.h */,
+				7744CDA52133E519009DE372 /* NSObject+Description.m */,
+			);
+			path = "NSObject+Category";
+			sourceTree = "<group>";
+		};
 		77FF441C212AC72C006DA5B5 = {
 			isa = PBXGroup;
 			children = (
@@ -145,16 +204,18 @@
 		77FF4427212AC72C006DA5B5 /* Aplus-SaaS */ = {
 			isa = PBXGroup;
 			children = (
-				84AC7378212CFBF0007A47AA /* Class */,
+				77FF44922133D911006DA5B5 /* readme */,
+				84AC7378212CFBF0007A47AA /* ZYClass */,
+				77FF449B2133DB26006DA5B5 /* ZYModel */,
 				77FF445F212AC765006DA5B5 /* ZYMain */,
 				77FF4475212AC766006DA5B5 /* ZYDefine */,
-				77FF445C212AC765006DA5B5 /* Category */,
-				77FF446F212AC766006DA5B5 /* ZYCustomView */,
-				77FF445D212AC765006DA5B5 /* ZYLib */,
+				7744CD962133DD34009DE372 /* ZYCategory */,
 				77FF4470212AC766006DA5B5 /* ZYThirdCustomView */,
+				77FF446F212AC766006DA5B5 /* ZYCustomView */,
 				77FF445E212AC765006DA5B5 /* ZYThirdTool */,
-				84AC7376212C113B007A47AA /* ZYSource */,
 				77FF447C212AC766006DA5B5 /* ZYTool */,
+				77FF445D212AC765006DA5B5 /* ZYLib */,
+				84AC7376212C113B007A47AA /* ZYSource */,
 			);
 			path = "Aplus-SaaS";
 			sourceTree = "<group>";
@@ -168,16 +229,10 @@
 			path = "Aplus-SaaSTests";
 			sourceTree = "<group>";
 		};
-		77FF445C212AC765006DA5B5 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
 		77FF445D212AC765006DA5B5 /* ZYLib */ = {
 			isa = PBXGroup;
 			children = (
+				7744CDAE2133E776009DE372 /* readme-lib */,
 			);
 			path = ZYLib;
 			sourceTree = "<group>";
@@ -185,6 +240,7 @@
 		77FF445E212AC765006DA5B5 /* ZYThirdTool */ = {
 			isa = PBXGroup;
 			children = (
+				7744CDB22133E78C009DE372 /* readme-thirdtool */,
 			);
 			path = ZYThirdTool;
 			sourceTree = "<group>";
@@ -192,6 +248,7 @@
 		77FF445F212AC765006DA5B5 /* ZYMain */ = {
 			isa = PBXGroup;
 			children = (
+				7744CD9A2133DE3A009DE372 /* Present */,
 				77FF4460212AC765006DA5B5 /* Controller */,
 				77FF4467212AC765006DA5B5 /* Model */,
 				77FF446A212AC765006DA5B5 /* View */,
@@ -235,6 +292,7 @@
 		77FF446F212AC766006DA5B5 /* ZYCustomView */ = {
 			isa = PBXGroup;
 			children = (
+				7744CDB42133E794009DE372 /* readme-customview */,
 			);
 			path = ZYCustomView;
 			sourceTree = "<group>";
@@ -242,6 +300,7 @@
 		77FF4470212AC766006DA5B5 /* ZYThirdCustomView */ = {
 			isa = PBXGroup;
 			children = (
+				7744CDB62133E79E009DE372 /* readme-thirdcustomview */,
 			);
 			path = ZYThirdCustomView;
 			sourceTree = "<group>";
@@ -262,8 +321,109 @@
 		77FF447C212AC766006DA5B5 /* ZYTool */ = {
 			isa = PBXGroup;
 			children = (
+				7744CDB02133E781009DE372 /* readme-tool */,
 			);
 			path = ZYTool;
+			sourceTree = "<group>";
+		};
+		77FF44952133D9F1006DA5B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		77FF44962133D9FB006DA5B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		77FF44972133DA06006DA5B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		77FF44992133DA6F006DA5B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		77FF449B2133DB26006DA5B5 /* ZYModel */ = {
+			isa = PBXGroup;
+			children = (
+				77FF449F2133DBA7006DA5B5 /* Response */,
+				77FF449E2133DBA1006DA5B5 /* Request */,
+			);
+			path = ZYModel;
+			sourceTree = "<group>";
+		};
+		77FF449E2133DBA1006DA5B5 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				77FF44AA2133DC22006DA5B5 /* House */,
+				77FF44A92133DC1A006DA5B5 /* Account */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		77FF449F2133DBA7006DA5B5 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				7744CDB82133EBA5009DE372 /* ZYAgencyBaseEntity.h */,
+				7744CDB92133EBA5009DE372 /* ZYAgencyBaseEntity.m */,
+				77FF44A12133DBC1006DA5B5 /* Account */,
+				77FF44A02133DBBB006DA5B5 /* House */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		77FF44A02133DBBB006DA5B5 /* House */ = {
+			isa = PBXGroup;
+			children = (
+				7744CDA12133E373009DE372 /* ZYHousePageFunc.h */,
+				7744CDA22133E373009DE372 /* ZYHousePageFunc.m */,
+			);
+			path = House;
+			sourceTree = "<group>";
+		};
+		77FF44A12133DBC1006DA5B5 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				77FF44A52133DBD5006DA5B5 /* ZYAccount.h */,
+				77FF44A62133DBD5006DA5B5 /* ZYAccount.m */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		77FF44A92133DC1A006DA5B5 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		77FF44AA2133DC22006DA5B5 /* House */ = {
+			isa = PBXGroup;
+			children = (
+				7744CD9E2133DF0A009DE372 /* ZYHouseRequestApi.h */,
+				7744CD9F2133DF0A009DE372 /* ZYHouseRequestApi.m */,
+			);
+			path = House;
+			sourceTree = "<group>";
+		};
+		77FF44AB2133DC61006DA5B5 /* Present */ = {
+			isa = PBXGroup;
+			children = (
+				77FF44AC2133DC7B006DA5B5 /* ZYHomeControllerPresent.h */,
+				77FF44AD2133DC7B006DA5B5 /* ZYHomeControllerPresent.m */,
+			);
+			path = Present;
 			sourceTree = "<group>";
 		};
 		84AC7376212C113B007A47AA /* ZYSource */ = {
@@ -280,7 +440,7 @@
 			path = ZYSource;
 			sourceTree = "<group>";
 		};
-		84AC7378212CFBF0007A47AA /* Class */ = {
+		84AC7378212CFBF0007A47AA /* ZYClass */ = {
 			isa = PBXGroup;
 			children = (
 				84AC7381212CFCF9007A47AA /* HomeController */,
@@ -288,15 +448,14 @@
 				84AC7379212CFCF9007A47AA /* MessgaeController */,
 				84AC7385212CFCF9007A47AA /* MyController */,
 			);
-			path = Class;
+			path = ZYClass;
 			sourceTree = "<group>";
 		};
 		84AC7379212CFCF9007A47AA /* MessgaeController */ = {
 			isa = PBXGroup;
 			children = (
 				84AC737A212CFCF9007A47AA /* Controller */,
-				84AC737B212CFCF9007A47AA /* Model */,
-				84AC737C212CFCF9007A47AA /* View */,
+				77FF44962133D9FB006DA5B5 /* View */,
 			);
 			path = MessgaeController;
 			sourceTree = "<group>";
@@ -310,26 +469,11 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		84AC737B212CFCF9007A47AA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		84AC737C212CFCF9007A47AA /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		84AC737D212CFCF9007A47AA /* WorkController */ = {
 			isa = PBXGroup;
 			children = (
 				84AC737E212CFCF9007A47AA /* Controller */,
-				84AC737F212CFCF9007A47AA /* Model */,
-				84AC7380212CFCF9007A47AA /* View */,
+				77FF44952133D9F1006DA5B5 /* View */,
 			);
 			path = WorkController;
 			sourceTree = "<group>";
@@ -343,26 +487,12 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		84AC737F212CFCF9007A47AA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		84AC7380212CFCF9007A47AA /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		84AC7381212CFCF9007A47AA /* HomeController */ = {
 			isa = PBXGroup;
 			children = (
+				77FF44AB2133DC61006DA5B5 /* Present */,
 				84AC7382212CFCF9007A47AA /* Controller */,
-				84AC7383212CFCF9007A47AA /* Model */,
-				84AC7384212CFCF9007A47AA /* View */,
+				77FF44992133DA6F006DA5B5 /* View */,
 			);
 			path = HomeController;
 			sourceTree = "<group>";
@@ -376,26 +506,11 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		84AC7383212CFCF9007A47AA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		84AC7384212CFCF9007A47AA /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		84AC7385212CFCF9007A47AA /* MyController */ = {
 			isa = PBXGroup;
 			children = (
 				84AC7386212CFCF9007A47AA /* Controller */,
-				84AC7387212CFCF9007A47AA /* Model */,
-				84AC7388212CFCF9007A47AA /* View */,
+				77FF44972133DA06006DA5B5 /* View */,
 			);
 			path = MyController;
 			sourceTree = "<group>";
@@ -407,20 +522,6 @@
 				84AC7396212CFDDD007A47AA /* ZYMyController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		84AC7387212CFCF9007A47AA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		84AC7388212CFCF9007A47AA /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		F5C2861C6EE1B2F698DD8F58 /* Pods */ = {
@@ -538,8 +639,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7744CDAF2133E776009DE372 /* readme-lib in Resources */,
+				77FF44932133D911006DA5B5 /* readme in Resources */,
+				7744CDB52133E794009DE372 /* readme-customview in Resources */,
 				77FF4487212AC766006DA5B5 /* readme in Resources */,
 				77FF4435212AC72D006DA5B5 /* LaunchScreen.storyboard in Resources */,
+				7744CDB72133E79E009DE372 /* readme-thirdcustomview in Resources */,
+				7744CDB32133E78C009DE372 /* readme-thirdtool in Resources */,
+				7744CDB12133E781009DE372 /* readme-tool in Resources */,
 				77FF4432212AC72D006DA5B5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -612,14 +719,21 @@
 			files = (
 				84AC7394212CFDCE007A47AA /* ZYMessageController.m in Sources */,
 				77FF448C212AC766006DA5B5 /* ZYMainCollectionView.m in Sources */,
+				7744CDAB2133E519009DE372 /* NSObject+Description.m in Sources */,
+				7744CDA32133E373009DE372 /* ZYHousePageFunc.m in Sources */,
+				7744CDBA2133EBA5009DE372 /* ZYAgencyBaseEntity.m in Sources */,
 				77FF4438212AC72D006DA5B5 /* main.m in Sources */,
 				77FF448A212AC766006DA5B5 /* ZYNavigationController.m in Sources */,
 				77FF4489212AC766006DA5B5 /* ZYBaseViewController.m in Sources */,
 				77FF4488212AC766006DA5B5 /* ZYTabBarController.m in Sources */,
+				77FF44AE2133DC7B006DA5B5 /* ZYHomeControllerPresent.m in Sources */,
 				77FF448D212AC766006DA5B5 /* ZYMainTableView.m in Sources */,
 				77FF448B212AC766006DA5B5 /* ZYInitialData.m in Sources */,
+				7744CD9D2133DE51009DE372 /* ZYBasePresent.m in Sources */,
+				7744CDA02133DF0A009DE372 /* ZYHouseRequestApi.m in Sources */,
 				84AC7391212CFDBA007A47AA /* ZYWorkController.m in Sources */,
 				77FF442A212AC72C006DA5B5 /* AppDelegate.m in Sources */,
+				77FF44A72133DBD5006DA5B5 /* ZYAccount.m in Sources */,
 				84AC7397212CFDDD007A47AA /* ZYMyController.m in Sources */,
 				84AC738E212CFD9D007A47AA /* ZYHomeController.m in Sources */,
 			);
@@ -782,8 +896,8 @@
 			baseConfigurationReference = 0A44D7B35669FBD1EBB0BDA0 /* Pods-Aplus-SaaS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UBR5C2TDT8;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$SRCROOT/Aplus-SaaS/ZYDefine/ZYAPlusHeader.pch";
 				INFOPLIST_FILE = "Aplus-SaaS/ZYSource/Info.plist";
@@ -792,8 +906,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = rxq001;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.centanet.newPKT.Aplus-SaaS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -803,8 +918,8 @@
 			baseConfigurationReference = AE7401A88E6AFC9B9DEDC9C0 /* Pods-Aplus-SaaS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UBR5C2TDT8;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$SRCROOT/Aplus-SaaS/ZYDefine/ZYAPlusHeader.pch";
 				INFOPLIST_FILE = "Aplus-SaaS/ZYSource/Info.plist";
@@ -813,8 +928,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = rxq001;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.centanet.newPKT.Aplus-SaaS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

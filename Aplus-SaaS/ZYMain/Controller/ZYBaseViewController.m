@@ -17,8 +17,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self loadInitialData];
+    [self loadMainView];
+    [self loadNavigationBar];
+    
 }
 
+- (void)loadMainView{
+    
+    
+}
+
+- (void)loadNavigationBar{
+    
+}
+
+- (void)loadInitialData{
+    
+}
 
 
 @end

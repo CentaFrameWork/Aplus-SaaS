@@ -10,7 +10,7 @@
 #import "ZYHomeControllerPresent.h"
 #import "ZYHomeMainView.h"
 
-@interface ZYHomeController ()<UITableViewDelegate>
+@interface ZYHomeController ()
 
 @property (nonatomic, strong) ZYHomeControllerPresent * present;
 @property (nonatomic, weak) ZYHomeMainView * mainView;
@@ -29,12 +29,11 @@
 - (void)loadMainView{
     
     ZYHomeMainView * mainView = [[ZYHomeMainView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
-    mainView.delegate = self;
-
     [self.view addSubview:mainView];
-    
     self.mainView = mainView;
 
+    
+    
     self.present = [[ZYHomeControllerPresent alloc] initWithView:self];
     [self.present setPresentView:mainView];
     [self.present sendRequest];

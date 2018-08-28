@@ -26,7 +26,7 @@
     _tableView = (UITableView*)view;
     
     _tableView.dataSource = self;
-    
+    _tableView.delegate = self;
     
     self.delegate = self.view;
     

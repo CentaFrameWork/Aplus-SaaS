@@ -10,6 +10,17 @@
 
 @implementation ZYBasePresent
 
+- (instancetype)initWithView:(id)view{
+    
+    if (self = [super init]) {
+        
+        _view = view;
+        
+    }
+    
+    return self;
+    
+}
 
 #pragma mark - get，懒加载方式
 - (RequestManager *)manager{

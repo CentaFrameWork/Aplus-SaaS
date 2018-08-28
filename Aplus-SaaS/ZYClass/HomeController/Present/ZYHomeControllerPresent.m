@@ -28,7 +28,15 @@
         
     }else{
         
-        [self.delegate getServerData:resData.data];
+        NSDictionary * dict = resData.data;
+        
+        ZYHousePageFunc * pageFunc = [ZYHousePageFunc yy_modelWithJSON:dict];
+        
+        if ([self.view respondsToSelector:@selector(getServerData:)]) {
+            
+            [self.view getServerData:pageFunc];
+            
+        }
         
     }
 }

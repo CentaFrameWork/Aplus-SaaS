@@ -8,10 +8,19 @@
 
 #import "ZYHousePageFunc.h"
 
+#import "YYModel.h"
+
 @implementation ZYHousePageFunc
 
 
 
++ (nullable NSDictionary<NSString *, id> *)modelContainerPropertyGenericClass{
+    
+    return @{
+             @"domains" : [ZYHousePageFuncItem class],
+             };
+    
+}
 
 
 @end

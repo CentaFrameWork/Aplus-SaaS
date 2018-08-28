@@ -10,8 +10,7 @@
 #define ZYThirdFrameWork_h
 
 
-
-
+#import "YYModel.h"
 
 
 

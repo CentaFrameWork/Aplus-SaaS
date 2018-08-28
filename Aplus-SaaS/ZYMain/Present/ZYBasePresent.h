@@ -14,4 +14,11 @@
 
 @property (nonatomic, strong) RequestManager * manager;
 
+@property (nonatomic, weak) id view;
+
+/**
+ *  初始化要绑定的视图
+ */
+- (instancetype)initWithView:(id)view;
+
 @end

@@ -8,18 +8,12 @@
 
 #import "ZYBasePresent.h"
 
-@protocol ZYHomeControllerPresentDelegate <NSObject>
+#import "ZYHomeMainView.h"
 
-/**
- *  获取到数据通知
- */
-- (void)getServerData:(id)data;
+#import "ZYHomeMainViewDelegate.h"
 
-@end
 
 @interface ZYHomeControllerPresent : ZYBasePresent
-
-@property (nonatomic, weak) id<ZYHomeControllerPresentDelegate> delegate;
 
 - (void)sendRequest;
 

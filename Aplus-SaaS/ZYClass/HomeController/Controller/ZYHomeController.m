@@ -8,11 +8,11 @@
 
 #import "ZYHomeController.h"
 
-#import "ZYHomeControllerPresent.h"
+#import "ZYHomeMainView.h"
 
-@interface ZYHomeController ()<ZYHomeControllerPresentDelegate>
+@interface ZYHomeController ()
 
-@property (nonatomic, strong) ZYHomeControllerPresent * present;
+@property (nonatomic, weak) ZYHomeMainView * mainView;
 
 @end
 
@@ -25,35 +25,17 @@
 
 - (void)loadMainView{
     
+    ZYHomeMainView * mainView = [[ZYHomeMainView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     
+    [self.view addSubview:mainView];
+    
+    self.mainView = mainView;
     
 }
 
 - (void)loadNavigationBar{
     
-    
-}
-
-- (void)loadInitialData{
-    
-    self.present = [[ZYHomeControllerPresent alloc] init];
-    
-    self.present.delegate = self;
-    
-    [self.present sendRequest];
-}
-
-#pragma mark - ZYHomeControllerPresentDelegate
-- (void)getServerData:(id)data{
-    
-    NSLog(@"-------->%@", [data otherDescription]);
-    
-}
-
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    
-    [self.present sendRequest];
+    self.navigationItem.title = @"首页";
     
 }
 

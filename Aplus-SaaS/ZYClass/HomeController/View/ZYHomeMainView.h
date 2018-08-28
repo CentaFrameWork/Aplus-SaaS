@@ -16,4 +16,6 @@
 
 @interface ZYHomeMainView : ZYMainTableView<UITableViewDelegate, UITableViewDataSource, ZYHomeMainViewDelegate>
 
+@property (nonatomic, copy) void (^didSelectItemBlock)(NSIndexPath * indexPath);
+
 @end

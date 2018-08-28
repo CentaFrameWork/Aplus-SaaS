@@ -7,6 +7,7 @@
 //
 
 #import "ZYHomeController.h"
+#import "ZYHouseListViewController.h"
 
 #import "ZYHomeMainView.h"
 
@@ -25,7 +26,17 @@
 
 - (void)loadMainView{
     
-    ZYHomeMainView * mainView = [[ZYHomeMainView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    __block typeof(self) weakSelf = self;
+    
+    ZYHomeMainView * mainView = [[ZYHomeMainView alloc] initWithFrame:CGRectMake(0, HEIGHT_NAV_AND_STATUSBAR, APP_SCREEN_WIDTH, APP_SCREEN_HEIGHT - HEIGHT_NAV_AND_STATUSBAR - self.tabBarController.tabBar.height) style:UITableViewStyleGrouped];
+    
+    [mainView setDidSelectItemBlock:^(NSIndexPath *indexPath) {
+        
+        ZYHouseListViewController * con = [[ZYHouseListViewController alloc] init];
+        
+        [weakSelf.navigationController pushViewController:con animated:YES];
+        
+    }];
     
     [self.view addSubview:mainView];
     

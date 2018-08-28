@@ -17,4 +17,6 @@
 
 - (void)sendRequest;
 
+- (void)didSelectItemWithIndexPath:(NSIndexPath *)indexPath;
+
 @end

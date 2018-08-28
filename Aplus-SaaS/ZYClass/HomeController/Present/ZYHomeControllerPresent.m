@@ -19,6 +19,12 @@
     
 }
 
+- (void)didSelectItemWithIndexPath:(NSIndexPath *)indexPath{
+    
+    //发起请求，
+    
+}
+
 #pragma mark - Delegate
 - (void)respSuc:(CentaResponse *)resData{
     

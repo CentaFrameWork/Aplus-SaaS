@@ -10,11 +10,11 @@
 
 #import "ZYHousePageFunc.h"
 
-#import "ZYHomeControllerPresent.h"
+//#import "ZYHomeControllerPresent.h"  <ZYHomeMainViewDelegate,UITableViewDelegate, UITableViewDataSource,>
 
 #import "ZYHomeMainViewDelegate.h"
 
-@interface ZYHomeMainView : ZYMainTableView<UITableViewDelegate, UITableViewDataSource, ZYHomeMainViewDelegate>
+@interface ZYHomeMainView : ZYMainTableView
 
 @property (nonatomic, copy) void (^didSelectItemBlock)(NSIndexPath * indexPath);
 

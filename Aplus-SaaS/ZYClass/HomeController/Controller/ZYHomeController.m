@@ -7,14 +7,14 @@
 //
 
 #import "ZYHomeController.h"
-#import "ZYHouseListViewController.h"
-
+#import "ZYHomeControllerPresent.h"
 #import "ZYHomeMainView.h"
 
-@interface ZYHomeController ()
+@interface ZYHomeController ()<UITableViewDelegate>
 
+@property (nonatomic, strong) ZYHomeControllerPresent * present;
 @property (nonatomic, weak) ZYHomeMainView * mainView;
-
+@property (nonatomic, strong) NSArray * dataArray;
 @end
 
 @implementation ZYHomeController
@@ -22,25 +22,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+
+    
 }
 
 - (void)loadMainView{
     
-    __block typeof(self) weakSelf = self;
-    
-    ZYHomeMainView * mainView = [[ZYHomeMainView alloc] initWithFrame:CGRectMake(0, HEIGHT_NAV_AND_STATUSBAR, APP_SCREEN_WIDTH, APP_SCREEN_HEIGHT - HEIGHT_NAV_AND_STATUSBAR - self.tabBarController.tabBar.height) style:UITableViewStyleGrouped];
-    
-    [mainView setDidSelectItemBlock:^(NSIndexPath *indexPath) {
-        
-        ZYHouseListViewController * con = [[ZYHouseListViewController alloc] init];
-        
-        [weakSelf.navigationController pushViewController:con animated:YES];
-        
-    }];
-    
+    ZYHomeMainView * mainView = [[ZYHomeMainView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    mainView.delegate = self;
+
     [self.view addSubview:mainView];
     
     self.mainView = mainView;
+
+    self.present = [[ZYHomeControllerPresent alloc] initWithView:self];
+    [self.present setPresentView:mainView];
+    [self.present sendRequest];
+    
     
 }
 
@@ -50,4 +48,9 @@
     
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    
+    NSLog(@"*********");
+}
 @end

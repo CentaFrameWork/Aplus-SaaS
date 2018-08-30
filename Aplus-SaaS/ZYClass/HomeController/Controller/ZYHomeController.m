@@ -22,22 +22,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+   
+    
 
     
 }
 
 - (void)loadMainView{
-    
-    ZYHomeMainView * mainView = [[ZYHomeMainView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+   
+    ZYHomeMainView * mainView = [[ZYHomeMainView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     [self.view addSubview:mainView];
     self.mainView = mainView;
-
-    
-    
+    if (@available(iOS 11.0, *)) {
+        self.mainView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentAutomatic;
+    } else {
+        
+    }
     self.present = [[ZYHomeControllerPresent alloc] initWithView:self];
-    [self.present setPresentView:mainView];
+    [self.present setPresentView:self.mainView];
     [self.present sendRequest];
     
+   
     
 }
 

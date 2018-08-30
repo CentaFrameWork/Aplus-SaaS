@@ -8,10 +8,13 @@
 
 #import "ZYHomeControllerPresent.h"
 #import "ZYHouseRequestApi.h"
+
 @interface ZYHomeControllerPresent ()
 
 @property (nonatomic, weak) UITableView * tableView;
+
 @end
+
 @implementation ZYHomeControllerPresent
 
 - (void)sendRequest{
@@ -47,12 +50,6 @@
         self.dataArray = pageFunc.domains;
         
         [_tableView reloadData];
-
-//        if ([self.view respondsToSelector:@selector(getServerData:)]) {
-//            
-//            [self.view getServerData:pageFunc];
-//            
-//        }
         
     }
 }
@@ -60,7 +57,6 @@
 - (void)respFail:(CentaResponse *)error{
     
     NSLog(@"-------->%@", error);
-    
     
 }
 
@@ -99,24 +95,23 @@
     [self.delegate tableView:tableView didSelectRowAtIndexPath:indexPath];
 }
 
-//#pragma mark - UITableViewDelegate
-//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-//    
-//    return 0.1;
-//    
-//}
-//
-//- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-//    
-//    return 0.1;
-//    
-//}
-//
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    
-//    return 60;
-//    
-//}
+#pragma mark - UITableViewDelegate
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    
+    return 0.1;
+    
+}
 
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    
+    return 0.1;
+    
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return 60;
+    
+}
 
 @end

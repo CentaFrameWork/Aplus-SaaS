@@ -27,6 +27,10 @@
  */
 #define HEIGHT_NAV self.navigationController.navigationBar.frame.size.height
 /**
+ *  底部tabbar高度
+ */
+#define HEIGHT_TABBAR self.tabBarController.tabBar.height
+/**
  *  底部安全距离高度
  */
 #define HEIGHT_SAFEAREA_BOTTOM [ZYInitialData safeareaBottomHeight]

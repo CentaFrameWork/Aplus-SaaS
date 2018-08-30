@@ -78,11 +78,11 @@
 		7744CDB92133EBA5009DE372 /* ZYAgencyBaseEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYAgencyBaseEntity.m; sourceTree = "<group>"; };
 		7744CDBB2133EF89009DE372 /* ZYHomeMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYHomeMainView.h; sourceTree = "<group>"; };
 		7744CDBC2133EF89009DE372 /* ZYHomeMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYHomeMainView.m; sourceTree = "<group>"; };
-		7744CDBF2134DB48009DE372 /* ZYHomeMainViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYHomeMainViewDelegate.h; sourceTree = "<group>"; };
 		7744CDC02134F023009DE372 /* ZYHouseListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYHouseListViewController.h; sourceTree = "<group>"; };
 		7744CDC12134F023009DE372 /* ZYHouseListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYHouseListViewController.m; sourceTree = "<group>"; };
 		7744CDC72134F6A5009DE372 /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
 		7744CDCA2134F6A5009DE372 /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
+		7744CDD021379268009DE372 /* ZYHomeControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYHomeControllerProtocol.h; sourceTree = "<group>"; };
 		77FF4425212AC72C006DA5B5 /* Aplus-SaaS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aplus-SaaS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77FF4428212AC72C006DA5B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77FF4429212AC72C006DA5B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -194,7 +194,7 @@
 		7744CDBE2134DB28009DE372 /* Protocal */ = {
 			isa = PBXGroup;
 			children = (
-				7744CDBF2134DB48009DE372 /* ZYHomeMainViewDelegate.h */,
+				7744CDD021379268009DE372 /* ZYHomeControllerProtocol.h */,
 			);
 			path = Protocal;
 			sourceTree = "<group>";

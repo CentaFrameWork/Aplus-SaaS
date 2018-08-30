@@ -30,20 +30,16 @@
 }
 
 - (void)loadMainView{
-   
-    ZYHomeMainView * mainView = [[ZYHomeMainView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    
+    //frame正常点，不适用自带的偏移
+    ZYHomeMainView * mainView = [[ZYHomeMainView alloc] initWithFrame:CGRectMake(0, HEIGHT_NAV_AND_STATUSBAR, APP_SCREEN_WIDTH, APP_SCREEN_HEIGHT - HEIGHT_NAV_AND_STATUSBAR - HEIGHT_TABBAR) style:UITableViewStylePlain];
     [self.view addSubview:mainView];
     self.mainView = mainView;
-    if (@available(iOS 11.0, *)) {
-        self.mainView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentAutomatic;
-    } else {
-        
-    }
+    
+    
     self.present = [[ZYHomeControllerPresent alloc] initWithView:self];
     [self.present setPresentView:self.mainView];
     [self.present sendRequest];
-    
-   
     
 }
 
@@ -55,7 +51,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    
     NSLog(@"*********");
+    
 }
 @end

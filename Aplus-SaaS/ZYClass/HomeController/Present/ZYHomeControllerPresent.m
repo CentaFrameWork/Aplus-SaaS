@@ -8,14 +8,10 @@
 
 #import "ZYHomeControllerPresent.h"
 #import "ZYHouseRequestApi.h"
-
-
 @interface ZYHomeControllerPresent ()
 
 @property (nonatomic, weak) UITableView * tableView;
-
 @end
-
 @implementation ZYHomeControllerPresent
 
 - (void)sendRequest{
@@ -27,14 +23,12 @@
 }
 - (void)setPresentView:(UIView *)view {
     
-    _tableView = (UITableView *)view;
+    _tableView = (UITableView*)view;
     
     _tableView.dataSource = self;
-    
     _tableView.delegate = self;
     
     self.delegate = self.view;
-    
     
 }
 #pragma mark - Delegate
@@ -53,6 +47,12 @@
         self.dataArray = pageFunc.domains;
         
         [_tableView reloadData];
+
+//        if ([self.view respondsToSelector:@selector(getServerData:)]) {
+//            
+//            [self.view getServerData:pageFunc];
+//            
+//        }
         
     }
 }
@@ -91,6 +91,12 @@
     cell.textLabel.text = item.domain_name;
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    [self tableView:tableView didSelectRowAtIndexPath:indexPath];
 }
 
 #pragma mark - UITableViewDelegate

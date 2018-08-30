@@ -28,7 +28,10 @@
 
 - (void)loadMainView{
     
-    ZYHomeMainView * mainView = [[ZYHomeMainView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    ZYHomeMainView * mainView = [[ZYHomeMainView alloc] initWithFrame:CGRectMake(0, HEIGHT_NAV, APP_SCREEN_WIDTH, APP_SCREEN_HEIGHT - HEIGHT_NAV - self.navigationController.navigationBar.height) style:UITableViewStyleGrouped];
+    
+    mainView.delegate = self;
+
     [self.view addSubview:mainView];
     self.mainView = mainView;
 
@@ -37,7 +40,6 @@
     self.present = [[ZYHomeControllerPresent alloc] initWithView:self];
     [self.present setPresentView:mainView];
     [self.present sendRequest];
-    
     
 }
 
@@ -49,7 +51,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    
     NSLog(@"*********");
+    
 }
 @end

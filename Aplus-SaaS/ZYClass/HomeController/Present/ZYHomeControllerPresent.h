@@ -19,8 +19,11 @@
 
 
 @interface ZYHomeControllerPresent : ZYBasePresent<UITableViewDataSource,UITableViewDelegate>
+
 @property (nonatomic, strong) NSArray * dataArray;
-@property (nonatomic, weak) id<ZYHomeControllerProtocol>delegate;
+
 - (void)sendRequest;
+
 - (void)setPresentView:(UIView*)view;
+
 @end

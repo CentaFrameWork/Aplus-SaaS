@@ -25,7 +25,7 @@
 
 - (void)sendRequest;
 
-- (void)setPresentView:(UIView*)view;
+- (void)setPresentView:(UIView *)view;
 
 @end
 

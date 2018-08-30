@@ -9,9 +9,11 @@
 #import "ZYHomeControllerPresent.h"
 #import "ZYHouseRequestApi.h"
 
+#import "ZYHomeMainView.h"
+
 @interface ZYHomeControllerPresent ()
 
-@property (nonatomic, weak) UITableView * tableView;
+@property (nonatomic, weak) ZYHomeMainView * tableView;
 
 @end
 
@@ -24,9 +26,9 @@
     [self.manager request:api];
     
 }
-- (void)setPresentView:(UIView *)view {
+- (void)setPresentView:(UIView *)view{
     
-    _tableView = (UITableView*)view;
+    _tableView = (ZYHomeMainView *)view;
     
     _tableView.dataSource = self;
     _tableView.delegate = self;
@@ -63,11 +65,15 @@
 
 #pragma mark - tableView协议代理
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    
     return 1;
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
     return self.dataArray.count;
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{

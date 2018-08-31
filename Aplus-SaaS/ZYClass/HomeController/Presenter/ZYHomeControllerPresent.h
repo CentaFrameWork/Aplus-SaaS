@@ -17,11 +17,7 @@
 #import "ZYHomeControllerProtocol.h"
 
 
-@interface ZYHomeControllerPresent : ZYBasePresent<UITableViewDelegate>
-
-
-
-@property (nonatomic, weak) id<ZYHomeControllerProtocol>delegate;
+@interface ZYHomeControllerPresent : ZYBasePresent
 
 - (void)sendRequest;
 

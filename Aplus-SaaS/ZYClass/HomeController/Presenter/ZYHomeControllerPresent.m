@@ -29,11 +29,7 @@
 - (void)setPresentView:(UIView *)view{
     
     _tableView = (ZYHomeMainView *)view;
-
-    _tableView.delegate = self;
-    
-    self.delegate = self.view;
-    
+ 
 }
 #pragma mark - Delegate
 - (void)respSuc:(CentaResponse *)resData{
@@ -54,12 +50,6 @@
     
     NSLog(@"-------->%@", error);
     
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    [self.delegate tableView:tableView didSelectRowAtIndexPath:indexPath];
 }
 
 

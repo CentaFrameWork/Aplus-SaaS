@@ -29,8 +29,7 @@
 - (void)setPresentView:(UIView *)view{
     
     _tableView = (ZYHomeMainView *)view;
-    
-    _tableView.dataSource = self;
+
     _tableView.delegate = self;
     
     self.delegate = self.view;
@@ -45,13 +44,8 @@
         
     }else{
         
-        NSDictionary * dict = resData.data;
-        
-        ZYHousePageFunc * pageFunc = [ZYHousePageFunc yy_modelWithJSON:dict];
-        
-        self.dataArray = pageFunc.domains;
-        
-        [_tableView reloadData];
+        [_tableView setViewData:resData.data];
+       
         
     }
 }
@@ -62,62 +56,12 @@
     
 }
 
-
-#pragma mark - tableView协议代理
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    
-    return 1;
-    
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
-    return self.dataArray.count;
-    
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    static NSString * identifier = @"UITableViewCell";
-    
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    
-    if(cell == nil){
-        
-        [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:identifier];
-        cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    }
-    
-    ZYHousePageFuncItem * item = self.dataArray[indexPath.row];
-    
-    cell.textLabel.text = item.domain_name;
-    
-    return cell;
-}
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     [self.delegate tableView:tableView didSelectRowAtIndexPath:indexPath];
 }
 
-#pragma mark - UITableViewDelegate
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    
-    return 0.1;
-    
-}
 
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    
-    return 0.1;
-    
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    return 60;
-    
-}
 
 @end

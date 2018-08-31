@@ -8,6 +8,6 @@
 
 #import "ZYMainTableView.h"
 
-@interface ZYHomeMainView : ZYMainTableView
-
+@interface ZYHomeMainView : ZYMainTableView<UITableViewDataSource>
+- (void)setViewData :(NSObject*)data;
 @end

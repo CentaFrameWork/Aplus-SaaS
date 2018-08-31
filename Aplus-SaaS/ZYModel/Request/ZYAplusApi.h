@@ -7,7 +7,7 @@
 //
 
 #import "ZYAplusApi.h"
-
+#import <BaseApi.h>
 @interface ZYAplusApi : BaseApi
 
 

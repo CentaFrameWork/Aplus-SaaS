@@ -17,15 +17,17 @@
 #import "ZYHomeControllerProtocol.h"
 
 
-@interface ZYHomeControllerPresent : ZYBasePresent<UITableViewDataSource,UITableViewDelegate>
+@interface ZYHomeControllerPresent : ZYBasePresent<UITableViewDelegate>
 
-@property (nonatomic, strong) NSArray * dataArray;
+
 
 @property (nonatomic, weak) id<ZYHomeControllerProtocol>delegate;
 
 - (void)sendRequest;
 
 - (void)setPresentView:(UIView *)view;
+
+
 
 @end
 

@@ -7,7 +7,7 @@
 //
 
 #import "ZYBasePresent.h"
-
+#import "ZYAplusInterceptor.h"
 @implementation ZYBasePresent
 
 - (instancetype)initWithView:(id)view{
@@ -30,6 +30,7 @@
     if (_manager == nil) {
         
         _manager = [RequestManager defaultManager:self];
+        _manager.interceptorForSuc = [[ZYAplusInterceptor alloc] init];
     }
     
     return _manager;

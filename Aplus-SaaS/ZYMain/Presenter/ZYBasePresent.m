@@ -16,9 +16,7 @@
     
     if (self = [super init]) {
         
-        _view = view;
-        
-        
+//        _view = view;
         
     }
     

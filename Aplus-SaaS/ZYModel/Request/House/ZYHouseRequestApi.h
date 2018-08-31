@@ -6,9 +6,9 @@
 //  Copyright © 2018年 CentaLine. All rights reserved.
 //
 
-#import "BaseApi.h"
+#import "ZYAplusApi.h"
 
-@interface ZYHouseRequestApi : BaseApi
+@interface ZYHouseRequestApi : ZYAplusApi
 
 @property (nonatomic, copy) NSString * key;
 

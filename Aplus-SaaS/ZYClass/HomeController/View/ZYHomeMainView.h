@@ -8,6 +8,11 @@
 
 #import "ZYMainTableView.h"
 
-@interface ZYHomeMainView : ZYMainTableView<UITableViewDataSource>
+@interface ZYHomeMainView : ZYMainTableView<UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, copy) void (^itemDidSelctedBlock)(NSIndexPath * indexPath);
+
 - (void)setViewData :(NSObject*)data;
+
+
 @end

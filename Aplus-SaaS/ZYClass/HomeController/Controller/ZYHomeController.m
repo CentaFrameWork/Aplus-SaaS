@@ -30,7 +30,6 @@
     
     //frame正常点，不适用自带的偏移
     ZYHomeMainView * mainView = [[ZYHomeMainView alloc] initWithFrame:CGRectMake(0, HEIGHT_NAV_AND_STATUSBAR, APP_SCREEN_WIDTH, APP_SCREEN_HEIGHT - HEIGHT_NAV_AND_STATUSBAR - HEIGHT_TABBAR) style:UITableViewStylePlain];
-     mainView.delegate = self;
     [self.view addSubview:mainView];
     
    

@@ -8,10 +8,12 @@
 
 #import "ZYHomeMainView.h"
 #import "ZYHousePageFunc.h"
-@interface ZYHomeMainView()
-@property (nonatomic, strong) NSArray * dataArray;
-@end
 
+@interface ZYHomeMainView()
+
+@property (nonatomic, strong) NSArray * dataArray;
+
+@end
 
 @implementation ZYHomeMainView
 
@@ -20,6 +22,9 @@
     if (self = [super initWithFrame:frame style:style]) {
         
         self.dataSource = self;
+        
+        self.delegate = self;
+        
     }
     
     return self;
@@ -67,8 +72,6 @@
     return cell;
 }
 
-
-
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     
@@ -85,6 +88,14 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     return 60;
+    
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    self.itemDidSelctedBlock ? self.itemDidSelctedBlock(indexPath) : nil;
     
 }
 

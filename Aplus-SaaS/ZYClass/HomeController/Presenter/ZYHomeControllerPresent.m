@@ -34,14 +34,9 @@
 #pragma mark - Delegate
 - (void)respSuc:(CentaResponse *)resData{
     
-    if (resData.code != 200) {
-        
-        
-        
-    }else{
+    if ([resData.data isKindOfClass:[ZYHousePageFunc class]]) {
         
         [_tableView setViewData:resData.data];
-       
         
     }
 }

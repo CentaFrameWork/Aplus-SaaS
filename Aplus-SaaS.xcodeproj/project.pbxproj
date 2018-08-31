@@ -21,6 +21,8 @@
 		7744CDCE2134F6A6009DE372 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744CDC72134F6A5009DE372 /* UIView+Category.m */; };
 		7744CDD32138D4D4009DE372 /* ZYAplusBaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744CDD22138D4D4009DE372 /* ZYAplusBaseEntity.m */; };
 		7744CDD62138D7FE009DE372 /* ZYAplusApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744CDD52138D7FE009DE372 /* ZYAplusApi.m */; };
+		7744CDDA2138E386009DE372 /* DataConvertInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744CDD82138E386009DE372 /* DataConvertInterceptor.m */; };
+		7744CDDE21392D50009DE372 /* ZYAplusInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744CDDD21392D3B009DE372 /* ZYAplusInterceptor.m */; };
 		77FF442A212AC72C006DA5B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FF4429212AC72C006DA5B5 /* AppDelegate.m */; };
 		77FF4432212AC72D006DA5B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77FF4431212AC72D006DA5B5 /* Assets.xcassets */; };
 		77FF4435212AC72D006DA5B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77FF4433212AC72D006DA5B5 /* LaunchScreen.storyboard */; };
@@ -40,7 +42,6 @@
 		84AC7391212CFDBA007A47AA /* ZYWorkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC7390212CFDBA007A47AA /* ZYWorkController.m */; };
 		84AC7394212CFDCE007A47AA /* ZYMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC7393212CFDCE007A47AA /* ZYMessageController.m */; };
 		84AC7397212CFDDD007A47AA /* ZYMyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC7396212CFDDD007A47AA /* ZYMyController.m */; };
-		84B4797E2139226100CE1C9A /* ZYAplusInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B4797D2139226100CE1C9A /* ZYAplusInterceptor.m */; };
 		9895E5FC12E589E191CC4B84 /* libPods-Aplus-SaaS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BCEA11E4BE4E0433A053AA /* libPods-Aplus-SaaS.a */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,10 @@
 		7744CDD22138D4D4009DE372 /* ZYAplusBaseEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYAplusBaseEntity.m; sourceTree = "<group>"; };
 		7744CDD42138D7FE009DE372 /* ZYAplusApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYAplusApi.h; sourceTree = "<group>"; };
 		7744CDD52138D7FE009DE372 /* ZYAplusApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYAplusApi.m; sourceTree = "<group>"; };
+		7744CDD82138E386009DE372 /* DataConvertInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataConvertInterceptor.m; sourceTree = "<group>"; };
+		7744CDD92138E386009DE372 /* DataConvertInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataConvertInterceptor.h; sourceTree = "<group>"; };
+		7744CDDC21392D3B009DE372 /* ZYAplusInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYAplusInterceptor.h; sourceTree = "<group>"; };
+		7744CDDD21392D3B009DE372 /* ZYAplusInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYAplusInterceptor.m; sourceTree = "<group>"; };
 		77FF4425212AC72C006DA5B5 /* Aplus-SaaS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aplus-SaaS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77FF4428212AC72C006DA5B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77FF4429212AC72C006DA5B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -130,8 +135,6 @@
 		84AC7393212CFDCE007A47AA /* ZYMessageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYMessageController.m; sourceTree = "<group>"; };
 		84AC7395212CFDDD007A47AA /* ZYMyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYMyController.h; sourceTree = "<group>"; };
 		84AC7396212CFDDD007A47AA /* ZYMyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYMyController.m; sourceTree = "<group>"; };
-		84B4797C2139226100CE1C9A /* ZYAplusInterceptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYAplusInterceptor.h; sourceTree = "<group>"; };
-		84B4797D2139226100CE1C9A /* ZYAplusInterceptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYAplusInterceptor.m; sourceTree = "<group>"; };
 		AE7401A88E6AFC9B9DEDC9C0 /* Pods-Aplus-SaaS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aplus-SaaS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aplus-SaaS/Pods-Aplus-SaaS.release.xcconfig"; sourceTree = "<group>"; };
 		B9BCEA11E4BE4E0433A053AA /* libPods-Aplus-SaaS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Aplus-SaaS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -214,6 +217,24 @@
 			path = "UIView+Category";
 			sourceTree = "<group>";
 		};
+		7744CDD72138E379009DE372 /* Interceptors */ = {
+			isa = PBXGroup;
+			children = (
+				7744CDD92138E386009DE372 /* DataConvertInterceptor.h */,
+				7744CDD82138E386009DE372 /* DataConvertInterceptor.m */,
+			);
+			path = Interceptors;
+			sourceTree = "<group>";
+		};
+		7744CDDB21392D3B009DE372 /* Interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				7744CDDC21392D3B009DE372 /* ZYAplusInterceptor.h */,
+				7744CDDD21392D3B009DE372 /* ZYAplusInterceptor.m */,
+			);
+			path = Interceptor;
+			sourceTree = "<group>";
+		};
 		77FF441C212AC72C006DA5B5 = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +303,7 @@
 		77FF445F212AC765006DA5B5 /* ZYMain */ = {
 			isa = PBXGroup;
 			children = (
+				7744CDD72138E379009DE372 /* Interceptors */,
 				7744CD9A2133DE3A009DE372 /* Presenter */,
 				77FF4460212AC765006DA5B5 /* Controller */,
 				77FF4467212AC765006DA5B5 /* Model */,
@@ -393,7 +415,7 @@
 		77FF449B2133DB26006DA5B5 /* ZYModel */ = {
 			isa = PBXGroup;
 			children = (
-				84B4797B213921E800CE1C9A /* Interceptor */,
+				7744CDDB21392D3B009DE372 /* Interceptor */,
 				77FF449F2133DBA7006DA5B5 /* Response */,
 				77FF449E2133DBA1006DA5B5 /* Request */,
 			);
@@ -564,15 +586,6 @@
 				84AC7396212CFDDD007A47AA /* ZYMyController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		84B4797B213921E800CE1C9A /* Interceptor */ = {
-			isa = PBXGroup;
-			children = (
-				84B4797C2139226100CE1C9A /* ZYAplusInterceptor.h */,
-				84B4797D2139226100CE1C9A /* ZYAplusInterceptor.m */,
-			);
-			path = Interceptor;
 			sourceTree = "<group>";
 		};
 		F5C2861C6EE1B2F698DD8F58 /* Pods */ = {
@@ -780,9 +793,9 @@
 				77FF4488212AC766006DA5B5 /* ZYTabBarController.m in Sources */,
 				77FF44AE2133DC7B006DA5B5 /* ZYHomeControllerPresent.m in Sources */,
 				77FF448D212AC766006DA5B5 /* ZYMainTableView.m in Sources */,
+				7744CDDE21392D50009DE372 /* ZYAplusInterceptor.m in Sources */,
 				77FF448B212AC766006DA5B5 /* ZYInitialData.m in Sources */,
 				7744CD9D2133DE51009DE372 /* ZYBasePresent.m in Sources */,
-				84B4797E2139226100CE1C9A /* ZYAplusInterceptor.m in Sources */,
 				7744CDA02133DF0A009DE372 /* ZYHouseRequestApi.m in Sources */,
 				84AC7391212CFDBA007A47AA /* ZYWorkController.m in Sources */,
 				77FF442A212AC72C006DA5B5 /* AppDelegate.m in Sources */,
@@ -790,6 +803,7 @@
 				84AC7397212CFDDD007A47AA /* ZYMyController.m in Sources */,
 				7744CDD32138D4D4009DE372 /* ZYAplusBaseEntity.m in Sources */,
 				7744CDD62138D7FE009DE372 /* ZYAplusApi.m in Sources */,
+				7744CDDA2138E386009DE372 /* DataConvertInterceptor.m in Sources */,
 				7744CDCE2134F6A6009DE372 /* UIView+Category.m in Sources */,
 				84AC738E212CFD9D007A47AA /* ZYHomeController.m in Sources */,
 			);

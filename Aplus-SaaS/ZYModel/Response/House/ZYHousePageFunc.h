@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-#import "ZYAgencyBaseEntity.h"
+#import "ZYAplusBaseEntity.h"
 
 @class ZYHousePageFuncItem;
 
 
-@interface ZYHousePageFunc : ZYAgencyBaseEntity
+@interface ZYHousePageFunc : ZYAplusBaseEntity
 
 @property (nonatomic, strong) NSArray<ZYHousePageFuncItem *> * domains;
 

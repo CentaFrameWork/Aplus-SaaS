@@ -7,14 +7,20 @@
 //
 
 #import "ZYHomeController.h"
-#import "ZYHomeControllerPresent.h"
+#import "ZYHouseListViewController.h"
+
 #import "ZYHomeMainView.h"
 
-@interface ZYHomeController ()
+#import "ZYHomeControllerPresent.h"
+
+@interface ZYHomeController ()<UITableViewDelegate>
+
+@property (nonatomic, weak) ZYHomeMainView * mainView;
 
 @property (nonatomic, strong) ZYHomeControllerPresent * present;
-@property (nonatomic, weak) ZYHomeMainView * mainView;
+
 @property (nonatomic, strong) NSArray * dataArray;
+
 @end
 
 @implementation ZYHomeController
@@ -23,27 +29,30 @@
     [super viewDidLoad];
     
     
-   
-    
-
     
 }
 
 - (void)loadMainView{
-   
-    ZYHomeMainView * mainView = [[ZYHomeMainView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-    [self.view addSubview:mainView];
-    self.mainView = mainView;
-    if (@available(iOS 11.0, *)) {
-        self.mainView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentAutomatic;
-    } else {
-        
-    }
-    self.present = [[ZYHomeControllerPresent alloc] initWithView:self];
-    [self.present setPresentView:self.mainView];
-    [self.present sendRequest];
     
-   
+    __block typeof(self) weakSelf = self;
+    
+    //frame正常点，不适用自带的偏移
+    ZYHomeMainView * mainView = [[ZYHomeMainView alloc] initWithFrame:CGRectMake(0, HEIGHT_NAV_AND_STATUSBAR, APP_SCREEN_WIDTH, APP_SCREEN_HEIGHT - HEIGHT_NAV_AND_STATUSBAR - HEIGHT_TABBAR) style:UITableViewStylePlain];
+    
+    [mainView setItemDidSelctedBlock:^(NSIndexPath *indexPath) {
+        
+        ZYHouseListViewController * con = [[ZYHouseListViewController alloc] init];
+        
+        [weakSelf.navigationController pushViewController:con animated:YES];
+        
+    }];
+    
+    [self.view addSubview:mainView];
+    
+    
+    self.present = [[ZYHomeControllerPresent alloc] init];
+    [self.present setPresentView:mainView];
+    [self.present sendRequest];
     
 }
 
@@ -53,9 +62,5 @@
     
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    
-    NSLog(@"*********");
-}
+
 @end

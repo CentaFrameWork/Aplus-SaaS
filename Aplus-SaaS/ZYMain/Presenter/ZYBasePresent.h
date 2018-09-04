@@ -1,5 +1,5 @@
 //
-//  ZYAgencyBaseEntity.h
+//  ZYBasePresent.h
 //  Aplus-SaaS
 //
 //  Created by 陈行 on 2018/8/27.
@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ZYAgencyBaseEntity : NSObject
+#import "RequestManager.h"
 
-@property (nonatomic, copy) NSString * message;
+@interface ZYBasePresent : NSObject<YResponseDelegate>
 
-@property (nonatomic, copy) NSString * code;
+@property (nonatomic, strong) RequestManager * manager;
 
 @end

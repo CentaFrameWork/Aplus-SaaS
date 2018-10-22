@@ -14,8 +14,6 @@
 
 #import "ZYHousePageFunc.h"
 
-#import "ZYHomeControllerProtocol.h"
-
 
 @interface ZYHomeControllerPresent : ZYBasePresent
 

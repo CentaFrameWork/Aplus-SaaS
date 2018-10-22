@@ -18,38 +18,13 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self loadInitialData];
-    [self loadMainView];
-    [self loadNavigationBar];
+  
     
 }
-
-- (void)loadMainView{
-    
-    
-}
-
-- (void)loadNavigationBar{
-    
-}
-
-- (void)loadInitialData{
-    
-}
-
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
-    if (self.navigationController.viewControllers.count > 1) {
-        
-        self.tabBarController.tabBar.hidden = YES;
-        
-    }else{
-        
-        self.tabBarController.tabBar.hidden = NO;
-        
-    }
     
 }
 

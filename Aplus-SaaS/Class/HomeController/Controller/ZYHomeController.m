@@ -7,10 +7,8 @@
 //
 
 #import "ZYHomeController.h"
-#import "ZYHouseListViewController.h"
-
 #import "ZYHomeMainView.h"
-
+#import "ZYWorkController.h"
 #import "ZYHomeControllerPresent.h"
 
 @interface ZYHomeController ()<UITableViewDelegate>
@@ -28,20 +26,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    
-}
-
-- (void)loadMainView{
+    self.title = @"首页";
     
     __block typeof(self) weakSelf = self;
     
-    //frame正常点，不适用自带的偏移
-    ZYHomeMainView * mainView = [[ZYHomeMainView alloc] initWithFrame:CGRectMake(0, HEIGHT_NAV_AND_STATUSBAR, APP_SCREEN_WIDTH, APP_SCREEN_HEIGHT - HEIGHT_NAV_AND_STATUSBAR - HEIGHT_TABBAR) style:UITableViewStylePlain];
+    ZYHomeMainView * mainView = [[ZYHomeMainView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     
     [mainView setItemDidSelctedBlock:^(NSIndexPath *indexPath) {
         
-        ZYHouseListViewController * con = [[ZYHouseListViewController alloc] init];
+        ZYWorkController * con = [[ZYWorkController alloc] init];
         
         [weakSelf.navigationController pushViewController:con animated:YES];
         
@@ -55,12 +48,5 @@
     [self.present sendRequest];
     
 }
-
-- (void)loadNavigationBar{
-    
-    self.navigationItem.title = @"首页";
-    
-}
-
 
 @end

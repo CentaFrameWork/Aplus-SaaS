@@ -27,15 +27,14 @@
     _mainView = [[ZYHomeMainView alloc] init];
 //    _mainView.delegate = self;
     [self.view addSubview:_mainView];
-    
-    [ZYHomeControllerPresent request_loginWithArgument:@{@"KeyId":@"",@"IsMobileRequest": @(YES)} withSucess:^(ZYHomeControllerPresent *shareVM) {
+ 
+
+    [ZYHomeControllerPresent request_loginWithArgument:@{@"DomainAccount":@"kmrxq",@"DomainPass": @"111222"} withSucess:^(ZYHomeControllerPresent *shareVM) {
         
         
         
     }];
-    
-
-    
+        
 }
 
 @end

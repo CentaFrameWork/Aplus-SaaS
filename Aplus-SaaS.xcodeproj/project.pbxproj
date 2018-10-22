@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7744CD9D2133DE51009DE372 /* ZYBasePresent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744CD9C2133DE51009DE372 /* ZYBasePresent.m */; };
 		7744CDA32133E373009DE372 /* ZYHousePageFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744CDA22133E373009DE372 /* ZYHousePageFunc.m */; };
 		7744CDAB2133E519009DE372 /* NSObject+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744CDA52133E519009DE372 /* NSObject+Description.m */; };
 		7744CDB12133E781009DE372 /* readme-tool in Resources */ = {isa = PBXBuildFile; fileRef = 7744CDB02133E781009DE372 /* readme-tool */; };
@@ -55,8 +54,6 @@
 
 /* Begin PBXFileReference section */
 		0A44D7B35669FBD1EBB0BDA0 /* Pods-Aplus-SaaS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aplus-SaaS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aplus-SaaS/Pods-Aplus-SaaS.debug.xcconfig"; sourceTree = "<group>"; };
-		7744CD9B2133DE51009DE372 /* ZYBasePresent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYBasePresent.h; sourceTree = "<group>"; };
-		7744CD9C2133DE51009DE372 /* ZYBasePresent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYBasePresent.m; sourceTree = "<group>"; };
 		7744CDA12133E373009DE372 /* ZYHousePageFunc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYHousePageFunc.h; sourceTree = "<group>"; };
 		7744CDA22133E373009DE372 /* ZYHousePageFunc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYHousePageFunc.m; sourceTree = "<group>"; };
 		7744CDA52133E519009DE372 /* NSObject+Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Description.m"; sourceTree = "<group>"; };
@@ -321,8 +318,6 @@
 		77FF44AB2133DC61006DA5B5 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				7744CD9B2133DE51009DE372 /* ZYBasePresent.h */,
-				7744CD9C2133DE51009DE372 /* ZYBasePresent.m */,
 				77FF44AC2133DC7B006DA5B5 /* ZYHomeControllerPresent.h */,
 				77FF44AD2133DC7B006DA5B5 /* ZYHomeControllerPresent.m */,
 			);
@@ -624,7 +619,6 @@
 				77FF4488212AC766006DA5B5 /* ZYTabBarController.m in Sources */,
 				77FF44AE2133DC7B006DA5B5 /* ZYHomeControllerPresent.m in Sources */,
 				7744CDDE21392D50009DE372 /* ZYAplusInterceptor.m in Sources */,
-				7744CD9D2133DE51009DE372 /* ZYBasePresent.m in Sources */,
 				840DB982217DB0A7009A9363 /* NSString+MD5Additions.m in Sources */,
 				84AC7391212CFDBA007A47AA /* ZYWorkController.m in Sources */,
 				77FF442A212AC72C006DA5B5 /* AppDelegate.m in Sources */,

@@ -49,17 +49,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    static NSString * identifier = @"UITableViewCell";
-    
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    
-    if(cell == nil){
-        
-        [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:identifier];
-        cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    }
-    
-    
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     
     cell.textLabel.text = @"1111";
     

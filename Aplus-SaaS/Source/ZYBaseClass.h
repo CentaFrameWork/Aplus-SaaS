@@ -14,7 +14,7 @@
 //引入category
 #import "NSObject+Description.h"
 #import "UIView+Category.h"
-
+#import <YYModel/YYModel.h>
 
 
 #endif /* ZYBaseClass_h */

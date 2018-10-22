@@ -1,49 +1,52 @@
 //
-//  ZYHomeControllerPresent.m
-//  Aplus-SaaS
+//  ZYShareVM.h
+//  PanKeTong
 //
-//  Created by 陈行 on 2018/8/27.
-//  Copyright © 2018年 CentaLine. All rights reserved.
+//  Created by Admin on 2018/9/11.
+//  Copyright © 2018年 中原集团. All rights reserved.
 //
 
 #import "ZYHomeControllerPresent.h"
-#import "ZYHouseRequestApi.h"
+#import "ZYUniversalApi.h"
+#import "HudViewUtil.h"
+#import <YRequestManager/BaseServiceManager.h>
 
-#import "ZYHomeMainView.h"
+
 
 @interface ZYHomeControllerPresent ()
-
-@property (nonatomic, weak) ZYHomeMainView * tableView;
+@property (nonatomic,strong) HudViewUtil *hud;
 
 @end
 
 @implementation ZYHomeControllerPresent
 
-- (void)sendRequest{
++ (void)request_loginWithArgument:(NSDictionary*)dict withSucess:(void(^)(ZYHomeControllerPresent * shareVM))block{
     
-    ZYHouseRequestApi * api = [[ZYHouseRequestApi alloc] init];
+    __block ZYHomeControllerPresent *vmodel = [[ZYHomeControllerPresent alloc] init];
     
-    [self.manager request:api];
+    vmodel.hud = [[HudViewUtil alloc] init];
+    [vmodel.hud showLoadingView:@""];
     
-}
-- (void)setPresentView:(UIView *)view{
     
-    _tableView = (ZYHomeMainView *)view;
- 
-}
-#pragma mark - Delegate
-- (void)respSuc:(CentaResponse *)resData{
+    ZYUniversalApi *api = [ZYUniversalApi new];
+    api.argument_dict = dict;
+    api.pathType = path_login;
+    NSLog(@"请求地址:%@\n请求参数:%@",api.getReqUrl,api.getBody);
     
-    if ([resData.data isKindOfClass:[ZYHousePageFunc class]]) {
+    BaseServiceManager* manager = [BaseServiceManager initManager];
+    [manager sendRequest:api sucBlock:^(NSDictionary* result) {
         
-        [_tableView setViewData:resData.data];
-        
-    }
-}
-
-- (void)respFail:(CentaResponse *)error{
+        [vmodel.hud hiddenLoadingView];
     
-    NSLog(@"-------->%@", error);
+        
+        NSLog(@"%@",result);
+        
+    } failBlock:^(NSError *error) {
+        
+        [vmodel.hud hiddenLoadingView];
+        NSLog(@"%@",error);
+        
+    }];
     
 }
 

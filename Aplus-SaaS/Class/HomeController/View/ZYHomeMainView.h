@@ -1,18 +1,23 @@
 //
-//  ZYHomeMainView.h
-//  Aplus-SaaS
+//  ZYShareCell.m
+//  PanKeTong
 //
-//  Created by 陈行 on 2018/8/27.
-//  Copyright © 2018年 CentaLine. All rights reserved.
+//  Created by Admin on 2018/9/11.
+//  Copyright © 2018年 中原集团. All rights reserved.
 //
 
-#import "ZYMainTableView.h"
+#import <UIKit/UIKit.h>
+#import "ZYHomeControllerPresent.h"
 
-@interface ZYHomeMainView : ZYMainTableView<UITableViewDataSource, UITableViewDelegate>
+@protocol ZYLoginViewDelegate <NSObject>
 
-@property (nonatomic, copy) void (^itemDidSelctedBlock)(NSIndexPath * indexPath);
+- (void)shareBtnClick;
 
-- (void)setViewData :(NSObject*)data;
+@end
+@interface ZYHomeMainView : UIView
+
+@property (nonatomic,weak) id<ZYLoginViewDelegate>delegate;
+@property (nonatomic,strong)ZYHomeControllerPresent *vmodel;
 
 
 @end

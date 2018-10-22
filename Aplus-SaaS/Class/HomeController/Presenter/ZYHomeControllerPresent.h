@@ -1,27 +1,18 @@
 //
-//  ZYHomeControllerPresent.h
-//  Aplus-SaaS
+//  ZYShareVM.h
+//  PanKeTong
 //
-//  Created by 陈行 on 2018/8/27.
-//  Copyright © 2018年 CentaLine. All rights reserved.
+//  Created by Admin on 2018/9/11.
+//  Copyright © 2018年 中原集团. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-#import "ZYBasePresent.h"
+@interface ZYHomeControllerPresent : NSObject
 
-#import "ZYHomeMainView.h"
+@property (nonatomic,strong,nullable) NSArray<NSObject*> *array;
 
-#import "ZYHousePageFunc.h"
-
-
-@interface ZYHomeControllerPresent : ZYBasePresent
-
-- (void)sendRequest;
-
-- (void)setPresentView:(UIView *)view;
-
-
++ (void)request_loginWithArgument:(NSDictionary*)dict withSucess:(void(^)(ZYHomeControllerPresent * shareVM))block;
 
 @end
 

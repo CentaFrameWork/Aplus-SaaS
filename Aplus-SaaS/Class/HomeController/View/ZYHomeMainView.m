@@ -1,49 +1,49 @@
 //
-//  ZYHomeMainView.m
-//  Aplus-SaaS
+//  ZYShareCell.m
+//  PanKeTong
 //
-//  Created by 陈行 on 2018/8/27.
-//  Copyright © 2018年 CentaLine. All rights reserved.
+//  Created by Admin on 2018/9/11.
+//  Copyright © 2018年 中原集团. All rights reserved.
 //
-
 #import "ZYHomeMainView.h"
 #import "ZYHousePageFunc.h"
 
-@interface ZYHomeMainView()
+@interface ZYHomeMainView()<UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic, strong) NSArray * dataArray;
+@property (nonatomic,strong,nonnull) UITableView *myTableView;
+
 
 @end
 
 @implementation ZYHomeMainView
 
-- (instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style {
+- (instancetype)initWithFrame:(CGRect)frame {
     
-    if (self = [super initWithFrame:frame style:style]) {
+    if (self = [super initWithFrame:frame]) {
         
-        self.dataSource = self;
-        
-        self.delegate = self;
+        _myTableView = [[UITableView alloc] initWithFrame:frame style:UITableViewStylePlain];
+        [_myTableView registerNib:[UINib nibWithNibName:@"ZYShareCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"Share"];
+        _myTableView.estimatedRowHeight = 44;
+        _myTableView.delegate = self;
+        _myTableView.dataSource = self;
+        _myTableView.tableFooterView = [UIView new];
+        [self addSubview:_myTableView];
         
     }
-    
     return self;
 }
 
-
-- (void)setViewData:(NSObject *)data {
+- (void)setVmodel:(ZYHomeControllerPresent *)vmodel {
     
-    ZYHousePageFunc * pageFunc = (ZYHousePageFunc*)data;
+    _vmodel = vmodel;
+    [self.myTableView reloadData];
     
-    self.dataArray = pageFunc.domains;
-    
-    [self reloadData];
 }
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return self.dataArray.count;
+    return _vmodel.array.count;
     
 }
 
@@ -59,9 +59,9 @@
         cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     }
     
-    ZYHousePageFuncItem * item = self.dataArray[indexPath.row];
     
-    cell.textLabel.text = item.domain_name;
+    
+    cell.textLabel.text = @"1111";
     
     return cell;
 }
@@ -71,7 +71,6 @@
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    self.itemDidSelctedBlock ? self.itemDidSelctedBlock(indexPath) : nil;
     
 }
 

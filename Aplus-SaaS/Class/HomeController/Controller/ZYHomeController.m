@@ -8,16 +8,11 @@
 
 #import "ZYHomeController.h"
 #import "ZYHomeMainView.h"
-#import "ZYWorkController.h"
 #import "ZYHomeControllerPresent.h"
 
 @interface ZYHomeController ()<UITableViewDelegate>
 
-@property (nonatomic, weak) ZYHomeMainView * mainView;
-
-@property (nonatomic, strong) ZYHomeControllerPresent * present;
-
-@property (nonatomic, strong) NSArray * dataArray;
+@property (nonatomic, strong) ZYHomeMainView * mainView;
 
 @end
 
@@ -28,24 +23,18 @@
     
     self.title = @"首页";
     
-    __block typeof(self) weakSelf = self;
     
-    ZYHomeMainView * mainView = [[ZYHomeMainView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    _mainView = [[ZYHomeMainView alloc] init];
+//    _mainView.delegate = self;
+    [self.view addSubview:_mainView];
     
-    [mainView setItemDidSelctedBlock:^(NSIndexPath *indexPath) {
+    [ZYHomeControllerPresent request_loginWithArgument:@{@"KeyId":@"",@"IsMobileRequest": @(YES)} withSucess:^(ZYHomeControllerPresent *shareVM) {
         
-        ZYWorkController * con = [[ZYWorkController alloc] init];
         
-        [weakSelf.navigationController pushViewController:con animated:YES];
         
     }];
     
-    [self.view addSubview:mainView];
-    
-    
-    self.present = [[ZYHomeControllerPresent alloc] init];
-    [self.present setPresentView:mainView];
-    [self.present sendRequest];
+
     
 }
 

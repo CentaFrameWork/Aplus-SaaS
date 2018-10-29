@@ -231,7 +231,7 @@
  */
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    kWeakSelf;
+    
     if (indexPath.row == 0) {
         static NSString *reuseID = @"cell";
         ContactListPropertiesCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseID];

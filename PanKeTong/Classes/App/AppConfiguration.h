@@ -59,7 +59,7 @@
 
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 #define StrongSelf(strongSelf) __strong __typeof(&*self) strongSelf = weakSelf;
-#define kWeakSelf __weak typeof(self) weakSelf = self;
+
 
 
 #define KeyWindow [UIApplication sharedApplication].keyWindow
@@ -145,9 +145,6 @@
 
 #define  YCAppMargin        12*NewRatio                              // 页边距
 #define  YCLayerCornerRadius    5*NewRatio                           //切角大小
-
-
-
 
 
 #define     SettingMicrophone   @"请在手机的“设置-隐私-麦克风”中，允许“移动A+”访问你的麦克风"

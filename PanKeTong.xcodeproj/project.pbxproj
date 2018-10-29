@@ -3098,7 +3098,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F3035771BCB4BD400A99D93 /* AdLoadingVC */ = {
+		1F3035771BCB4BD400A99D93 /* AdLoading */ = {
 			isa = PBXGroup;
 			children = (
 				77B1F7F520AA7AA1000FE67A /* view */,
@@ -3109,7 +3109,7 @@
 				770A479320B6A52A00F49573 /* JMAdLoadingViewController.m */,
 				770A479520B6A53200F49573 /* JMAdLoadingViewController.storyboard */,
 			);
-			path = AdLoadingVC;
+			path = AdLoading;
 			sourceTree = "<group>";
 		};
 		1F5953371BF9A17000A25473 /* ChatVC */ = {
@@ -3833,9 +3833,8 @@
 			isa = PBXGroup;
 			children = (
 				969DDF841CAA4FC70076DB3D /* Main */,
-				CFD12DF62022F2DF007F2C89 /* NewProject */,
 				969DDF831CAA4FBF0076DB3D /* HomePage */,
-				1F3035771BCB4BD400A99D93 /* AdLoadingVC */,
+				1F3035771BCB4BD400A99D93 /* AdLoading */,
 				59AB56D01BB274170001179F /* Message */,
 				1FBCAA321BB0E0BD007DBE66 /* Discover */,
 				969DDF851CAA4FCE0076DB3D /* Mine */,
@@ -4577,9 +4576,9 @@
 			isa = PBXGroup;
 			children = (
 				5D9471CB1FEAACF200200E80 /* Controller */,
+				5D9471D71FEAACF200200E80 /* View */,
 				5D9471CE1FEAACF200200E80 /* Model */,
 				5D9471D11FEAACF200200E80 /* Other */,
-				5D9471D71FEAACF200200E80 /* View */,
 			);
 			path = UploadListVC;
 			sourceTree = "<group>";
@@ -5032,35 +5031,6 @@
 			path = cell;
 			sourceTree = "<group>";
 		};
-		806E73611CC5205F00C94DA5 /* FollowRcord */ = {
-			isa = PBXGroup;
-			children = (
-				806E73671CC5D20500C94DA5 /* Cell */,
-				806E73621CC520B700C94DA5 /* FollowListVC.h */,
-				806E73631CC520B700C94DA5 /* FollowListVC.m */,
-				7DD524531CCA264B0005DE86 /* TimeScreenViewController.h */,
-				7DD524541CCA264B0005DE86 /* TimeScreenViewController.m */,
-				7DD524551CCA264B0005DE86 /* TimeScreenViewController.xib */,
-				7D9D41C71CCDA69900B4EFF9 /* FollowSearchViewController.h */,
-				7D9D41C81CCDA69900B4EFF9 /* FollowSearchViewController.m */,
-				7D9D41C91CCDA69900B4EFF9 /* FollowSearchViewController.xib */,
-			);
-			name = FollowRcord;
-			sourceTree = "<group>";
-		};
-		806E73671CC5D20500C94DA5 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				806E73681CC5D22700C94DA5 /* FollowListTableViewCell.h */,
-				806E73691CC5D22700C94DA5 /* FollowListTableViewCell.m */,
-				806E736A1CC5D22700C94DA5 /* FollowListTableViewCell.xib */,
-				7D5B488B1CCF6FAD009C5E0C /* CheckScopeCell.h */,
-				7D5B488C1CCF6FAD009C5E0C /* CheckScopeCell.m */,
-				7D5B488D1CCF6FAD009C5E0C /* CheckScopeCell.xib */,
-			);
-			name = Cell;
-			sourceTree = "<group>";
-		};
 		809DA3EE1C478F300058C05E /* 400Project */ = {
 			isa = PBXGroup;
 			children = (
@@ -5278,6 +5248,89 @@
 			path = Customer;
 			sourceTree = "<group>";
 		};
+		84CE85AF2186A06400CC49E7 /* AddContact */ = {
+			isa = PBXGroup;
+			children = (
+				CF9B18461ED7C2E300322504 /* AddContactsViewController.h */,
+				CF9B18471ED7C2E300322504 /* AddContactsViewController.m */,
+				96A9BE541CC63FD400A793B5 /* AddContactsViewController.xib */,
+			);
+			path = AddContact;
+			sourceTree = "<group>";
+		};
+		84CE85B02186A0DB00CC49E7 /* FollowRcord */ = {
+			isa = PBXGroup;
+			children = (
+				84CE85B12186A11300CC49E7 /* Controller */,
+				84CE85B22186A12C00CC49E7 /* View */,
+			);
+			path = FollowRcord;
+			sourceTree = "<group>";
+		};
+		84CE85B12186A11300CC49E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				806E73621CC520B700C94DA5 /* FollowListVC.h */,
+				806E73631CC520B700C94DA5 /* FollowListVC.m */,
+				7DD524531CCA264B0005DE86 /* TimeScreenViewController.h */,
+				7DD524541CCA264B0005DE86 /* TimeScreenViewController.m */,
+				7DD524551CCA264B0005DE86 /* TimeScreenViewController.xib */,
+				7D9D41C71CCDA69900B4EFF9 /* FollowSearchViewController.h */,
+				7D9D41C81CCDA69900B4EFF9 /* FollowSearchViewController.m */,
+				7D9D41C91CCDA69900B4EFF9 /* FollowSearchViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84CE85B22186A12C00CC49E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				806E73681CC5D22700C94DA5 /* FollowListTableViewCell.h */,
+				806E73691CC5D22700C94DA5 /* FollowListTableViewCell.m */,
+				806E736A1CC5D22700C94DA5 /* FollowListTableViewCell.xib */,
+				7D5B488B1CCF6FAD009C5E0C /* CheckScopeCell.h */,
+				7D5B488C1CCF6FAD009C5E0C /* CheckScopeCell.m */,
+				7D5B488D1CCF6FAD009C5E0C /* CheckScopeCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84CE85B32186A15700CC49E7 /* RichScan */ = {
+			isa = PBXGroup;
+			children = (
+				84CE85B42186A18F00CC49E7 /* Controller */,
+				84CE85B52186A1AD00CC49E7 /* other */,
+			);
+			path = RichScan;
+			sourceTree = "<group>";
+		};
+		84CE85B42186A18F00CC49E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5DC4031F205600C700801C43 /* JMScanController.h */,
+				5DC4031E205600C700801C43 /* JMScanController.m */,
+				84C8713D20B2E29F0076D22C /* JMScanJumpWebController.h */,
+				84C8713E20B2E29F0076D22C /* JMScanJumpWebController.m */,
+				846845C220D249440027AB95 /* JMScanJumpYCuiController.h */,
+				846845C320D249440027AB95 /* JMScanJumpYCuiController.m */,
+				8411B88E20D9EF2300D7EA10 /* JMScanJumpOtherController.h */,
+				8411B88F20D9EF2300D7EA10 /* JMScanJumpOtherController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84CE85B52186A1AD00CC49E7 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				96A9BE611CC63FEE00A793B5 /* CLLocation+YCLocation.h */,
+				96A9BE621CC63FEE00A793B5 /* CLLocation+YCLocation.m */,
+				96A9BE791CC6406600A793B5 /* TCLocationHelper.h */,
+				96A9BE7A1CC6406600A793B5 /* TCLocationHelper.m */,
+				96A9BE691CC6402300A793B5 /* HomePageJSExprt.h */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
 		96317A1D1CAB9B1400741342 /* CustomService */ = {
 			isa = PBXGroup;
 			children = (
@@ -5301,18 +5354,12 @@
 		969DDF831CAA4FBF0076DB3D /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				CFD12E5B2022F2DF007F2C89 /* NewHomePage */,
+				CFD12E902022F2DF007F2C89 /* NewProperty */,
 				5D9471CA1FEAACF200200E80 /* UploadListVC */,
-				96A9BE4F1CC63F8300A793B5 /* AddContact（新增联系人） */,
-				96A9BE511CC63FBE00A793B5 /* Bidding(叫价) */,
-				806E73611CC5205F00C94DA5 /* FollowRcord */,
-				5DC4031F205600C700801C43 /* JMScanController.h */,
-				5DC4031E205600C700801C43 /* JMScanController.m */,
-				84C8713D20B2E29F0076D22C /* JMScanJumpWebController.h */,
-				84C8713E20B2E29F0076D22C /* JMScanJumpWebController.m */,
-				846845C220D249440027AB95 /* JMScanJumpYCuiController.h */,
-				846845C320D249440027AB95 /* JMScanJumpYCuiController.m */,
-				8411B88E20D9EF2300D7EA10 /* JMScanJumpOtherController.h */,
-				8411B88F20D9EF2300D7EA10 /* JMScanJumpOtherController.m */,
+				84CE85B02186A0DB00CC49E7 /* FollowRcord */,
+				84CE85AF2186A06400CC49E7 /* AddContact */,
+				84CE85B32186A15700CC49E7 /* RichScan */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -5343,36 +5390,6 @@
 				F4D215E71FDBEEE800ED3F3F /* ShowStaffImageView.m */,
 			);
 			path = Mine;
-			sourceTree = "<group>";
-		};
-		96A9BE4F1CC63F8300A793B5 /* AddContact（新增联系人） */ = {
-			isa = PBXGroup;
-			children = (
-				CF9B18461ED7C2E300322504 /* AddContactsViewController.h */,
-				CF9B18471ED7C2E300322504 /* AddContactsViewController.m */,
-				96A9BE541CC63FD400A793B5 /* AddContactsViewController.xib */,
-			);
-			name = "AddContact（新增联系人）";
-			sourceTree = "<group>";
-		};
-		96A9BE511CC63FBE00A793B5 /* Bidding(叫价) */ = {
-			isa = PBXGroup;
-			children = (
-				96A9BE801CC6408900A793B5 /* Helper */,
-			);
-			name = "Bidding(叫价)";
-			sourceTree = "<group>";
-		};
-		96A9BE801CC6408900A793B5 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				96A9BE611CC63FEE00A793B5 /* CLLocation+YCLocation.h */,
-				96A9BE621CC63FEE00A793B5 /* CLLocation+YCLocation.m */,
-				96A9BE791CC6406600A793B5 /* TCLocationHelper.h */,
-				96A9BE7A1CC6406600A793B5 /* TCLocationHelper.m */,
-				96A9BE691CC6402300A793B5 /* HomePageJSExprt.h */,
-			);
-			name = Helper;
 			sourceTree = "<group>";
 		};
 		CF28FCCE1ECD99AD00F9A4E6 /* CalendarStroke */ = {
@@ -5866,15 +5883,6 @@
 				CFA4A91F1ED411AB005ECF06 /* CheckTrustPhotosCell.xib */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		CFD12DF62022F2DF007F2C89 /* NewProject */ = {
-			isa = PBXGroup;
-			children = (
-				CFD12E5B2022F2DF007F2C89 /* NewHomePage */,
-				CFD12E902022F2DF007F2C89 /* NewProperty */,
-			);
-			path = NewProject;
 			sourceTree = "<group>";
 		};
 		CFD12E5B2022F2DF007F2C89 /* NewHomePage */ = {

@@ -118,7 +118,7 @@
 #warning 颜色 以原翠拼音首字母开头👇👇👇👇👇👇
 // 见Color.rtfd文件
 // 主题颜色
-#define  YCThemeColorGreen          UICOLOR_RGB_Alpha(0x25A763,1.0)  //（37 , 167, 99 , 1.0）主色调绿色
+#define  YCThemeColorGreen          UICOLOR_RGB_Alpha(0xff0000,1.0)  //（37 , 167, 99 , 1.0）主色调绿色
 #define  YCThemeColorGreenTrans     UICOLOR_RGB_Alpha(0x25A763, 0.65)  //（37 , 167, 99 , 0.65）主色调绿色半透明，手势选中用
 #define  YCThemeColorOrange         UICOLOR_RGB_Alpha(0xE58909,1.0)  //（229, 137, 9  , 1.0）辅助橙色
 #define  YCThemeColorRed            UICOLOR_RGB_Alpha(0xE65F5F,1.0)  //（230, 95 , 95 , 1.0）辅助红色

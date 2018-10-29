@@ -9,20 +9,7 @@
 #ifndef PanKeTong_AppConfiguration_h
 #define PanKeTong_AppConfiguration_h
 
-#warning A Online Warn 上线前注意事项
-/**
- *  1、检查所有第三方SDK的 appkey/id 是否修改为正式：百度统计
- *  2、JPush的plist文件中的id修改为正式
- *  3、所有接口地址修改为正式的
- *  4、修改百度统计策略
- *  5、百度地图bundle id修改
- *  6、修改请求超时时间
- *  7、修改APP更新版本号
- *
- */
 
-
-#pragma mark - <Device information>
 #define MODEL_NAME                      [[UIDevice currentDevice] model]
 #define MODEL_VERSION                   [[[UIDevice currentDevice] systemVersion] floatValue]
 
@@ -74,37 +61,37 @@
 #define StrongSelf(strongSelf) __strong __typeof(&*self) strongSelf = weakSelf;
 #define kWeakSelf __weak typeof(self) weakSelf = self;
 
-#pragma mark - UIApplication
+
 #define KeyWindow [UIApplication sharedApplication].keyWindow
 #define JMWindow [[[UIApplication sharedApplication] delegate] window]
-#pragma mark - <TextColor>
+
 
 
 #define UIColorFromHex(hex,alp)  [UIColor colorWithRed:(((hex & 0xFF0000) >> 16))/255.0 green:(((hex &0xFF00) >>8))/255.0 blue:((hex &0xFF))/255.0 alpha:alp]
 
 #define APP_BACKGROUND_COLOR                [UIColor colorWithRed:246.0 / 255.0 green:245.0 / 255.0 blue:241.0 / 255.0 alpha:1.0f]
-#define LOGIN_NAV_BAR_COLOR                 [UIColor colorWithRed:220.0 / 255.0 green:93.0 / 255.0 blue:73.0 / 255.0 alpha:1.0f]
-#define COMMIT_BTN_COLOR                    [UIColor colorWithRed:223.0 / 255.0 green:48.0 / 255.0 blue:49.0 / 255.0 alpha:1.0f]
-#define COMFIRM_BTN_COLOR                   [UIColor colorWithRed:216.0 / 255.0 green:77.0 / 255.0 blue:55.0 / 255.0 alpha:1.0f]
-#define YOUHUI_CONTACTESTATE_BTN_COLOR      [UIColor colorWithRed:100.0 / 255.0 green:183.0 / 255.0 blue:228.0 / 255.0 alpha:1.0f]
-#define MY_SIGN_UP_BTN_COLOR                [UIColor colorWithRed:255.0 / 255.0 green:80.0 / 255.0 blue:39.0 / 255.0 alpha:1.0f]
-#define ORANGE_COLOR                        [UIColor colorWithRed:255.0 / 255.0 green:159.0 / 255.0 blue:12.0 / 255.0 alpha:1.0f]
+
+
 #define GREEN_COLOR                         [UIColor colorWithRed:70.0 / 255.0 green:180.0 / 255.0 blue:65.0 / 255.0 alpha:1.0f]
+
 #define RED_COLOR                           [UIColor colorWithRed:254.0 / 255.0 green:61.0 / 255.0 blue:29.0 / 255.0 alpha:1.0f]
 
 #define LITTLE_BLACK_COLOR                  [UIColor colorWithRed:51.0 / 255.0 green:51.0 / 255.0 blue:51.0 / 255.0 alpha:1.0f]
+
 #define LITTLE_GRAY_COLOR                   [UIColor colorWithRed:102.0 / 255.0 green:102.0 / 255.0 blue:102.0 / 255.0 alpha:1.0f]
+
 #define LITTLE_LIGHTGRAY_COLOR              [UIColor colorWithRed:199.0 / 255.0 green:199.0 / 255.0 blue:205.0 / 255.0 alpha:1.0f]
-#define LIST_HEADER_COLOR                   [UIColor colorWithRed:234.0/255 green:234.0/255 blue:234.0/255 alpha:1]
-#define ERSHOUEST_ICON_SELECT_COLOR         [UIColor colorWithRed:85.0/255 green:190.0/255 blue:231.0/255 alpha:1]
-#define REGETCODESIGN_GREEN_COLOR           [UIColor colorWithRed:97.0/255.0 green:173.0/255.0 blue:46.0/255.0 alpha:1.0]
+
 #define LITTLE_BLUE_COLOR                   [UIColor colorWithRed:92.0/255.0 green:199.0/255.0 blue:226.0/255.0 alpha:1.0]
+
 #define LABEL_LITTLEGRAY_COLOR                   [UIColor colorWithRed:153.0/255.0 green:153.0/255.0 blue:153.0/255.0 alpha:1.0]
-#define CHOOSEBTN_BACKGROUND_COLOR          [UIColor colorWithRed:238.0 / 255.0 green:118.0 / 255.0 blue:86.0 / 255.0 alpha:1.0f]
+
+
 #define ShadowBackgroundColor               [UIColor colorWithRed:0.0 / 255.0 green:0.0 / 255.0 blue:0.0 / 255.0 alpha:0.5f]
 
-//#define MainRedColor                        [UIColor colorWithRed:255.0 / 255.0 green:51.0 / 255.0 blue:51.0 / 255.0 alpha:1.0f]
+
 #define MainGrayFontColor                   [UIColor colorWithRed:153.0 / 255.0 green:153.0 / 255.0 blue:153.0 / 255.0 alpha:1.0f]
+
 #define SeparateLineColor                   [UIColor colorWithRed:238.0 / 255.0 green:238.0 / 255.0 blue:238.0 / 255.0 alpha:1.0f]
 
 // RGB颜色
@@ -115,7 +102,7 @@
 #define AMapAPI            @"cfcd1e37ab05b79e13b3f8666d01570d"
 
 
-#warning 颜色 以原翠拼音首字母开头👇👇👇👇👇👇
+#pragma mark - 颜色以原翠拼音首字母开头
 // 见Color.rtfd文件
 // 主题颜色
 #define  YCThemeColorGreen          UICOLOR_RGB_Alpha(0xff0000,1.0)  //（37 , 167, 99 , 1.0）主色调绿色
@@ -155,7 +142,6 @@
 #define YCEntrustAttachmentBGColor  RGBColor(249, 250, 255) //备案上传附件背景颜色
 
 
-#warning 颜色 以原翠拼音首字母开头👆👆👆👆👆👆
 
 #define  YCAppMargin        12*NewRatio                              // 页边距
 #define  YCLayerCornerRadius    5*NewRatio                           //切角大小

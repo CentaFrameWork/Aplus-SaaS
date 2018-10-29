@@ -311,23 +311,6 @@ UIPickerViewDelegate,doneSelect,UITextFieldDelegate>
     
 }
 
-//- (void)loginByAccountAndPwd{
-//
-//    _loginBtn.userInteractionEnabled = NO;
-//    [_hostAccountTextfield resignFirstResponder];
-//    [_hostPasswordTextfield resignFirstResponder];
-//
-//    [self showLoadingView:@"登录中..."];
-//
-//    _loginApi = [LoginApi new];
-//    _loginApi.account = _hostAccountTextfield.text;
-//    _loginApi.psd = _hostPasswordTextfield.text;
-//    [_manager sendRequest:_loginApi];
-//
-//}
-
-
-
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     
     NSCharacterSet *cs = [[NSCharacterSet characterSetWithCharactersInString:ALPHANUM] invertedSet];

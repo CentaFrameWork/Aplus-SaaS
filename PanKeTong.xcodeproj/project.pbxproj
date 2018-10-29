@@ -3877,6 +3877,7 @@
 			children = (
 				8429A88D20620BEB005DA1B2 /* PanKeTong.entitlements */,
 				F4AA519A1FDB96B700946EB9 /* Images.xcassets */,
+				1FFB6DC21BA6931600981F61 /* Main.storyboard */,
 				1FFB6DB91BA6931600981F61 /* Info.plist */,
 				1F98D05A1BFAC79300323630 /* PushConfig.plist */,
 				1FFB6DBA1BA6931600981F61 /* main.m */,
@@ -5232,7 +5233,6 @@
 				5D57A0A42050E0F80004BDD6 /* APP_Api.h */,
 				CF0C87E92021582C00A0745A /* AppDelegate+APPConfig.h */,
 				CF0C87EA2021582C00A0745A /* AppDelegate+APPConfig.m */,
-				1FFB6DC21BA6931600981F61 /* Main.storyboard */,
 			);
 			path = App;
 			sourceTree = "<group>";

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="settingSwitchCell" id="KGk-i7-Jjw" customClass="SettingSwitchCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ttF-aY-g11">
+                        <rect key="frame" x="259" y="6" width="51" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="YCe-hV-1jN"/>
+                            <constraint firstAttribute="width" constant="49" id="g0N-Zx-0j3"/>
+                        </constraints>
+                        <color key="onTintColor" red="0.99607843137254903" green="0.23921568627450979" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </switch>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYh-i4-HI8">
+                        <rect key="frame" x="42" y="10.5" width="0.0" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="JaU-Lq-qQg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOq-xt-9KR">
+                        <rect key="frame" x="15" y="13.5" width="17" height="17"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="Mor-CC-HGe"/>
+                            <constraint firstAttribute="width" constant="17" id="Q84-kJ-NTC"/>
+                        </constraints>
+                        <state key="normal">
+                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ttF-aY-g11" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="00g-uI-eJ3"/>
+                    <constraint firstItem="wOq-xt-9KR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Nxm-XZ-gTw"/>
+                    <constraint firstItem="cYh-i4-HI8" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="TKh-aQ-vym"/>
+                    <constraint firstItem="wOq-xt-9KR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bdp-Db-AiV"/>
+                    <constraint firstAttribute="trailing" secondItem="ttF-aY-g11" secondAttribute="trailing" constant="12" id="boe-Xd-dyV"/>
+                    <constraint firstItem="cYh-i4-HI8" firstAttribute="leading" secondItem="wOq-xt-9KR" secondAttribute="trailing" constant="10" id="qOQ-EX-QPt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftTextLabel" destination="cYh-i4-HI8" id="fGo-wu-eaU"/>
+                <outlet property="rightSwitchItem" destination="ttF-aY-g11" id="1np-uT-kfR"/>
+                <outlet property="typeButton" destination="wOq-xt-9KR" id="leO-bt-cz4"/>
+            </connections>
+            <point key="canvasLocation" x="294" y="220"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ChatListCell" id="bfc-ka-fDb" customClass="ChatListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bfc-ka-fDb" id="yd3-zg-v0P">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87F-Ag-HWT">
+                        <rect key="frame" x="64" y="10" width="189" height="0.0"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="U0o-HQ-va8"/>
+                            <constraint firstAttribute="width" constant="210" id="YRx-8w-Y5Z"/>
+                            <constraint firstAttribute="width" constant="190" id="sar-ll-HFg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="U0o-HQ-va8"/>
+                                <exclude reference="YRx-8w-Y5Z"/>
+                                <exclude reference="sar-ll-HFg"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Res-Q5-bwS">
+                        <rect key="frame" x="257" y="19" width="55" height="0.0"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="2k4-X3-Nd0"/>
+                            <constraint firstAttribute="width" constant="55" id="jP8-eZ-Szr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2k4-X3-Nd0"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGa-Sl-fgX">
+                        <rect key="frame" x="64" y="15" width="216" height="16"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="M44-mS-tVE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="staffHead_icon" translatesAutoresizingMaskIntoConstraints="NO" id="tYT-5t-h1f">
+                        <rect key="frame" x="8" y="8" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="FT2-Xi-I1W"/>
+                            <constraint firstAttribute="height" constant="48" id="VXW-6k-TWz"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="24"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rv-Ti-IXC">
+                        <rect key="frame" x="45" y="5" width="18" height="18"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="18" id="dR9-s0-oLa"/>
+                            <constraint firstAttribute="height" constant="18" id="lml-Ft-s8B"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Res-Q5-bwS" secondAttribute="trailing" constant="8" id="65D-eJ-9DF"/>
+                    <constraint firstItem="tYT-5t-h1f" firstAttribute="leading" secondItem="yd3-zg-v0P" secondAttribute="leading" constant="8" id="9kr-Xv-REO"/>
+                    <constraint firstItem="xGa-Sl-fgX" firstAttribute="leading" secondItem="tYT-5t-h1f" secondAttribute="trailing" constant="8" id="BKF-lh-WWr"/>
+                    <constraint firstItem="tYT-5t-h1f" firstAttribute="top" secondItem="yd3-zg-v0P" secondAttribute="top" constant="8" id="DAU-zh-ZSc"/>
+                    <constraint firstItem="Res-Q5-bwS" firstAttribute="leading" secondItem="87F-Ag-HWT" secondAttribute="trailing" constant="4" id="IUg-EY-zad"/>
+                    <constraint firstItem="87F-Ag-HWT" firstAttribute="top" secondItem="yd3-zg-v0P" secondAttribute="top" constant="10" id="M6f-hS-BGi"/>
+                    <constraint firstItem="xGa-Sl-fgX" firstAttribute="top" secondItem="87F-Ag-HWT" secondAttribute="bottom" constant="5" id="USo-qR-AMu"/>
+                    <constraint firstItem="6rv-Ti-IXC" firstAttribute="leading" secondItem="yd3-zg-v0P" secondAttribute="leading" constant="45" id="V16-mV-nMo"/>
+                    <constraint firstItem="87F-Ag-HWT" firstAttribute="leading" secondItem="tYT-5t-h1f" secondAttribute="trailing" constant="8" id="XuT-fc-0YE"/>
+                    <constraint firstAttribute="trailing" secondItem="xGa-Sl-fgX" secondAttribute="trailing" constant="40" id="ciH-Oa-Sjv"/>
+                    <constraint firstItem="6rv-Ti-IXC" firstAttribute="top" secondItem="yd3-zg-v0P" secondAttribute="top" constant="5" id="gtG-SD-rNR"/>
+                    <constraint firstItem="Res-Q5-bwS" firstAttribute="top" secondItem="yd3-zg-v0P" secondAttribute="top" constant="19" id="wk9-zZ-GiJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="badgeLabelLeftFrame" destination="V16-mV-nMo" id="7zc-zc-u9T"/>
+                <outlet property="badgeLabelWidth" destination="dR9-s0-oLa" id="VBD-cT-qZT"/>
+                <outlet property="badgeNumLabel" destination="6rv-Ti-IXC" id="Ohz-zJ-e6v"/>
+                <outlet property="userChatContentLabel" destination="xGa-Sl-fgX" id="UeE-6d-6ie"/>
+                <outlet property="userChatTimeLabel" destination="Res-Q5-bwS" id="pJF-V7-T3m"/>
+                <outlet property="userHeadImgView" destination="tYT-5t-h1f" id="Iyf-3z-Pzy"/>
+                <outlet property="userNameLabel" destination="87F-Ag-HWT" id="wKA-TW-1jl"/>
+            </connections>
+            <point key="canvasLocation" x="289" y="339.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="staffHead_icon" width="70" height="70"/>
+    </resources>
+</document>

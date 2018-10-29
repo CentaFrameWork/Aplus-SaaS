@@ -1,0 +1,13 @@
+//
+//  ChannelFilterTableViewCell.h
+//  PanKeTong
+//
+//  Created by 燕文强 on 16/1/19.
+//  Copyright (c) 2016年 苏军朋. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface ChannelFilterTableViewCell : UITableViewCell
+
+@end

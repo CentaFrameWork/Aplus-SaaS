@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChooseLocationViewController">
+            <connections>
+                <outlet property="_mainTableView" destination="c4C-FC-JKD" id="gEF-iq-xpH"/>
+                <outlet property="_mapView" destination="k4t-Y0-GKg" id="Xk6-dK-kV3"/>
+                <outlet property="_mapViewHeight" destination="l7n-au-Mmj" id="UvA-Dx-fbI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c4C-FC-JKD">
+                    <rect key="frame" x="0.0" y="280" width="320" height="288"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="b7N-EK-vQx"/>
+                        <outlet property="delegate" destination="-1" id="I9A-7P-gfQ"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k4t-Y0-GKg" customClass="BMKMapView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="280" id="l7n-au-Mmj"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7fP-XD-ca2">
+                    <rect key="frame" x="14" y="150" width="36" height="110"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map_zoom_icon" translatesAutoresizingMaskIntoConstraints="NO" id="rfy-e9-RDO">
+                            <rect key="frame" x="0.0" y="44" width="36" height="66"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6L-ve-yxQ">
+                            <rect key="frame" x="0.0" y="78" width="34" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="ShA-Kc-ySn"/>
+                                <constraint firstAttribute="width" constant="34" id="yel-CW-enX"/>
+                            </constraints>
+                            <connections>
+                                <action selector="mapZoomOutClick:" destination="-1" eventType="touchUpInside" id="D2e-wO-An0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSb-f5-w27">
+                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                            <state key="normal" image="map_Location_icon"/>
+                            <connections>
+                                <action selector="currentLocationClick:" destination="-1" eventType="touchUpInside" id="RIO-XE-awC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zn-RI-bOV">
+                            <rect key="frame" x="0.0" y="46" width="34" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="Hig-4G-Cl4"/>
+                                <constraint firstAttribute="width" constant="34" id="oYU-60-Vbe"/>
+                            </constraints>
+                            <connections>
+                                <action selector="mapZoomInClick:" destination="-1" eventType="touchUpInside" id="VUT-hv-rbg"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="rfy-e9-RDO" firstAttribute="top" secondItem="zSb-f5-w27" secondAttribute="bottom" constant="8" id="FEf-m7-gLz"/>
+                        <constraint firstItem="e6L-ve-yxQ" firstAttribute="leading" secondItem="7fP-XD-ca2" secondAttribute="leading" id="PxN-r1-4s9"/>
+                        <constraint firstItem="zSb-f5-w27" firstAttribute="top" secondItem="7fP-XD-ca2" secondAttribute="top" id="Rby-Lz-N4x"/>
+                        <constraint firstItem="e6L-ve-yxQ" firstAttribute="top" secondItem="1zn-RI-bOV" secondAttribute="bottom" constant="4" id="UsY-6j-BLe"/>
+                        <constraint firstItem="1zn-RI-bOV" firstAttribute="leading" secondItem="7fP-XD-ca2" secondAttribute="leading" id="XR3-a7-0cH"/>
+                        <constraint firstAttribute="height" constant="110" id="XjV-Qi-gBY"/>
+                        <constraint firstAttribute="width" constant="36" id="haw-3Y-JQp"/>
+                        <constraint firstItem="rfy-e9-RDO" firstAttribute="leading" secondItem="7fP-XD-ca2" secondAttribute="leading" id="ssV-ZK-sjT"/>
+                        <constraint firstItem="1zn-RI-bOV" firstAttribute="top" secondItem="zSb-f5-w27" secondAttribute="bottom" constant="10" id="tSX-5s-m9g"/>
+                        <constraint firstItem="zSb-f5-w27" firstAttribute="leading" secondItem="7fP-XD-ca2" secondAttribute="leading" id="vdV-I3-WeQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="c4C-FC-JKD" secondAttribute="bottom" id="18G-UC-w2P"/>
+                <constraint firstItem="c4C-FC-JKD" firstAttribute="top" secondItem="7fP-XD-ca2" secondAttribute="bottom" constant="20" id="22M-8A-b0Y"/>
+                <constraint firstItem="c4C-FC-JKD" firstAttribute="top" secondItem="k4t-Y0-GKg" secondAttribute="bottom" id="4uJ-s1-6br"/>
+                <constraint firstAttribute="trailing" secondItem="c4C-FC-JKD" secondAttribute="trailing" id="BWR-Tl-Scf"/>
+                <constraint firstAttribute="trailing" secondItem="k4t-Y0-GKg" secondAttribute="trailing" id="Fqd-3P-JYc"/>
+                <constraint firstItem="k4t-Y0-GKg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RJ3-Vl-pCy"/>
+                <constraint firstItem="k4t-Y0-GKg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="a0h-yF-aUj"/>
+                <constraint firstItem="7fP-XD-ca2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="aiz-ea-5nZ"/>
+                <constraint firstItem="c4C-FC-JKD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hyg-k9-tJA"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="map_Location_icon" width="36" height="36"/>
+        <image name="map_zoom_icon" width="36" height="66"/>
+    </resources>
+</document>

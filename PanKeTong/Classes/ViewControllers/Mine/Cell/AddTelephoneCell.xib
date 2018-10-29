@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="addTelCell" id="KGk-i7-Jjw" userLabel="Add Telephone Cell" customClass="AddTelephoneCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8yn-1t-oMT">
+                        <rect key="frame" x="86" y="8" width="61" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="61" id="Tu2-e1-2EB">
+                                <variation key="heightClass=regular-widthClass=compact" constant="60"/>
+                            </constraint>
+                            <constraint firstAttribute="width" constant="50" id="vXF-CP-Hbl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="vXF-CP-Hbl"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="Tu2-e1-2EB"/>
+                            </mask>
+                        </variation>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="－" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LN-au-v83" userLabel="Area">
+                        <rect key="frame" x="134" y="12" width="44" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="17.5" id="IO9-Fd-JBH"/>
+                            <constraint firstAttribute="height" constant="20" id="gaK-Ub-Wk5"/>
+                            <constraint firstAttribute="width" constant="20" id="sTm-dm-4Mw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IO9-Fd-JBH"/>
+                                <exclude reference="sTm-dm-4Mw"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="IO9-Fd-JBH"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="irh-fZ-saH">
+                        <rect key="frame" x="167" y="7" width="70" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="qdq-uL-Gv7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="－" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQD-pK-gtx" userLabel="Area">
+                        <rect key="frame" x="235.5" y="12" width="17.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="YVr-2n-t5Y"/>
+                            <constraint firstAttribute="width" constant="14" id="pqt-wL-Gkf"/>
+                            <constraint firstAttribute="height" constant="20" id="qOE-22-xtF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="YVr-2n-t5Y"/>
+                                <exclude reference="pqt-wL-Gkf"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="pqt-wL-Gkf"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RW5-Dp-Jf0">
+                        <rect key="frame" x="253" y="11" width="51" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="座机 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cB-Yh-OIi">
+                        <rect key="frame" x="16" y="8" width="70" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="azS-ew-BQd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2cB-Yh-OIi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="2SU-yA-K2H"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="FQD-pK-gtx" secondAttribute="trailing" constant="64" id="3OV-SH-U18"/>
+                    <constraint firstItem="irh-fZ-saH" firstAttribute="leading" secondItem="1LN-au-v83" secondAttribute="trailing" id="3eW-DT-diz"/>
+                    <constraint firstItem="RW5-Dp-Jf0" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="5SH-bW-UYg"/>
+                    <constraint firstItem="1LN-au-v83" firstAttribute="centerY" secondItem="2cB-Yh-OIi" secondAttribute="centerY" id="8Gn-3c-AwT"/>
+                    <constraint firstAttribute="trailing" secondItem="1LN-au-v83" secondAttribute="trailing" constant="129" id="8LW-du-ZjX"/>
+                    <constraint firstItem="FQD-pK-gtx" firstAttribute="leading" secondItem="irh-fZ-saH" secondAttribute="trailing" id="8XS-La-iy9"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="2cB-Yh-OIi" secondAttribute="bottom" id="Cud-wx-wpP"/>
+                    <constraint firstItem="FQD-pK-gtx" firstAttribute="width" secondItem="1LN-au-v83" secondAttribute="width" id="DQG-90-Mb6"/>
+                    <constraint firstItem="RW5-Dp-Jf0" firstAttribute="leading" secondItem="FQD-pK-gtx" secondAttribute="trailing" constant="3" id="F8m-rv-JU0"/>
+                    <constraint firstItem="RW5-Dp-Jf0" firstAttribute="width" secondItem="8yn-1t-oMT" secondAttribute="width" id="H7d-er-h4O"/>
+                    <constraint firstItem="FQD-pK-gtx" firstAttribute="leading" secondItem="irh-fZ-saH" secondAttribute="trailing" id="H8L-CM-Aoh"/>
+                    <constraint firstItem="FQD-pK-gtx" firstAttribute="baseline" secondItem="1LN-au-v83" secondAttribute="baseline" id="HH3-d7-ceJ"/>
+                    <constraint firstItem="1LN-au-v83" firstAttribute="leading" secondItem="8yn-1t-oMT" secondAttribute="trailing" id="J19-I2-cYc">
+                        <variation key="heightClass=regular-widthClass=compact" constant="1"/>
+                    </constraint>
+                    <constraint firstAttribute="bottomMargin" secondItem="8yn-1t-oMT" secondAttribute="bottom" id="KLJ-no-ncR"/>
+                    <constraint firstItem="1LN-au-v83" firstAttribute="leading" secondItem="8yn-1t-oMT" secondAttribute="trailing" constant="5" id="KR1-85-OQ9"/>
+                    <constraint firstItem="FQD-pK-gtx" firstAttribute="leading" secondItem="irh-fZ-saH" secondAttribute="trailing" constant="1" id="Q6o-N2-tv9"/>
+                    <constraint firstItem="irh-fZ-saH" firstAttribute="baseline" secondItem="RW5-Dp-Jf0" secondAttribute="baseline" id="Qll-pC-ace"/>
+                    <constraint firstItem="1LN-au-v83" firstAttribute="centerY" secondItem="8yn-1t-oMT" secondAttribute="centerY" id="RP0-5j-LeI"/>
+                    <constraint firstItem="2cB-Yh-OIi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="SbF-Rw-EeU">
+                        <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                    </constraint>
+                    <constraint firstItem="RW5-Dp-Jf0" firstAttribute="leading" secondItem="FQD-pK-gtx" secondAttribute="trailing" id="a61-nP-QBN"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="RW5-Dp-Jf0" secondAttribute="bottom" id="djW-GZ-VUB"/>
+                    <constraint firstAttribute="trailing" secondItem="FQD-pK-gtx" secondAttribute="trailing" constant="45" id="fYl-5r-pSR"/>
+                    <constraint firstItem="RW5-Dp-Jf0" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="gI5-P4-O0b"/>
+                    <constraint firstItem="8yn-1t-oMT" firstAttribute="leading" secondItem="2cB-Yh-OIi" secondAttribute="trailing" id="i7A-5m-t5p"/>
+                    <constraint firstItem="irh-fZ-saH" firstAttribute="leading" secondItem="1LN-au-v83" secondAttribute="trailing" id="k4b-U8-ha1"/>
+                    <constraint firstItem="1LN-au-v83" firstAttribute="leading" secondItem="8yn-1t-oMT" secondAttribute="trailing" id="kRa-2o-AZ5">
+                        <variation key="heightClass=regular-widthClass=compact" constant="1"/>
+                    </constraint>
+                    <constraint firstItem="1LN-au-v83" firstAttribute="leading" secondItem="8yn-1t-oMT" secondAttribute="trailing" constant="8" symbolic="YES" id="l7u-Dw-pOx"/>
+                    <constraint firstItem="8yn-1t-oMT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="lwd-Ht-KZ0"/>
+                    <constraint firstItem="1LN-au-v83" firstAttribute="leading" secondItem="8yn-1t-oMT" secondAttribute="trailing" id="njM-Ud-ELD">
+                        <variation key="heightClass=regular-widthClass=compact" constant="1"/>
+                    </constraint>
+                    <constraint firstItem="RW5-Dp-Jf0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="noG-GM-eQA"/>
+                    <constraint firstItem="8yn-1t-oMT" firstAttribute="leading" secondItem="2cB-Yh-OIi" secondAttribute="trailing" constant="8" id="oyy-wG-MGK"/>
+                    <constraint firstItem="FQD-pK-gtx" firstAttribute="centerY" secondItem="irh-fZ-saH" secondAttribute="centerY" id="wwB-4J-My9"/>
+                    <constraint firstItem="RW5-Dp-Jf0" firstAttribute="leading" secondItem="FQD-pK-gtx" secondAttribute="trailing" constant="2" id="yEf-KH-w4n"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="oyy-wG-MGK"/>
+                        <exclude reference="8Gn-3c-AwT"/>
+                        <exclude reference="KR1-85-OQ9"/>
+                        <exclude reference="l7u-Dw-pOx"/>
+                        <exclude reference="Qll-pC-ace"/>
+                        <exclude reference="3OV-SH-U18"/>
+                        <exclude reference="8XS-La-iy9"/>
+                        <exclude reference="DQG-90-Mb6"/>
+                        <exclude reference="Q6o-N2-tv9"/>
+                        <exclude reference="fYl-5r-pSR"/>
+                        <exclude reference="5SH-bW-UYg"/>
+                        <exclude reference="F8m-rv-JU0"/>
+                        <exclude reference="H7d-er-h4O"/>
+                        <exclude reference="yEf-KH-w4n"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular-widthClass=compact">
+                    <mask key="constraints">
+                        <exclude reference="8LW-du-ZjX"/>
+                        <exclude reference="kRa-2o-AZ5"/>
+                        <exclude reference="njM-Ud-ELD"/>
+                        <include reference="Qll-pC-ace"/>
+                        <include reference="DQG-90-Mb6"/>
+                        <exclude reference="HH3-d7-ceJ"/>
+                        <exclude reference="fYl-5r-pSR"/>
+                        <include reference="H7d-er-h4O"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="areaCodeTextField" destination="8yn-1t-oMT" id="MaH-xx-ayr"/>
+                <outlet property="extensionTextField" destination="RW5-Dp-Jf0" id="RbK-IV-LU7"/>
+                <outlet property="telTextField" destination="irh-fZ-saH" id="3VK-lc-jO8"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

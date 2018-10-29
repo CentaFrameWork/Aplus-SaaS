@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TakeLookViewController">
+            <connections>
+                <outlet property="_firstUseView" destination="1qO-Yg-t8N" id="POP-6f-7Pl"/>
+                <outlet property="_mainTableView" destination="kOV-OW-xQX" id="rcc-rC-gBx"/>
+                <outlet property="addTakeLookBtn" destination="dZ5-yk-tyu" id="U6x-lb-trV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="kOV-OW-xQX">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <color key="separatorColor" red="0.56470588239999997" green="0.76470588240000004" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1qO-Yg-t8N">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" tag="102" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_jm_no_result_image" translatesAutoresizingMaskIntoConstraints="NO" id="MRr-Y6-zjq">
+                            <rect key="frame" x="95.5" y="137" width="185" height="90"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一个月内还没有带看记录，快去新增一条吧~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xvr-0t-abT">
+                            <rect key="frame" x="47.5" y="72" width="280.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZ5-yk-tyu">
+                            <rect key="frame" x="60" y="531" width="255" height="50"/>
+                            <color key="backgroundColor" red="0.1450980392" green="0.65490196079999996" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="OJ5-Pc-ZiO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                            <state key="normal" title="新增带看"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="addTakeLookClick:" destination="-1" eventType="touchUpInside" id="PWf-dn-WhX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Xvr-0t-abT" firstAttribute="top" secondItem="1qO-Yg-t8N" secondAttribute="top" constant="72" id="9GU-Fb-1j8"/>
+                        <constraint firstItem="MRr-Y6-zjq" firstAttribute="centerX" secondItem="1qO-Yg-t8N" secondAttribute="centerX" id="9mA-96-Ar1"/>
+                        <constraint firstItem="MRr-Y6-zjq" firstAttribute="top" secondItem="Xvr-0t-abT" secondAttribute="bottom" constant="48" id="JZr-BX-wNJ"/>
+                        <constraint firstAttribute="bottom" secondItem="dZ5-yk-tyu" secondAttribute="bottom" constant="86" id="MkP-qJ-Xfb"/>
+                        <constraint firstItem="Xvr-0t-abT" firstAttribute="centerX" secondItem="1qO-Yg-t8N" secondAttribute="centerX" id="Rb4-tb-ya9"/>
+                        <constraint firstAttribute="trailing" secondItem="dZ5-yk-tyu" secondAttribute="trailing" constant="60" id="fbe-7T-XyW"/>
+                        <constraint firstItem="dZ5-yk-tyu" firstAttribute="leading" secondItem="1qO-Yg-t8N" secondAttribute="leading" constant="60" id="jde-zw-pPB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1qO-Yg-t8N" secondAttribute="trailing" id="1U9-cd-ydJ"/>
+                <constraint firstItem="kOV-OW-xQX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8kW-8E-45v"/>
+                <constraint firstAttribute="bottom" secondItem="kOV-OW-xQX" secondAttribute="bottom" id="Byv-VN-mlS"/>
+                <constraint firstItem="1qO-Yg-t8N" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="J9j-6Y-xKO"/>
+                <constraint firstItem="kOV-OW-xQX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Tf0-v2-yKF"/>
+                <constraint firstAttribute="bottom" secondItem="1qO-Yg-t8N" secondAttribute="bottom" id="Vul-gK-ytA"/>
+                <constraint firstAttribute="trailing" secondItem="kOV-OW-xQX" secondAttribute="trailing" id="hZu-Lv-Ek9"/>
+                <constraint firstItem="1qO-Yg-t8N" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vPR-nO-gv6"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_jm_no_result_image" width="185" height="90"/>
+    </resources>
+</document>

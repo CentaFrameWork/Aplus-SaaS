@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PDTakeSeeCell" rowHeight="150" id="KGk-i7-Jjw" customClass="PDTakeSeeCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFW-4P-Kpd">
+                        <rect key="frame" x="75" y="35" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="KeX-gE-9wV"/>
+                            <constraint firstAttribute="width" constant="60" id="Ou3-n0-l64"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tmw-nI-wUa">
+                        <rect key="frame" x="240" y="35" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="7O5-xD-0yR"/>
+                            <constraint firstAttribute="width" constant="60" id="Px4-bi-e76"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="累计带看次数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNo-u7-w1E">
+                        <rect key="frame" x="210" y="100" width="120" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="JEC-vG-4dk"/>
+                            <constraint firstAttribute="height" constant="21" id="lQb-8G-VrD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="近7天带看次数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtS-oz-AnM">
+                        <rect key="frame" x="45" y="100" width="120" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="O5u-pW-Lvd"/>
+                            <constraint firstAttribute="width" constant="120" id="nDc-rt-0hV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lFW-4P-Kpd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="trailing" multiplier="0.2" id="7Sr-3S-PIv"/>
+                    <constraint firstItem="dtS-oz-AnM" firstAttribute="centerX" secondItem="lFW-4P-Kpd" secondAttribute="centerX" id="7jz-i3-8k2"/>
+                    <constraint firstItem="dtS-oz-AnM" firstAttribute="top" secondItem="lFW-4P-Kpd" secondAttribute="bottom" constant="5" id="P1U-4K-dxo"/>
+                    <constraint firstItem="Tmw-nI-wUa" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailing" multiplier="0.8" id="UHY-4z-qyU"/>
+                    <constraint firstItem="Tmw-nI-wUa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="35" id="VBp-ax-UTq"/>
+                    <constraint firstItem="TNo-u7-w1E" firstAttribute="top" secondItem="Tmw-nI-wUa" secondAttribute="bottom" constant="5" id="p2F-Zu-ei8"/>
+                    <constraint firstItem="lFW-4P-Kpd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="35" id="t80-WT-ntH"/>
+                    <constraint firstItem="TNo-u7-w1E" firstAttribute="centerX" secondItem="Tmw-nI-wUa" secondAttribute="centerX" id="uus-FS-Xe2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="oneWeekLabel" destination="lFW-4P-Kpd" id="ljF-j4-1RE"/>
+                <outlet property="sumLabel" destination="Tmw-nI-wUa" id="31m-Ej-G7y"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="52"/>
+        </tableViewCell>
+    </objects>
+</document>

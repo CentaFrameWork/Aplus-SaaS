@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChannelCallFilterViewController">
+            <connections>
+                <outlet property="confirmView" destination="z0L-QR-yzR" id="oCS-h2-ZZy"/>
+                <outlet property="mainTableView" destination="GFp-6L-LcZ" id="LQQ-y5-ebA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z0L-QR-yzR">
+                    <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="确定" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8D-LR-Kjq">
+                            <rect key="frame" x="143" y="11" width="34" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.99552162247474751" green="0.26094976806071507" blue="0.21697517187017304" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Inx-Jh-NoR"/>
+                        <constraint firstAttribute="centerX" secondItem="h8D-LR-Kjq" secondAttribute="centerX" id="RaJ-AA-Znr"/>
+                        <constraint firstAttribute="centerY" secondItem="h8D-LR-Kjq" secondAttribute="centerY" id="eGM-FC-fU8"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="GFp-6L-LcZ" customClass="TPKeyboardAvoidingTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.96078431369999995" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="GFp-6L-LcZ" secondAttribute="trailing" id="Anf-3u-ahg"/>
+                <constraint firstItem="GFp-6L-LcZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="F74-b5-FIU"/>
+                <constraint firstAttribute="trailing" secondItem="z0L-QR-yzR" secondAttribute="trailing" id="Pdx-cC-1Rh"/>
+                <constraint firstItem="z0L-QR-yzR" firstAttribute="top" secondItem="GFp-6L-LcZ" secondAttribute="bottom" id="VMa-23-8qg"/>
+                <constraint firstItem="GFp-6L-LcZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XcN-sH-YAv"/>
+                <constraint firstAttribute="bottom" secondItem="z0L-QR-yzR" secondAttribute="bottom" id="cXu-GP-yae"/>
+                <constraint firstItem="z0L-QR-yzR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gFQ-ur-NL1"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="161" y="305"/>
+        </view>
+    </objects>
+</document>

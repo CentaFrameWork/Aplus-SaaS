@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PropSumTakeSeeVC">
+            <connections>
+                <outlet property="_headerView" destination="F15-3c-AAZ" id="11F-6z-Izb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <point key="canvasLocation" x="139" y="154"/>
+        </view>
+        <view contentMode="scaleToFill" id="F15-3c-AAZ">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="带看人" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjP-lK-dDb">
+                    <rect key="frame" x="141.5" y="17" width="117" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="所属部门" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EnZ-sr-5LD">
+                    <rect key="frame" x="270.5" y="17" width="117.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="带看日期" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2X-AG-zlw">
+                    <rect key="frame" x="12" y="17" width="117.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="y2X-AG-zlw" firstAttribute="width" secondItem="KjP-lK-dDb" secondAttribute="width" id="9jA-Lk-TdG"/>
+                <constraint firstItem="KjP-lK-dDb" firstAttribute="width" secondItem="EnZ-sr-5LD" secondAttribute="width" id="JIV-tZ-Hnl"/>
+                <constraint firstAttribute="trailing" secondItem="EnZ-sr-5LD" secondAttribute="trailing" constant="12" id="ORA-Sy-j8T"/>
+                <constraint firstItem="KjP-lK-dDb" firstAttribute="centerY" secondItem="F15-3c-AAZ" secondAttribute="centerY" id="Ucs-d8-KR6"/>
+                <constraint firstItem="y2X-AG-zlw" firstAttribute="centerY" secondItem="F15-3c-AAZ" secondAttribute="centerY" id="Yyp-Fl-auU"/>
+                <constraint firstItem="EnZ-sr-5LD" firstAttribute="leading" secondItem="KjP-lK-dDb" secondAttribute="trailing" constant="12" id="hBV-jI-eCp"/>
+                <constraint firstItem="KjP-lK-dDb" firstAttribute="leading" secondItem="y2X-AG-zlw" secondAttribute="trailing" constant="12" id="iP6-UD-sov"/>
+                <constraint firstItem="y2X-AG-zlw" firstAttribute="leading" secondItem="F15-3c-AAZ" secondAttribute="leading" constant="12" id="mqO-oO-e55"/>
+                <constraint firstItem="EnZ-sr-5LD" firstAttribute="centerY" secondItem="F15-3c-AAZ" secondAttribute="centerY" id="ooK-w5-bwj"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="138" y="676"/>
+        </view>
+    </objects>
+</document>

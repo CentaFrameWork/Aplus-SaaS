@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="4096" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Private Chat View Controller-->
+        <scene sceneID="tnC-qg-qBt">
+            <objects>
+                <viewController storyboardIdentifier="JMPrivateChatViewController" id="pt1-ZS-joM" customClass="JMPrivateChatViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kdD-BY-8jy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pje-6B-kZ0">
+                                <rect key="frame" x="0.0" y="20" width="375" height="597"/>
+                                <color key="backgroundColor" red="0.95294117647058818" green="0.95686274509803915" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Yr-g9-YMg">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="我们开始聊天吧！" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c3A-bH-T08">
+                                        <rect key="frame" x="6" y="6" width="287" height="38"/>
+                                        <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="send"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZmS-3f-YPp">
+                                        <rect key="frame" x="299" y="6" width="70" height="38"/>
+                                        <color key="backgroundColor" red="0.1450980392" green="0.65490196079999996" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="Uef-5M-Ilh"/>
+                                        </constraints>
+                                        <state key="normal" title="发送">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendButtonClick:" destination="pt1-ZS-joM" eventType="touchUpInside" id="ivx-iX-g6L"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ZmS-3f-YPp" secondAttribute="trailing" constant="6" id="5aK-rW-opG"/>
+                                    <constraint firstItem="ZmS-3f-YPp" firstAttribute="top" secondItem="1Yr-g9-YMg" secondAttribute="top" constant="6" id="DI0-BK-xsm"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZmS-3f-YPp" secondAttribute="bottom" constant="6" id="Q2v-YR-M6g"/>
+                                    <constraint firstAttribute="bottom" secondItem="c3A-bH-T08" secondAttribute="bottom" constant="6" id="UeC-fn-lpQ"/>
+                                    <constraint firstAttribute="height" constant="50" id="XKR-vn-R9A"/>
+                                    <constraint firstItem="c3A-bH-T08" firstAttribute="leading" secondItem="1Yr-g9-YMg" secondAttribute="leading" constant="6" id="Y7S-bF-AKi"/>
+                                    <constraint firstItem="ZmS-3f-YPp" firstAttribute="leading" secondItem="c3A-bH-T08" secondAttribute="trailing" constant="6" id="bQw-D6-Vw9"/>
+                                    <constraint firstItem="c3A-bH-T08" firstAttribute="top" secondItem="1Yr-g9-YMg" secondAttribute="top" constant="6" id="d36-63-0IF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iob-z3-UOz" firstAttribute="trailing" secondItem="Pje-6B-kZ0" secondAttribute="trailing" id="7c0-Po-Yjy"/>
+                            <constraint firstItem="Pje-6B-kZ0" firstAttribute="leading" secondItem="iob-z3-UOz" secondAttribute="leading" id="AJc-Iz-BZS"/>
+                            <constraint firstItem="Pje-6B-kZ0" firstAttribute="top" secondItem="iob-z3-UOz" secondAttribute="top" id="Yo1-oG-y3p"/>
+                            <constraint firstItem="iob-z3-UOz" firstAttribute="bottom" secondItem="1Yr-g9-YMg" secondAttribute="bottom" id="bVr-02-T37"/>
+                            <constraint firstItem="1Yr-g9-YMg" firstAttribute="top" secondItem="Pje-6B-kZ0" secondAttribute="bottom" id="fdA-0V-d62"/>
+                            <constraint firstItem="iob-z3-UOz" firstAttribute="trailing" secondItem="1Yr-g9-YMg" secondAttribute="trailing" id="o4y-9S-vcx"/>
+                            <constraint firstItem="1Yr-g9-YMg" firstAttribute="leading" secondItem="iob-z3-UOz" secondAttribute="leading" id="rsx-hh-jo7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iob-z3-UOz"/>
+                    </view>
+                    <connections>
+                        <outlet property="chatTableView" destination="Pje-6B-kZ0" id="lTk-GH-lP5"/>
+                        <outlet property="inputConView" destination="1Yr-g9-YMg" id="xtl-4y-8rW"/>
+                        <outlet property="inputConViewBottomCon" destination="bVr-02-T37" id="bBO-dM-xCO"/>
+                        <outlet property="inputTextField" destination="c3A-bH-T08" id="GXq-M6-1Af"/>
+                        <outlet property="sendBtn" destination="ZmS-3f-YPp" id="6or-T1-Scb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kGu-xs-bM2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105" y="219"/>
+        </scene>
+    </scenes>
+</document>

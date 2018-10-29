@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SearchViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="a" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cth-5P-biB">
+                        <rect key="frame" x="299" y="15" width="7" height="14"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="aaaaaaaa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQi-hR-rqi">
+                        <rect key="frame" x="38" y="14" width="60.5" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="230" id="XVs-vi-aZ5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=")" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELJ-7X-l6Y">
+                        <rect key="frame" x="306" y="15" width="4" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="4" id="jy2-Ug-X0l"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_im_search_record" translatesAutoresizingMaskIntoConstraints="NO" id="IVy-Vl-YCq">
+                        <rect key="frame" x="12" y="15" width="14" height="14"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oQi-hR-rqi" firstAttribute="leading" secondItem="IVy-Vl-YCq" secondAttribute="trailing" constant="12" id="1jF-pd-NvQ"/>
+                    <constraint firstItem="IVy-Vl-YCq" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="AQt-fv-K6v"/>
+                    <constraint firstItem="oQi-hR-rqi" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CWW-hR-4Rf"/>
+                    <constraint firstItem="ELJ-7X-l6Y" firstAttribute="leading" secondItem="cth-5P-biB" secondAttribute="trailing" id="Cfz-SR-J2r"/>
+                    <constraint firstItem="ELJ-7X-l6Y" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="LAi-VT-w6p"/>
+                    <constraint firstAttribute="trailing" secondItem="ELJ-7X-l6Y" secondAttribute="trailing" constant="10" id="TP1-zL-oh0"/>
+                    <constraint firstItem="cth-5P-biB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="WtJ-g8-L5y"/>
+                    <constraint firstItem="IVy-Vl-YCq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="hbz-aj-bq4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bracketsLabel" destination="ELJ-7X-l6Y" id="vaw-Xu-A5B"/>
+                <outlet property="leftLabelTitle" destination="oQi-hR-rqi" id="gua-zh-WeP"/>
+                <outlet property="leftLabelWidthConstant" destination="XVs-vi-aZ5" id="KbH-As-s2f"/>
+                <outlet property="rightLabelTitle" destination="cth-5P-biB" id="lHn-7K-VVy"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_im_search_record" width="14" height="14"/>
+    </resources>
+</document>

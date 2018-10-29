@@ -1,0 +1,18 @@
+//
+//  FaceBaseApi.m
+//  PanKeTong
+//
+//  Created by 乔书超 on 2017/12/8.
+//  Copyright © 2017年 中原集团. All rights reserved.
+//
+
+#import "FaceBaseApi.h"
+
+@implementation FaceBaseApi
+
+- (NSString *)getRootUrl
+{
+    return [[BaseApiDomainUtil getApiDomain] faceRecogUrl];
+}
+
+@end

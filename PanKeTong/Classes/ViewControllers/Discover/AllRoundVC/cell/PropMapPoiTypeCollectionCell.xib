@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="propMapTypeCell" id="gTV-IL-0wX" customClass="PropMapPoiTypeCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="45"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="45"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTQ-0b-5de">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="45"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="银行" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoQ-n7-cbw">
+                        <rect key="frame" x="34" y="17" width="46" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="jH4-zh-cty"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWD-J8-Uho">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="45"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="jTQ-0b-5de" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7Uj-Bx-hdG"/>
+                <constraint firstAttribute="trailing" secondItem="jTQ-0b-5de" secondAttribute="trailing" id="AlM-iy-bGb"/>
+                <constraint firstAttribute="bottom" secondItem="IoQ-n7-cbw" secondAttribute="bottom" constant="17" id="GL2-ZH-vJd"/>
+                <constraint firstAttribute="trailing" secondItem="IoQ-n7-cbw" secondAttribute="trailing" id="PZa-y7-gGq"/>
+                <constraint firstItem="IoQ-n7-cbw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="17" id="ToB-xb-wra"/>
+                <constraint firstItem="WWD-J8-Uho" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="deU-1j-cfx"/>
+                <constraint firstAttribute="trailing" secondItem="WWD-J8-Uho" secondAttribute="trailing" id="j1J-AF-nO1"/>
+                <constraint firstAttribute="bottom" secondItem="jTQ-0b-5de" secondAttribute="bottom" id="kFv-tY-fjo"/>
+                <constraint firstItem="jTQ-0b-5de" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="r2K-y7-cDo"/>
+                <constraint firstItem="WWD-J8-Uho" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="urt-ZI-tRt"/>
+                <constraint firstAttribute="bottom" secondItem="WWD-J8-Uho" secondAttribute="bottom" id="vOV-0n-dhm"/>
+            </constraints>
+            <connections>
+                <outlet property="mapPoiBigBtn" destination="WWD-J8-Uho" id="SRU-7t-IQO"/>
+                <outlet property="mapPoiImgBtn" destination="jTQ-0b-5de" id="wDL-uN-MVL"/>
+                <outlet property="mapPoiTitleLabel" destination="IoQ-n7-cbw" id="qTO-YG-eZg"/>
+            </connections>
+            <point key="canvasLocation" x="32" y="53.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

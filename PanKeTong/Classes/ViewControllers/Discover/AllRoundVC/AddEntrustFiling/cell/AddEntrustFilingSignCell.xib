@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="AddEntrustFilingSignCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张帆" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OiB-XJ-iPt">
+                        <rect key="frame" x="260" y="11" width="29" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="签署人" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqw-Gq-ggx">
+                        <rect key="frame" x="36" y="11" width="43" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_jm_right_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="ECJ-p2-ZL0">
+                        <rect key="frame" x="292" y="12" width="16" height="16"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aS-Fs-meN">
+                        <rect key="frame" x="12" y="14.5" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="sn4-I2-A0e"/>
+                            <constraint firstAttribute="width" constant="12" id="zXW-L9-fwI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.90196078430000004" green="0.37254901959999998" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fqw-Gq-ggx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6nb-tV-iQx"/>
+                    <constraint firstItem="0aS-Fs-meN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ArX-GR-yfk"/>
+                    <constraint firstAttribute="trailing" secondItem="OiB-XJ-iPt" secondAttribute="trailing" constant="31" id="H9j-Gh-ns5"/>
+                    <constraint firstAttribute="trailing" secondItem="ECJ-p2-ZL0" secondAttribute="trailing" constant="12" id="XhJ-8L-Uga"/>
+                    <constraint firstItem="ECJ-p2-ZL0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="abe-4n-f0A"/>
+                    <constraint firstItem="0aS-Fs-meN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="atO-zE-4ef"/>
+                    <constraint firstItem="fqw-Gq-ggx" firstAttribute="leading" secondItem="0aS-Fs-meN" secondAttribute="trailing" constant="12" id="d4A-T9-Cb9"/>
+                    <constraint firstItem="OiB-XJ-iPt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="j9V-JM-cMa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftTitleLabel" destination="fqw-Gq-ggx" id="sIY-Ga-60Q"/>
+                <outlet property="rightArrowImg" destination="ECJ-p2-ZL0" id="3Ce-R3-Pep"/>
+                <outlet property="rightTitleLabel" destination="OiB-XJ-iPt" id="BaV-z0-sRI"/>
+                <outlet property="rightTitleLabelRightCon" destination="H9j-Gh-ns5" id="IUr-6Q-mj4"/>
+            </connections>
+            <point key="canvasLocation" x="247" y="211"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_jm_right_arrow" width="16" height="16"/>
+    </resources>
+</document>

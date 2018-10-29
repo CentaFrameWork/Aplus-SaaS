@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JMMessageViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="春季活动正式启动，部分房源8折" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taR-Da-8bH">
+                        <rect key="frame" x="12" y="8" width="276" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018-04-23 15:10:55" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEM-It-lF7">
+                        <rect key="frame" x="12" y="27" width="119.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_jm_right_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="qh1-tL-gli">
+                        <rect key="frame" x="300" y="18" width="8" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="41Y-sD-j8N"/>
+                            <constraint firstAttribute="height" constant="14" id="tKS-cx-MhG"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="qh1-tL-gli" secondAttribute="trailing" constant="12" id="3A0-xy-5xH"/>
+                    <constraint firstItem="taR-Da-8bH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="6Sj-8t-2dc"/>
+                    <constraint firstItem="HEM-It-lF7" firstAttribute="top" secondItem="taR-Da-8bH" secondAttribute="bottom" constant="2" id="Lxc-2y-nmG"/>
+                    <constraint firstItem="HEM-It-lF7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="aqb-MO-1IE"/>
+                    <constraint firstItem="qh1-tL-gli" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cxN-qi-PqP"/>
+                    <constraint firstItem="qh1-tL-gli" firstAttribute="leading" secondItem="taR-Da-8bH" secondAttribute="trailing" constant="12" id="f65-S9-Bhz"/>
+                    <constraint firstItem="taR-Da-8bH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="yVv-3l-HsC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="messageLabel" destination="taR-Da-8bH" id="VgF-6r-a6A"/>
+                <outlet property="timeLabel" destination="HEM-It-lF7" id="sBP-qj-R7H"/>
+            </connections>
+            <point key="canvasLocation" x="31" y="28"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_jm_right_arrow" width="8" height="14"/>
+    </resources>
+</document>

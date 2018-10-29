@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CheckRealSurveyViewController">
+            <connections>
+                <outlet property="_footerView" destination="tL9-oM-l0u" id="hEP-cI-d4t"/>
+                <outlet property="_passAction" destination="zH5-0c-koM" id="lSs-HM-vzH"/>
+                <outlet property="_refuseButton" destination="cuH-iL-yoO" id="8gv-da-SXY"/>
+                <outlet property="passAction" destination="zH5-0c-koM" id="jZe-Yh-xPx"/>
+                <outlet property="refuseButton" destination="cuH-iL-yoO" id="LW8-lB-iS1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="324" y="158"/>
+        </view>
+        <view contentMode="scaleToFill" id="tL9-oM-l0u">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" clearsContextBeforeDrawing="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zH5-0c-koM">
+                    <rect key="frame" x="10" y="19" width="140" height="42"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="V7f-Jl-MPl"/>
+                        <constraint firstAttribute="height" constant="42" id="hMw-Vt-5aN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="通过"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="V7f-Jl-MPl"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="passAction:" destination="-1" eventType="touchUpInside" id="YFi-KL-usk"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GHF-N1-ZUN">
+                    <rect key="frame" x="158" y="0.0" width="5" height="80"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="5" id="4SK-lO-bv2"/>
+                        <constraint firstAttribute="height" constant="80" id="IjN-7C-lfx"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuH-iL-yoO">
+                    <rect key="frame" x="171" y="19" width="139" height="42"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="1FP-rQ-kM3"/>
+                        <constraint firstAttribute="width" constant="139" id="hr7-tx-fHo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="拒绝"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="hr7-tx-fHo"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="refusedAction:" destination="-1" eventType="touchUpInside" id="XEs-hk-JAw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="cuH-iL-yoO" firstAttribute="leading" secondItem="GHF-N1-ZUN" secondAttribute="trailing" constant="8" id="0qe-P7-Ljr"/>
+                <constraint firstItem="zH5-0c-koM" firstAttribute="centerY" secondItem="tL9-oM-l0u" secondAttribute="centerY" id="9va-1Z-7J4"/>
+                <constraint firstItem="GHF-N1-ZUN" firstAttribute="centerX" secondItem="tL9-oM-l0u" secondAttribute="centerX" id="TtA-YD-PBL"/>
+                <constraint firstItem="GHF-N1-ZUN" firstAttribute="leading" secondItem="zH5-0c-koM" secondAttribute="trailing" constant="8" id="XVX-nV-Gzt"/>
+                <constraint firstItem="GHF-N1-ZUN" firstAttribute="centerY" secondItem="tL9-oM-l0u" secondAttribute="centerY" id="cea-Ok-e9O"/>
+                <constraint firstItem="zH5-0c-koM" firstAttribute="leading" secondItem="tL9-oM-l0u" secondAttribute="leading" constant="10" id="fxp-j2-uSl"/>
+                <constraint firstAttribute="trailing" secondItem="cuH-iL-yoO" secondAttribute="trailing" constant="10" id="hdb-4z-hfd"/>
+                <constraint firstItem="cuH-iL-yoO" firstAttribute="centerY" secondItem="tL9-oM-l0u" secondAttribute="centerY" id="kDR-Ai-Ho2"/>
+                <constraint firstItem="cuH-iL-yoO" firstAttribute="top" secondItem="tL9-oM-l0u" secondAttribute="top" constant="19" id="oS6-h7-YNh"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="931" y="99"/>
+        </view>
+    </objects>
+</document>

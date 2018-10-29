@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WuHan</key>
+	<string>027</string>
+	<key>HuiZhou</key>
+	<string>0752</string>
+	<key>DongGuan</key>
+	<string>0769</string>
+	<key>HangZhou</key>
+	<string>0571</string>
+	<key>ChangSha</key>
+	<string>0731</string>
+	<key>ChongQing</key>
+	<string>023</string>
+	<key>GuangZhou</key>
+	<string>020</string>
+	<key>AoMenHengQin</key>
+	<string>853</string>
+	<key>TianJin</key>
+	<string>022</string>
+	<key>ShenZhen</key>
+	<string>0755</string>
+	<key>BeiJing</key>
+	<string>010</string>
+	<key>NanJing</key>
+	<string>025</string>
+</dict>
+</plist>

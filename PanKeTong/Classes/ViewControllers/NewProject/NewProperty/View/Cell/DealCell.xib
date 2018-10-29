@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DealCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H5a-0B-cGk">
+                    <rect key="frame" x="12" y="18" width="3" height="14"/>
+                    <color key="backgroundColor" red="0.90196078431372551" green="0.37254901960784315" blue="0.37254901960784315" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="3" id="0c6-2B-BdY"/>
+                        <constraint firstAttribute="height" constant="14" id="Xkx-el-6Sh"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="武红" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ego-yP-dEr">
+                    <rect key="frame" x="27" y="16.5" width="86" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="86" id="87S-Qp-OWF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018-12-06" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CiO-Dj-msJ">
+                    <rect key="frame" x="113" y="17" width="116" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="116" id="xo3-uh-An0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="租" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aR9-Ng-Lf4">
+                    <rect key="frame" x="229" y="17" width="14.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已退解约" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S10-Lx-WcF">
+                    <rect key="frame" x="275" y="17" width="80" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="gIZ-lm-2fy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_jm_right_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="1TG-0N-bjH">
+                    <rect key="frame" x="355" y="18.5" width="8" height="14"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ego-yP-dEr" firstAttribute="leading" secondItem="H5a-0B-cGk" secondAttribute="trailing" constant="12" id="6TM-ae-qdH"/>
+                <constraint firstItem="aR9-Ng-Lf4" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="AOm-4g-FtB"/>
+                <constraint firstItem="ego-yP-dEr" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="CiG-yB-eCN"/>
+                <constraint firstAttribute="trailing" secondItem="1TG-0N-bjH" secondAttribute="trailing" constant="12" id="D16-Ct-WXv"/>
+                <constraint firstItem="1TG-0N-bjH" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="HWB-GH-1jm"/>
+                <constraint firstItem="1TG-0N-bjH" firstAttribute="leading" secondItem="S10-Lx-WcF" secondAttribute="trailing" id="Z9k-Ap-nQK"/>
+                <constraint firstItem="aR9-Ng-Lf4" firstAttribute="leading" secondItem="CiO-Dj-msJ" secondAttribute="trailing" id="a8U-ea-Itr"/>
+                <constraint firstItem="H5a-0B-cGk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="djR-eq-XaK"/>
+                <constraint firstItem="S10-Lx-WcF" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="eaD-L4-jxM"/>
+                <constraint firstItem="CiO-Dj-msJ" firstAttribute="leading" secondItem="ego-yP-dEr" secondAttribute="trailing" id="uuV-RV-YPe"/>
+                <constraint firstItem="CiO-Dj-msJ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="wOr-cd-dCP"/>
+                <constraint firstItem="H5a-0B-cGk" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="y3x-Jo-n8U"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="customerLabel" destination="ego-yP-dEr" id="Ywo-VX-wGE"/>
+                <outlet property="customerLabelWidthCon" destination="87S-Qp-OWF" id="Qcy-yT-Qxb"/>
+                <outlet property="nodeLabel" destination="S10-Lx-WcF" id="pH3-es-pyc"/>
+                <outlet property="nodeLabelWidthCon" destination="gIZ-lm-2fy" id="jIV-io-gB8"/>
+                <outlet property="timeLabel" destination="CiO-Dj-msJ" id="klk-mg-2hM"/>
+                <outlet property="timeLabelWidthCon" destination="xo3-uh-An0" id="M3B-6m-0nO"/>
+                <outlet property="typeLabel" destination="aR9-Ng-Lf4" id="tAF-89-9nD"/>
+                <outlet property="typeView" destination="H5a-0B-cGk" id="YCY-4b-4JZ"/>
+            </connections>
+            <point key="canvasLocation" x="7" y="40"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_jm_right_arrow" width="8" height="14"/>
+    </resources>
+</document>

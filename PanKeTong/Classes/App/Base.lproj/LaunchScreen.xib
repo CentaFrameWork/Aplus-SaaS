@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JM_logo_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="lQa-NM-5JV" userLabel="app">
+                    <rect key="frame" x="143" y="180" width="90" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="3z7-1g-PNH"/>
+                        <constraint firstAttribute="height" constant="90" id="Iiy-0K-yM6"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright© 2018centaline inc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNm-tA-XJC">
+                    <rect key="frame" x="0.0" y="728" width="375" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Y1q-C1-2Mv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iNm-tA-XJC" firstAttribute="trailing" secondItem="Yql-HT-ACD" secondAttribute="trailing" id="WQd-Xy-jkg"/>
+                <constraint firstItem="iNm-tA-XJC" firstAttribute="bottom" secondItem="Yql-HT-ACD" secondAttribute="bottom" id="Yma-Xs-pVA"/>
+                <constraint firstItem="lQa-NM-5JV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="180" id="mNd-bZ-LjS"/>
+                <constraint firstItem="lQa-NM-5JV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="szW-Ax-zNT"/>
+                <constraint firstItem="iNm-tA-XJC" firstAttribute="leading" secondItem="Yql-HT-ACD" secondAttribute="leading" id="z7m-8C-Etj"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Yql-HT-ACD"/>
+            <point key="canvasLocation" x="327.5" y="393"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="JM_logo_image.png" width="256" height="256"/>
+    </resources>
+</document>

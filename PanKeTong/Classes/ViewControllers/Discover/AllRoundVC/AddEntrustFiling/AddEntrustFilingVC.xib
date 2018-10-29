@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddEntrustFilingVC">
+            <connections>
+                <outlet property="_cleanEntrustfilingBtn" destination="FIV-Pf-riV" id="Xq8-SV-ayB"/>
+                <outlet property="_mainTableView" destination="wG9-y9-dhP" id="Hh0-Du-PPH"/>
+                <outlet property="_saveEntrustfilingBtn" destination="xDt-Cd-fu8" id="THh-Z2-8vr"/>
+                <outlet property="bottomView" destination="wSY-rN-5f5" id="RVH-Cf-adm"/>
+                <outlet property="clearBtn" destination="FIV-Pf-riV" id="3iC-W3-x9v"/>
+                <outlet property="funcViewBottomCon" destination="Wax-t0-POs" id="Iek-Ob-nLb"/>
+                <outlet property="saveBtn" destination="xDt-Cd-fu8" id="IBf-eM-bBA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wG9-y9-dhP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="xPw-qy-S1Z"/>
+                        <outlet property="delegate" destination="-1" id="Prb-h9-BjT"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wSY-rN-5f5">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDt-Cd-fu8">
+                            <rect key="frame" x="190.5" y="6" width="178.5" height="38"/>
+                            <color key="backgroundColor" red="0.56470588239999997" green="0.76470588240000004" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                            <state key="normal" title="保存">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="commitEntrustfiling:" destination="-1" eventType="touchUpInside" id="kq7-tR-0RS"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIV-Pf-riV">
+                            <rect key="frame" x="6" y="6" width="178.5" height="38"/>
+                            <color key="backgroundColor" red="0.92156862750000001" green="0.67450980390000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                            <state key="normal" title="清空"/>
+                            <connections>
+                                <action selector="cleanEntrustfiling:" destination="-1" eventType="touchUpInside" id="yxT-uV-ave"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="xDt-Cd-fu8" secondAttribute="bottom" constant="6" id="6ly-2Z-n3K"/>
+                        <constraint firstItem="FIV-Pf-riV" firstAttribute="top" secondItem="wSY-rN-5f5" secondAttribute="top" constant="6" id="9zX-hX-vzv"/>
+                        <constraint firstItem="xDt-Cd-fu8" firstAttribute="top" secondItem="wSY-rN-5f5" secondAttribute="top" constant="6" id="CkU-uD-I1b"/>
+                        <constraint firstItem="FIV-Pf-riV" firstAttribute="leading" secondItem="wSY-rN-5f5" secondAttribute="leading" constant="6" id="HQF-zZ-cTL"/>
+                        <constraint firstAttribute="bottom" secondItem="FIV-Pf-riV" secondAttribute="bottom" constant="6" id="SX0-LZ-R71"/>
+                        <constraint firstAttribute="height" constant="50" id="ahL-Bm-ElS"/>
+                        <constraint firstAttribute="trailing" secondItem="xDt-Cd-fu8" secondAttribute="trailing" constant="6" id="br1-0W-BRG"/>
+                        <constraint firstItem="xDt-Cd-fu8" firstAttribute="leading" secondItem="FIV-Pf-riV" secondAttribute="trailing" constant="6" id="duG-7e-UKi"/>
+                        <constraint firstItem="xDt-Cd-fu8" firstAttribute="width" secondItem="FIV-Pf-riV" secondAttribute="width" id="i9N-oP-kdV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wSY-rN-5f5" secondAttribute="trailing" id="7Xm-6o-DX2"/>
+                <constraint firstItem="wG9-y9-dhP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8di-ic-AyF"/>
+                <constraint firstItem="wG9-y9-dhP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QI4-sJ-IxU"/>
+                <constraint firstAttribute="trailing" secondItem="wG9-y9-dhP" secondAttribute="trailing" id="RbK-zm-Jog"/>
+                <constraint firstAttribute="bottom" secondItem="wSY-rN-5f5" secondAttribute="bottom" id="Wax-t0-POs"/>
+                <constraint firstItem="wSY-rN-5f5" firstAttribute="top" secondItem="wG9-y9-dhP" secondAttribute="bottom" id="ipT-eB-2UR"/>
+                <constraint firstItem="wSY-rN-5f5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uZt-Dd-bjk"/>
+            </constraints>
+            <point key="canvasLocation" x="106" y="113"/>
+        </view>
+    </objects>
+</document>

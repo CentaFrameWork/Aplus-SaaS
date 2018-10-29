@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RealSurveyAuditingSearchVC">
+            <connections>
+                <outlet property="_clearSearchHisBtn" destination="jCS-8K-g5g" id="5kl-8M-IKu"/>
+                <outlet property="mainTableView" destination="g9w-d2-WhF" id="wk1-EV-eS3"/>
+                <outlet property="view" destination="JhV-EN-FhW" id="n32-Xw-QI0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="JhV-EN-FhW">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="g9w-d2-WhF">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <view key="tableFooterView" contentMode="scaleToFill" id="k5A-SK-Zgn">
+                        <rect key="frame" x="0.0" y="896.5" width="375" height="60"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCS-8K-g5g">
+                                <rect key="frame" x="102" y="14" width="116" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="116" id="2OA-mj-2wV"/>
+                                    <constraint firstAttribute="height" constant="32" id="bCg-3o-QdI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <state key="normal" title="加载更多" backgroundImage="clearSearchHisBtn_bg">
+                                    <color key="titleColor" red="0.5296475887298584" green="0.52963173389434814" blue="0.52964073419570923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2OA-mj-2wV"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="jCS-8K-g5g" secondAttribute="centerX" id="KSF-KF-HFP"/>
+                            <constraint firstItem="jCS-8K-g5g" firstAttribute="top" secondItem="k5A-SK-Zgn" secondAttribute="top" constant="14" id="rge-yf-dYq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="jJ6-nE-ICu"/>
+                        <outlet property="delegate" destination="-1" id="81t-f0-Gel"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="g9w-d2-WhF" firstAttribute="top" secondItem="JhV-EN-FhW" secondAttribute="top" id="Pfd-Xt-c8j"/>
+                <constraint firstAttribute="bottom" secondItem="g9w-d2-WhF" secondAttribute="bottom" id="dD2-oz-fJu"/>
+                <constraint firstItem="g9w-d2-WhF" firstAttribute="top" secondItem="JhV-EN-FhW" secondAttribute="top" id="fhx-8L-aSH"/>
+                <constraint firstAttribute="trailing" secondItem="g9w-d2-WhF" secondAttribute="trailing" id="j6Z-EJ-ZiF"/>
+                <constraint firstItem="g9w-d2-WhF" firstAttribute="leading" secondItem="JhV-EN-FhW" secondAttribute="leading" id="jFI-e3-L4b"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="fhx-8L-aSH"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="fhx-8L-aSH"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="80" y="405"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="clearSearchHisBtn_bg" width="116" height="32"/>
+    </resources>
+</document>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageContentCell" rowHeight="160" id="KGk-i7-Jjw" customClass="MessageContentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="159.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="短信内容（60字数/每条）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdm-Af-7MD">
+                        <rect key="frame" x="15" y="8" width="140" height="21"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="41P-fm-AJT"/>
+                            <constraint firstAttribute="width" constant="140" id="Ors-or-aiU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="[客户]您好，我是[门店][姓名]，今日带看了您位于[小区]的房子，我会及时反馈您客户情况，打扰请见谅。" translatesAutoresizingMaskIntoConstraints="NO" id="73e-nl-QJU">
+                        <rect key="frame" x="15" y="29" width="290" height="89"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="89" id="3iY-PW-lws"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="54/60" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lio-RW-7e3">
+                        <rect key="frame" x="275" y="126" width="30" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="5YB-kM-kL4"/>
+                            <constraint firstAttribute="width" constant="30" id="s1T-Eo-iRq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRp-RN-FE4">
+                        <rect key="frame" x="202" y="124" width="71" height="22.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="71" id="2yi-sb-B1G"/>
+                            <constraint firstAttribute="height" constant="22.5" id="DrR-vd-Ldo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="  使用模版" image="kuang">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="selectMobanAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZMz-wE-5Sm"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="lio-RW-7e3" secondAttribute="bottom" constant="14.5" id="3iW-kP-TAS"/>
+                    <constraint firstItem="lio-RW-7e3" firstAttribute="leading" secondItem="qRp-RN-FE4" secondAttribute="trailing" constant="2" id="FS1-GW-1Ni"/>
+                    <constraint firstAttribute="trailing" secondItem="73e-nl-QJU" secondAttribute="trailing" constant="15" id="Iof-IR-ILy"/>
+                    <constraint firstAttribute="trailing" secondItem="lio-RW-7e3" secondAttribute="trailing" constant="15" id="Qkh-Nw-zO2"/>
+                    <constraint firstItem="73e-nl-QJU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Xfg-HM-mob"/>
+                    <constraint firstItem="73e-nl-QJU" firstAttribute="top" secondItem="mdm-Af-7MD" secondAttribute="bottom" id="aeh-G2-E8A"/>
+                    <constraint firstAttribute="bottom" secondItem="qRp-RN-FE4" secondAttribute="bottom" constant="13" id="e8g-X0-PKJ"/>
+                    <constraint firstItem="mdm-Af-7MD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="sg4-Xh-YVh"/>
+                    <constraint firstItem="mdm-Af-7MD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="udU-pG-OB5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="_mobanBtn" destination="qRp-RN-FE4" id="JdR-Xt-HOU"/>
+                <outlet property="_sumLabel" destination="lio-RW-7e3" id="mkP-bz-7k8"/>
+                <outlet property="_textView" destination="73e-nl-QJU" id="0s6-k8-4SU"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="kuang" width="10" height="10"/>
+    </resources>
+</document>

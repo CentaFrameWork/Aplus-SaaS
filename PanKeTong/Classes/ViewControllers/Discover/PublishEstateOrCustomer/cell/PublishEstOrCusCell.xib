@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="publishEstOrCusCell" id="KGk-i7-Jjw" customClass="PublishEstOrCusCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBG-cL-vF6">
+                        <rect key="frame" x="8" y="14" width="0.0" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="8KC-rx-oZf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RhS-sF-VvM">
+                        <rect key="frame" x="33" y="14" width="0.0" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="bUk-j8-cAY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rd4-TM-HDb">
+                        <rect key="frame" x="294" y="16" width="18" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="kBt-oz-NRy"/>
+                            <constraint firstAttribute="width" constant="18" id="kFE-6G-1Nr"/>
+                        </constraints>
+                    </imageView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p8e-nM-MZe">
+                        <rect key="frame" x="273" y="16" width="18" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="KCf-gy-ZoN"/>
+                            <constraint firstAttribute="width" constant="18" id="uxy-W7-S17"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CBG-cL-vF6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="3AH-X7-fVs"/>
+                    <constraint firstItem="RhS-sF-VvM" firstAttribute="leading" secondItem="CBG-cL-vF6" secondAttribute="trailing" constant="25" id="4LE-Os-0HA"/>
+                    <constraint firstAttribute="trailing" secondItem="rd4-TM-HDb" secondAttribute="trailing" constant="8" id="8CD-EB-VvU"/>
+                    <constraint firstItem="p8e-nM-MZe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="RhS-sF-VvM" secondAttribute="trailing" constant="10" id="D7p-hV-uba"/>
+                    <constraint firstAttribute="centerY" secondItem="rd4-TM-HDb" secondAttribute="centerY" id="GWy-pn-Chl"/>
+                    <constraint firstItem="rd4-TM-HDb" firstAttribute="leading" secondItem="p8e-nM-MZe" secondAttribute="trailing" constant="3" id="MY6-aS-fHy"/>
+                    <constraint firstItem="CBG-cL-vF6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Nqx-zE-Oxg"/>
+                    <constraint firstAttribute="centerY" secondItem="p8e-nM-MZe" secondAttribute="centerY" id="OS9-UW-n63"/>
+                    <constraint firstItem="RhS-sF-VvM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="ccq-2a-j2c"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftDetailLabel" destination="CBG-cL-vF6" id="bQi-Tq-iIi"/>
+                <outlet property="leftSecondDetailLabel" destination="RhS-sF-VvM" id="0QQ-Hc-Cfu"/>
+                <outlet property="rightFirstEstTypeImageView" destination="rd4-TM-HDb" id="swH-ba-CMz"/>
+                <outlet property="rightSecondEstTypeImageView" destination="p8e-nM-MZe" id="6sP-Mt-rpM"/>
+            </connections>
+            <point key="canvasLocation" x="224" y="388"/>
+        </tableViewCell>
+    </objects>
+</document>

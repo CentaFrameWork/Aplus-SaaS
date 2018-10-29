@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="onlyTrust" rowHeight="58" id="KGk-i7-Jjw" customClass="OnlyTrustTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="57.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="管理员" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tl-Uh-wxc">
+                        <rect key="frame" x="21" y="13" width="188" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="Zeh-fM-g1e"/>
+                            <constraint firstAttribute="height" constant="20" id="pUF-Xr-uN3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Zeh-fM-g1e"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="2015.10.23-2015.12.23" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLP-O1-lje">
+                        <rect key="frame" x="152" y="33" width="147" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="7c9-CP-caG"/>
+                            <constraint firstAttribute="width" constant="147" id="dDV-Mh-88x"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.063801087439060211" green="0.40428453683853149" blue="0.47407472133636475" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上钱独家" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAB-gS-ac4">
+                        <rect key="frame" x="219" y="13" width="80" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="279-Fh-INq"/>
+                            <constraint firstAttribute="height" constant="20" id="44e-S6-05u"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3tl-Uh-wxc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="AB0-yd-Axe"/>
+                    <constraint firstItem="pAB-gS-ac4" firstAttribute="leading" secondItem="3tl-Uh-wxc" secondAttribute="trailing" constant="10" id="LXZ-ob-ADk"/>
+                    <constraint firstItem="pAB-gS-ac4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="bzZ-Th-kaz"/>
+                    <constraint firstItem="pAB-gS-ac4" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-5" id="mEZ-pl-9bF"/>
+                    <constraint firstItem="oLP-O1-lje" firstAttribute="top" secondItem="pAB-gS-ac4" secondAttribute="bottom" id="vWa-JW-Zs4"/>
+                    <constraint firstItem="oLP-O1-lje" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-5" id="xCB-SL-8r9"/>
+                    <constraint firstItem="3tl-Uh-wxc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="xhZ-wU-f5l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="effectiveDate" destination="oLP-O1-lje" id="FOR-Pm-2cC"/>
+                <outlet property="onlyTrustPerson" destination="3tl-Uh-wxc" id="AON-7E-b7H"/>
+                <outlet property="onlyTrustType" destination="pAB-gS-ac4" id="44G-6p-Bvs"/>
+            </connections>
+            <point key="canvasLocation" x="-29" y="310"/>
+        </tableViewCell>
+    </objects>
+</document>

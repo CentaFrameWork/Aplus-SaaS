@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TakeLookRecordCell" id="KGk-i7-Jjw" customClass="TakeLookRecordCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="159.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="带看客户" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKT-b0-TGl">
+                        <rect key="frame" x="12" y="48" width="57.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2c-Rd-6dh">
+                        <rect key="frame" x="81.5" y="105" width="68" height="29"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <state key="normal" title="34566776"/>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_jm_take_look_rent" translatesAutoresizingMaskIntoConstraints="NO" id="aEe-VK-Juv">
+                        <rect key="frame" x="0.0" y="12" width="66" height="24"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张帆" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIn-jg-5fD">
+                        <rect key="frame" x="81.5" y="48" width="29" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="带看时间" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOa-s0-KUC">
+                        <rect key="frame" x="12" y="69" width="57.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张帆" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2O-sK-5JL">
+                        <rect key="frame" x="81" y="69" width="29" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="陪  看  人" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQS-tx-HWV">
+                        <rect key="frame" x="12" y="90" width="57.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张帆" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFw-ka-EEy">
+                        <rect key="frame" x="81.5" y="90" width="29" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="看  房  单" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPm-Du-yZF">
+                        <rect key="frame" x="12" y="111" width="57.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="房源信息" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syi-9l-yZL">
+                        <rect key="frame" x="12" y="132" width="57.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9Y-ll-0P2">
+                        <rect key="frame" x="282" y="120" width="38" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="38" id="ZM4-gt-UKU"/>
+                            <constraint firstAttribute="height" constant="40" id="hy6-kF-93Z"/>
+                        </constraints>
+                        <state key="normal" image="icon_jm_arrow_under_gray"/>
+                        <state key="selected" image="icon_jm_arrow_on_gray"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="e2O-sK-5JL" firstAttribute="centerY" secondItem="hOa-s0-KUC" secondAttribute="centerY" id="46h-JF-MzV"/>
+                    <constraint firstItem="kFw-ka-EEy" firstAttribute="leading" secondItem="fIn-jg-5fD" secondAttribute="leading" id="8nB-Yh-NNp"/>
+                    <constraint firstItem="syi-9l-yZL" firstAttribute="top" secondItem="yPm-Du-yZF" secondAttribute="bottom" constant="4" id="8tu-x9-TFe"/>
+                    <constraint firstItem="aEe-VK-Juv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="9hl-IC-eLO"/>
+                    <constraint firstItem="l9Y-ll-0P2" firstAttribute="centerY" secondItem="syi-9l-yZL" secondAttribute="centerY" id="Alf-Yx-vbK"/>
+                    <constraint firstItem="O2c-Rd-6dh" firstAttribute="leading" secondItem="fIn-jg-5fD" secondAttribute="leading" id="Dfe-vC-b3d"/>
+                    <constraint firstItem="hOa-s0-KUC" firstAttribute="leading" secondItem="uKT-b0-TGl" secondAttribute="leading" id="DiW-c5-VsA"/>
+                    <constraint firstItem="aEe-VK-Juv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="FBj-Im-nf4"/>
+                    <constraint firstItem="uKT-b0-TGl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Ioa-vX-IOR"/>
+                    <constraint firstItem="yPm-Du-yZF" firstAttribute="top" secondItem="wQS-tx-HWV" secondAttribute="bottom" constant="4" id="KGL-QG-evq"/>
+                    <constraint firstItem="wQS-tx-HWV" firstAttribute="top" secondItem="hOa-s0-KUC" secondAttribute="bottom" constant="4" id="Kvo-XY-STD"/>
+                    <constraint firstItem="kFw-ka-EEy" firstAttribute="centerY" secondItem="wQS-tx-HWV" secondAttribute="centerY" id="PI6-cT-zEW"/>
+                    <constraint firstAttribute="trailing" secondItem="l9Y-ll-0P2" secondAttribute="trailing" id="PO8-Cq-Fdj"/>
+                    <constraint firstItem="wQS-tx-HWV" firstAttribute="leading" secondItem="uKT-b0-TGl" secondAttribute="leading" id="cLz-h9-O4Y"/>
+                    <constraint firstItem="yPm-Du-yZF" firstAttribute="leading" secondItem="uKT-b0-TGl" secondAttribute="leading" id="dtP-ik-n9H"/>
+                    <constraint firstItem="syi-9l-yZL" firstAttribute="leading" secondItem="uKT-b0-TGl" secondAttribute="leading" id="gEx-3b-goJ"/>
+                    <constraint firstItem="e2O-sK-5JL" firstAttribute="leading" secondItem="fIn-jg-5fD" secondAttribute="leading" id="hZq-mv-Av8"/>
+                    <constraint firstItem="uKT-b0-TGl" firstAttribute="top" secondItem="aEe-VK-Juv" secondAttribute="bottom" constant="12" id="kvh-57-g93"/>
+                    <constraint firstItem="fIn-jg-5fD" firstAttribute="leading" secondItem="uKT-b0-TGl" secondAttribute="trailing" constant="12" id="mRg-Uh-LgH"/>
+                    <constraint firstItem="O2c-Rd-6dh" firstAttribute="centerY" secondItem="yPm-Du-yZF" secondAttribute="centerY" id="oau-5R-fO0"/>
+                    <constraint firstItem="hOa-s0-KUC" firstAttribute="top" secondItem="uKT-b0-TGl" secondAttribute="bottom" constant="4" id="s7H-b8-YES"/>
+                    <constraint firstItem="fIn-jg-5fD" firstAttribute="centerY" secondItem="uKT-b0-TGl" secondAttribute="centerY" id="zPi-GE-gbi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="arrowBtn" destination="l9Y-ll-0P2" id="QNb-eb-1Kb"/>
+                <outlet property="customerLabel" destination="fIn-jg-5fD" id="N38-xa-r3g"/>
+                <outlet property="lookAtPeopleLabel" destination="kFw-ka-EEy" id="vmq-Tm-cPv"/>
+                <outlet property="seeLinkBtn" destination="O2c-Rd-6dh" id="QWA-d2-1Oq"/>
+                <outlet property="timeLabel" destination="e2O-sK-5JL" id="Cpm-OK-QnG"/>
+                <outlet property="typeImageView" destination="aEe-VK-Juv" id="IJI-EY-jPn"/>
+            </connections>
+            <point key="canvasLocation" x="30" y="410"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_jm_arrow_on_gray" width="14" height="8"/>
+        <image name="icon_jm_arrow_under_gray" width="14" height="8"/>
+        <image name="icon_jm_take_look_rent" width="66" height="24"/>
+    </resources>
+</document>

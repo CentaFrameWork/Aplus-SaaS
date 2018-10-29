@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="faceSwitchCell" id="KGk-i7-Jjw" customClass="FaceSwitchCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yt0-u0-rlK">
+                        <rect key="frame" x="16" y="15" width="17" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="17" id="4y0-km-wJ3"/>
+                            <constraint firstAttribute="height" constant="17" id="Yea-pL-3yW"/>
+                        </constraints>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3l-gJ-Vjm">
+                        <rect key="frame" x="43" y="17" width="0.0" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" id="Jio-pP-Fjm"/>
+                            <constraint firstAttribute="height" constant="15" id="xif-QW-HvS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qn7-Uz-QeK">
+                        <rect key="frame" x="257" y="6" width="51" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="itu-Un-Thd"/>
+                            <constraint firstAttribute="width" constant="49" id="jjf-6F-hzX"/>
+                        </constraints>
+                        <color key="onTintColor" red="0.99607843139999996" green="0.23921568630000001" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="x3l-gJ-Vjm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="9" id="7sf-hL-Mj1"/>
+                    <constraint firstItem="qn7-Uz-QeK" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-6" id="BtC-qd-bBB"/>
+                    <constraint firstItem="x3l-gJ-Vjm" firstAttribute="leading" secondItem="Yt0-u0-rlK" secondAttribute="trailing" constant="10" id="D6X-Xo-diT"/>
+                    <constraint firstItem="Yt0-u0-rlK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="E4N-7s-gHr"/>
+                    <constraint firstItem="qn7-Uz-QeK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-2" id="kb3-p7-z6D"/>
+                    <constraint firstItem="Yt0-u0-rlK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="xqA-lh-FzI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="faceSwitch" destination="qn7-Uz-QeK" id="YGk-au-pGJ"/>
+                <outlet property="typeButton" destination="Yt0-u0-rlK" id="bAs-IU-KLe"/>
+                <outlet property="typeNameLabel" destination="x3l-gJ-Vjm" id="ts0-cy-UeQ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

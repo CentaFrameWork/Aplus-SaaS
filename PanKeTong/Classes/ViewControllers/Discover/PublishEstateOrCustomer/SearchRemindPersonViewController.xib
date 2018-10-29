@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchRemindPersonViewController">
+            <connections>
+                <outlet property="_clearSearchHisBtn" destination="HuH-ge-sfw" id="LCa-T3-PT4"/>
+                <outlet property="_mainTableView" destination="f14-zh-qlX" id="TZX-VR-foD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="f14-zh-qlX">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <view key="tableFooterView" contentMode="scaleToFill" id="pwd-aw-o73">
+                        <rect key="frame" x="0.0" y="896.5" width="375" height="60"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HuH-ge-sfw">
+                                <rect key="frame" x="102" y="14" width="116" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="R7K-IR-IOL"/>
+                                    <constraint firstAttribute="width" constant="116" id="oQU-7L-UPh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <state key="normal" title="清空搜索历史" backgroundImage="clearSearchHisBtn_bg">
+                                    <color key="titleColor" red="0.5296475887298584" green="0.52963173389434814" blue="0.52964073419570923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HuH-ge-sfw" firstAttribute="top" secondItem="pwd-aw-o73" secondAttribute="top" constant="14" id="EIP-cW-eye"/>
+                            <constraint firstAttribute="centerX" secondItem="HuH-ge-sfw" secondAttribute="centerX" id="UY5-aG-11U"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="1V4-AT-ku0"/>
+                        <outlet property="delegate" destination="-1" id="DAB-Jz-dgD"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="f14-zh-qlX" secondAttribute="trailing" id="0x0-Ns-xgd"/>
+                <constraint firstItem="f14-zh-qlX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1C4-IP-c4N"/>
+                <constraint firstAttribute="bottom" secondItem="f14-zh-qlX" secondAttribute="bottom" id="hHp-6D-XLO"/>
+                <constraint firstItem="f14-zh-qlX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kG5-kh-TbA"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <point key="canvasLocation" x="220" y="322"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="clearSearchHisBtn_bg" width="116" height="32"/>
+    </resources>
+</document>

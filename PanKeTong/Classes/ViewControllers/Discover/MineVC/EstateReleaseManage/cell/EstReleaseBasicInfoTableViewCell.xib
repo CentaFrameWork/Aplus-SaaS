@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="basicCell" rowHeight="126" id="KGk-i7-Jjw" customClass="EstReleaseBasicInfoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="125.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgO-Ls-FPv">
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rc-hH-Zkh">
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feD-95-8dg">
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lo-tF-TxG">
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZm-tr-L3r">
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reH-Lf-RaT">
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkZ-hq-JHA">
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="户型：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbw-oD-e0X">
+                        <rect key="frame" x="10" y="11" width="42" height="17"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="类型：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qjt-mi-2v2">
+                        <rect key="frame" x="10" y="40" width="42" height="17"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="楼层：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVe-jP-7AI">
+                        <rect key="frame" x="10" y="71" width="42" height="17"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="装修：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0da-7p-tBy">
+                        <rect key="frame" x="10" y="101" width="42" height="17"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="面积：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epa-bR-JlP">
+                        <rect key="frame" x="189" y="11" width="42" height="17"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="朝向：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqO-hz-D2k">
+                        <rect key="frame" x="189" y="71" width="42" height="17"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年代：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFx-Ik-g27">
+                        <rect key="frame" x="189" y="101" width="42" height="17"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyS-qQ-9ug">
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="产权性质：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9T-pT-Ddp">
+                        <rect key="frame" x="189" y="40" width="70" height="17"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kbw-oD-e0X" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="15f-U1-yoA"/>
+                    <constraint firstItem="0da-7p-tBy" firstAttribute="top" secondItem="GVe-jP-7AI" secondAttribute="bottom" constant="13" id="2dm-eA-Ydf"/>
+                    <constraint firstItem="GVe-jP-7AI" firstAttribute="top" secondItem="4lo-tF-TxG" secondAttribute="top" id="4w0-c4-ftm"/>
+                    <constraint firstItem="GVe-jP-7AI" firstAttribute="top" secondItem="Qjt-mi-2v2" secondAttribute="bottom" constant="14" id="9I7-lX-x5x"/>
+                    <constraint firstItem="reH-Lf-RaT" firstAttribute="leading" secondItem="epa-bR-JlP" secondAttribute="trailing" constant="2" id="9hx-hM-sf7"/>
+                    <constraint firstItem="feD-95-8dg" firstAttribute="leading" secondItem="9rc-hH-Zkh" secondAttribute="leading" id="AJK-Ib-odi"/>
+                    <constraint firstItem="0da-7p-tBy" firstAttribute="leading" secondItem="GVe-jP-7AI" secondAttribute="leading" id="AZP-pt-WN9"/>
+                    <constraint firstItem="epa-bR-JlP" firstAttribute="leading" secondItem="EFx-Ik-g27" secondAttribute="leading" id="Aox-3E-MgV"/>
+                    <constraint firstItem="0da-7p-tBy" firstAttribute="leading" secondItem="Qjt-mi-2v2" secondAttribute="leading" id="BAy-fF-jIJ"/>
+                    <constraint firstItem="kbw-oD-e0X" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="Cdg-uJ-L9V"/>
+                    <constraint firstItem="9rc-hH-Zkh" firstAttribute="top" secondItem="Y9T-pT-Ddp" secondAttribute="top" id="Gjp-05-vll"/>
+                    <constraint firstItem="epa-bR-JlP" firstAttribute="leading" secondItem="Y9T-pT-Ddp" secondAttribute="leading" id="HND-Nx-wOK"/>
+                    <constraint firstAttribute="centerX" secondItem="epa-bR-JlP" secondAttribute="centerX" constant="-50" id="Nem-LR-4PG"/>
+                    <constraint firstItem="feD-95-8dg" firstAttribute="top" secondItem="0da-7p-tBy" secondAttribute="top" id="QD6-x2-VVo"/>
+                    <constraint firstItem="feD-95-8dg" firstAttribute="top" secondItem="IkZ-hq-JHA" secondAttribute="top" id="VPv-19-Obh"/>
+                    <constraint firstItem="GVe-jP-7AI" firstAttribute="top" secondItem="lyS-qQ-9ug" secondAttribute="top" id="Ykt-NA-ocb"/>
+                    <constraint firstItem="feD-95-8dg" firstAttribute="leading" secondItem="lyS-qQ-9ug" secondAttribute="leading" id="cDi-9T-4vc"/>
+                    <constraint firstItem="Qjt-mi-2v2" firstAttribute="top" secondItem="kbw-oD-e0X" secondAttribute="bottom" constant="12" id="cca-CA-aJK"/>
+                    <constraint firstItem="epa-bR-JlP" firstAttribute="leading" secondItem="cqO-hz-D2k" secondAttribute="leading" id="csi-TY-MKs"/>
+                    <constraint firstItem="feD-95-8dg" firstAttribute="top" secondItem="EFx-Ik-g27" secondAttribute="top" id="dal-Dk-SIf"/>
+                    <constraint firstItem="dgO-Ls-FPv" firstAttribute="top" secondItem="epa-bR-JlP" secondAttribute="top" id="eBb-iN-KHb"/>
+                    <constraint firstItem="dgO-Ls-FPv" firstAttribute="top" secondItem="kbw-oD-e0X" secondAttribute="top" id="h00-fV-a0g"/>
+                    <constraint firstItem="IkZ-hq-JHA" firstAttribute="leading" secondItem="4lo-tF-TxG" secondAttribute="leading" id="hUD-SM-oL2"/>
+                    <constraint firstItem="IkZ-hq-JHA" firstAttribute="leading" secondItem="reH-Lf-RaT" secondAttribute="leading" id="hYy-cD-PDF"/>
+                    <constraint firstItem="9rc-hH-Zkh" firstAttribute="top" secondItem="ZZm-tr-L3r" secondAttribute="top" id="j6H-Mj-ea7"/>
+                    <constraint firstItem="0da-7p-tBy" firstAttribute="leading" secondItem="kbw-oD-e0X" secondAttribute="leading" id="lX7-4y-SL6"/>
+                    <constraint firstItem="dgO-Ls-FPv" firstAttribute="top" secondItem="reH-Lf-RaT" secondAttribute="top" id="nSK-Nx-58d"/>
+                    <constraint firstItem="feD-95-8dg" firstAttribute="leading" secondItem="dgO-Ls-FPv" secondAttribute="leading" id="nai-sL-RD2"/>
+                    <constraint firstItem="dgO-Ls-FPv" firstAttribute="leading" secondItem="kbw-oD-e0X" secondAttribute="trailing" constant="2" id="pdE-Nc-HnM"/>
+                    <constraint firstItem="IkZ-hq-JHA" firstAttribute="leading" secondItem="ZZm-tr-L3r" secondAttribute="leading" id="w5E-LK-HIO"/>
+                    <constraint firstItem="9rc-hH-Zkh" firstAttribute="top" secondItem="Qjt-mi-2v2" secondAttribute="top" id="xOM-ra-0Vi"/>
+                    <constraint firstItem="GVe-jP-7AI" firstAttribute="top" secondItem="cqO-hz-D2k" secondAttribute="top" id="yJj-g6-gyA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="areaLabel" destination="reH-Lf-RaT" id="iMw-Jl-LuQ"/>
+                <outlet property="confrontationLabel" destination="4lo-tF-TxG" id="lYV-PT-3Je"/>
+                <outlet property="fitmentLabel" destination="feD-95-8dg" id="CoD-qH-8rh"/>
+                <outlet property="floorLabel" destination="lyS-qQ-9ug" id="9eX-0K-e1T"/>
+                <outlet property="propertyLabel" destination="ZZm-tr-L3r" id="8Lf-6H-nHK"/>
+                <outlet property="roomFormLabel" destination="dgO-Ls-FPv" id="w42-i6-4Ju"/>
+                <outlet property="roomType" destination="9rc-hH-Zkh" id="k9t-cs-Rxt"/>
+                <outlet property="yearLabel" destination="IkZ-hq-JHA" id="1iU-QN-SmD"/>
+            </connections>
+            <point key="canvasLocation" x="444" y="202"/>
+        </tableViewCell>
+    </objects>
+</document>

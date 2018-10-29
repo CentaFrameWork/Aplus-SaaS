@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdLoadingViewController">
+            <connections>
+                <outlet property="_adLoadingRedBgImageView" destination="rUc-lz-twQ" id="RE9-Wp-cIJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_img_bg" translatesAutoresizingMaskIntoConstraints="NO" id="rUc-lz-twQ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rUc-lz-twQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Uf1-Ik-cR5"/>
+                <constraint firstItem="rUc-lz-twQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iPe-xa-HXq"/>
+                <constraint firstAttribute="trailing" secondItem="rUc-lz-twQ" secondAttribute="trailing" id="sJt-8n-Sz8"/>
+                <constraint firstAttribute="bottom" secondItem="rUc-lz-twQ" secondAttribute="bottom" id="zui-Rm-zHg"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="258" y="256"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_img_bg" width="320" height="568"/>
+    </resources>
+</document>

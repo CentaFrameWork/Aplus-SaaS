@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="applyTransferPubEstRemindPersonCell" id="KGk-i7-Jjw" customClass="ApplyTransferPubEstRemindPersonCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addRemindPerson_icon" translatesAutoresizingMaskIntoConstraints="NO" id="FLk-HF-QdE">
+                        <rect key="frame" x="23" y="5" width="26" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="QQa-Q4-RLf"/>
+                            <constraint firstAttribute="width" constant="26" id="xBp-0J-QgZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提醒人" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apE-IG-gkw">
+                        <rect key="frame" x="16" y="30" width="40" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="IZh-iP-eF1"/>
+                            <constraint firstAttribute="width" constant="40" id="Yt9-sv-swd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="remindPersonVerSeperator_line" translatesAutoresizingMaskIntoConstraints="NO" id="lfE-Df-3UE">
+                        <rect key="frame" x="63" y="13" width="1" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="xTY-Hh-afF"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rcs-8j-Y4n">
+                        <rect key="frame" x="8" y="8" width="50" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="Jhy-aN-AAa"/>
+                        </constraints>
+                        <state key="normal">
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="QGL-s1-5G3">
+                        <rect key="frame" x="80" y="8" width="232" height="33"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="5" id="Nsd-kc-gcc">
+                            <size key="itemSize" width="50" height="28"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="-1" id="uzF-6r-f9H"/>
+                            <outlet property="delegate" destination="-1" id="w1p-Jx-ZAE"/>
+                        </connections>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="lfE-Df-3UE" secondAttribute="bottom" constant="12" id="8fn-tX-geN"/>
+                    <constraint firstItem="Rcs-8j-Y4n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="EZ6-tS-WzX"/>
+                    <constraint firstAttribute="bottom" secondItem="QGL-s1-5G3" secondAttribute="bottom" constant="8" id="G8Y-dz-3Gm"/>
+                    <constraint firstItem="QGL-s1-5G3" firstAttribute="leading" secondItem="lfE-Df-3UE" secondAttribute="trailing" constant="16" id="JX9-5U-KAH"/>
+                    <constraint firstItem="FLk-HF-QdE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="23" id="P1d-c0-QcE"/>
+                    <constraint firstItem="apE-IG-gkw" firstAttribute="top" secondItem="FLk-HF-QdE" secondAttribute="bottom" constant="4" id="QKW-dz-ofa"/>
+                    <constraint firstItem="QGL-s1-5G3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="VXB-3C-2Ki"/>
+                    <constraint firstItem="Rcs-8j-Y4n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="cd3-RH-Wtt"/>
+                    <constraint firstItem="FLk-HF-QdE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="grr-XC-HrJ"/>
+                    <constraint firstAttribute="bottom" secondItem="Rcs-8j-Y4n" secondAttribute="bottom" constant="8" id="i7J-tS-cme"/>
+                    <constraint firstItem="lfE-Df-3UE" firstAttribute="leading" secondItem="Rcs-8j-Y4n" secondAttribute="trailing" constant="5" id="kbk-Mo-S7B"/>
+                    <constraint firstAttribute="centerY" secondItem="FLk-HF-QdE" secondAttribute="centerY" constant="9" id="laq-YQ-FFI"/>
+                    <constraint firstItem="apE-IG-gkw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="mAD-Zs-pr5"/>
+                    <constraint firstAttribute="trailing" secondItem="QGL-s1-5G3" secondAttribute="trailing" constant="8" id="rKr-Uf-9eG"/>
+                    <constraint firstItem="lfE-Df-3UE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="wh3-9d-lhR"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="grr-XC-HrJ"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addRemindPersonBtn" destination="Rcs-8j-Y4n" id="6RE-D6-zTG"/>
+                <outlet property="remindPersonVerSepLineWidth" destination="xTY-Hh-afF" id="npD-fD-cX4"/>
+                <outlet property="showRemindListCollectionView" destination="QGL-s1-5G3" id="LlL-tx-BuL"/>
+            </connections>
+            <point key="canvasLocation" x="251" y="338"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="addRemindPerson_icon" width="46" height="37"/>
+        <image name="remindPersonVerSeperator_line" width="1" height="1"/>
+    </resources>
+</document>

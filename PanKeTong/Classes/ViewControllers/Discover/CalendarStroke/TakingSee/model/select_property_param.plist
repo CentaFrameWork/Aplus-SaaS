@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>面       积</string>
+		<key>propKey</key>
+		<string>square</string>
+		<key>unit</key>
+		<string>平</string>
+		<key>isShowUnit</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>房       型</string>
+		<key>propKey</key>
+		<string>houseType</string>
+		<key>unit</key>
+		<string></string>
+		<key>isShowUnit</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>朝       向</string>
+		<key>propKey</key>
+		<string>houseDirection</string>
+		<key>unit</key>
+		<string></string>
+		<key>isShowUnit</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>楼       层</string>
+		<key>propKey</key>
+		<string>floor</string>
+		<key>unit</key>
+		<string>层</string>
+		<key>isShowUnit</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>单       价</string>
+		<key>propKey</key>
+		<string>salePriceUnit</string>
+		<key>unit</key>
+		<string></string>
+		<key>isShowUnit</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>房屋现状</string>
+		<key>propKey</key>
+		<string>propertySituation</string>
+		<key>unit</key>
+		<string></string>
+		<key>isShowUnit</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>产       权</string>
+		<key>propKey</key>
+		<string>propertyCardClassName</string>
+		<key>unit</key>
+		<string></string>
+		<key>isShowUnit</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>带看次数</string>
+		<key>propKey</key>
+		<string>takeToSeeCount</string>
+		<key>unit</key>
+		<string>次</string>
+		<key>isShowUnit</key>
+		<false/>
+	</dict>
+</array>
+</plist>

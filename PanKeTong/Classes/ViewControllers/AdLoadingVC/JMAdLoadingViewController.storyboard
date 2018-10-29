@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ad Loading View Controller-->
+        <scene sceneID="Rsk-gW-jc3">
+            <objects>
+                <viewController storyboardIdentifier="JMAdLoadingViewController" id="V9o-mZ-uy6" customClass="JMAdLoadingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xtl-Ie-hek"/>
+                        <viewControllerLayoutGuide type="bottom" id="q03-No-Qqf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o23-hE-w7D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_jm_loading_1" translatesAutoresizingMaskIntoConstraints="NO" id="XVm-sd-R2a">
+                                <rect key="frame" x="49.5" y="120" width="275" height="38"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_jm_loading_2" translatesAutoresizingMaskIntoConstraints="NO" id="qMr-hR-BIl">
+                                <rect key="frame" x="112" y="569" width="150" height="48"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qMr-hR-BIl" firstAttribute="centerX" secondItem="o23-hE-w7D" secondAttribute="centerX" id="CED-XY-gVG"/>
+                            <constraint firstAttribute="bottom" secondItem="qMr-hR-BIl" secondAttribute="bottom" constant="50" id="TM6-qD-slG"/>
+                            <constraint firstItem="XVm-sd-R2a" firstAttribute="top" secondItem="xtl-Ie-hek" secondAttribute="bottom" constant="100" id="Y7f-rk-gez"/>
+                            <constraint firstItem="XVm-sd-R2a" firstAttribute="centerX" secondItem="o23-hE-w7D" secondAttribute="centerX" id="m6g-dv-VkN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loadingImageViewBottomCon" destination="TM6-qD-slG" id="7ZO-cM-OMi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y2U-7Q-eVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="474" y="-170"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_jm_loading_1" width="275" height="38"/>
+        <image name="icon_jm_loading_2" width="150" height="48"/>
+    </resources>
+</document>

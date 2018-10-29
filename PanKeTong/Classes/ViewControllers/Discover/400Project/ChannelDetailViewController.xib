@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChannelDetailViewController">
+            <connections>
+                <outlet property="mainTableView" destination="YXL-ts-5a2" id="gmW-GT-94L"/>
+                <outlet property="phoneLabel" destination="px0-7b-6Fg" id="B2w-41-GDK"/>
+                <outlet property="topView" destination="IC6-xQ-tCp" id="Xqg-jX-5eA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IC6-xQ-tCp">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="px0-7b-6Fg">
+                            <rect key="frame" x="44" y="12" width="276" height="21.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_call_green" translatesAutoresizingMaskIntoConstraints="NO" id="F8k-Eh-U03">
+                            <rect key="frame" x="15" y="13" width="19" height="19"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="19" id="lzM-D8-L5j"/>
+                                <constraint firstAttribute="width" constant="19" id="uc6-9w-MVe"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="2NN-sD-8KD"/>
+                        <constraint firstAttribute="centerY" secondItem="px0-7b-6Fg" secondAttribute="centerY" id="BPd-fS-pdA"/>
+                        <constraint firstItem="px0-7b-6Fg" firstAttribute="leading" secondItem="F8k-Eh-U03" secondAttribute="trailing" constant="10" id="DIb-22-5zi"/>
+                        <constraint firstAttribute="centerY" secondItem="px0-7b-6Fg" secondAttribute="centerY" id="MCI-hC-AFb"/>
+                        <constraint firstAttribute="trailing" secondItem="px0-7b-6Fg" secondAttribute="trailing" id="MfU-47-kvS"/>
+                        <constraint firstItem="F8k-Eh-U03" firstAttribute="leading" secondItem="IC6-xQ-tCp" secondAttribute="leading" constant="15" id="bCC-mq-HYb"/>
+                        <constraint firstAttribute="centerY" secondItem="F8k-Eh-U03" secondAttribute="centerY" id="c3N-Af-1mE"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="YXL-ts-5a2">
+                    <rect key="frame" x="0.0" y="46" width="320" height="434"/>
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.96078431369999995" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YXL-ts-5a2" firstAttribute="top" secondItem="IC6-xQ-tCp" secondAttribute="bottom" constant="1" id="3FL-PY-QOY"/>
+                <constraint firstAttribute="trailing" secondItem="IC6-xQ-tCp" secondAttribute="trailing" id="L7J-OJ-0CG"/>
+                <constraint firstItem="IC6-xQ-tCp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XgQ-av-ueF"/>
+                <constraint firstItem="YXL-ts-5a2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dLZ-b4-Log"/>
+                <constraint firstItem="IC6-xQ-tCp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gc2-nX-eAX"/>
+                <constraint firstAttribute="trailing" secondItem="YXL-ts-5a2" secondAttribute="trailing" id="kzo-a6-bIi"/>
+                <constraint firstAttribute="bottom" secondItem="YXL-ts-5a2" secondAttribute="bottom" id="x2z-gO-kgr"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="188" y="335"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_call_green" width="19" height="19"/>
+    </resources>
+</document>

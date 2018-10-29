@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HQAllRoundDetailVC">
+            <connections>
+                <outlet property="_mainTableView" destination="r1l-8u-BcC" id="ZGq-DU-yuN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="r1l-8u-BcC">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                    <color key="backgroundColor" red="0.95556771755218506" green="0.95128798484802246" blue="0.93128681182861328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="udL-gx-SH7"/>
+                        <outlet property="delegate" destination="-1" id="NIF-br-Ujz"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="r1l-8u-BcC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" id="3ph-m0-qJw"/>
+                <constraint firstAttribute="trailingMargin" secondItem="r1l-8u-BcC" secondAttribute="trailing" id="BxH-md-lQE"/>
+                <constraint firstItem="r1l-8u-BcC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="D4s-CF-vCa"/>
+                <constraint firstItem="r1l-8u-BcC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="IoI-ie-xk7"/>
+                <constraint firstAttribute="bottom" secondItem="r1l-8u-BcC" secondAttribute="bottom" id="Rm7-ZO-8pf"/>
+                <constraint firstAttribute="bottomMargin" secondItem="r1l-8u-BcC" secondAttribute="bottom" id="VJL-t9-QIS"/>
+                <constraint firstAttribute="trailing" secondItem="r1l-8u-BcC" secondAttribute="trailing" id="hTi-ef-j1p"/>
+                <constraint firstItem="r1l-8u-BcC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qdi-Bw-dYA"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="r1l-8u-BcC"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="3ph-m0-qJw"/>
+                    <exclude reference="BxH-md-lQE"/>
+                    <exclude reference="D4s-CF-vCa"/>
+                    <exclude reference="IoI-ie-xk7"/>
+                    <exclude reference="Rm7-ZO-8pf"/>
+                    <exclude reference="VJL-t9-QIS"/>
+                    <exclude reference="hTi-ef-j1p"/>
+                    <exclude reference="qdi-Bw-dYA"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="r1l-8u-BcC"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="3ph-m0-qJw"/>
+                    <exclude reference="BxH-md-lQE"/>
+                    <include reference="D4s-CF-vCa"/>
+                    <exclude reference="IoI-ie-xk7"/>
+                    <include reference="Rm7-ZO-8pf"/>
+                    <exclude reference="VJL-t9-QIS"/>
+                    <include reference="hTi-ef-j1p"/>
+                    <include reference="qdi-Bw-dYA"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

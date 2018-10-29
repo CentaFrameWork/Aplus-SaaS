@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GesturePwdManageViewController">
+            <connections>
+                <outlet property="mainTableView" destination="SXh-ih-ErR" id="7Pc-nd-3fY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SXh-ih-ErR">
+                    <rect key="frame" x="159" y="253" width="240" height="128"/>
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.96078431369999995" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="sectionIndexBackgroundColor" red="0.96470588239999999" green="0.96078431369999995" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="1Op-uu-psE"/>
+                        <outlet property="delegate" destination="-1" id="zzc-tQ-4Kq"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="SXh-ih-ErR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BC8-SV-2Fh"/>
+                <constraint firstItem="SXh-ih-ErR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Pes-t8-5dD"/>
+                <constraint firstAttribute="bottom" secondItem="SXh-ih-ErR" secondAttribute="bottom" id="WSr-NP-9od"/>
+                <constraint firstAttribute="trailing" secondItem="SXh-ih-ErR" secondAttribute="trailing" id="noJ-Ka-32g"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="SXh-ih-ErR"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="BC8-SV-2Fh"/>
+                    <exclude reference="Pes-t8-5dD"/>
+                    <exclude reference="WSr-NP-9od"/>
+                    <exclude reference="noJ-Ka-32g"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="SXh-ih-ErR"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="BC8-SV-2Fh"/>
+                    <include reference="Pes-t8-5dD"/>
+                    <include reference="WSr-NP-9od"/>
+                    <include reference="noJ-Ka-32g"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

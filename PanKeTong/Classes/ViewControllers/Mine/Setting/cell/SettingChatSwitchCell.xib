@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="settingChatSwitchCell" id="KGk-i7-Jjw" customClass="SettingChatSwitchCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeR-ic-iUz">
+                        <rect key="frame" x="16" y="22" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" red="0.15056313574314117" green="0.15055863559246063" blue="0.15056121349334717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="If6-e1-WAP">
+                        <rect key="frame" x="257" y="7" width="51" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="htt-bj-vcd"/>
+                            <constraint firstAttribute="width" constant="49" id="lCq-gV-4v6"/>
+                        </constraints>
+                        <color key="onTintColor" red="0.1450980392" green="0.65490196079999996" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="If6-e1-WAP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="8La-NX-qgC"/>
+                    <constraint firstItem="CeR-ic-iUz" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9iF-ev-Utg"/>
+                    <constraint firstItem="CeR-ic-iUz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="NRl-w7-fet"/>
+                    <constraint firstAttribute="trailing" secondItem="If6-e1-WAP" secondAttribute="trailing" constant="14" id="tbf-JO-XzG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftTextLabel" destination="CeR-ic-iUz" id="FoW-ht-beu"/>
+                <outlet property="rightSwitchItem" destination="If6-e1-WAP" id="DYs-ZV-Wim"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

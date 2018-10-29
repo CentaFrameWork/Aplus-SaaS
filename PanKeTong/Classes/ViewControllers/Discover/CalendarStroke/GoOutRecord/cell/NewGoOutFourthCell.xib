@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="NewGoOutFourthCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="129.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最多输入200字" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HK6-U6-rnK">
+                        <rect key="frame" x="130" y="110" width="61" height="11"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="9"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="78p-tN-zuH">
+                        <rect key="frame" x="5" y="0.0" width="315" height="100"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="tJj-zj-ssN"/>
+                        </constraints>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRS-AI-66N">
+                        <rect key="frame" x="286" y="102" width="20" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="Xy5-Ak-Iqv"/>
+                            <constraint firstAttribute="height" constant="22" id="b9u-8j-Ple"/>
+                        </constraints>
+                        <state key="normal" image="new_icon_voice"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ida-ZA-TNV">
+                        <rect key="frame" x="3" y="8" width="9" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ida-ZA-TNV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="2EH-Js-eea"/>
+                    <constraint firstAttribute="trailing" secondItem="78p-tN-zuH" secondAttribute="trailing" id="5no-e4-rJH"/>
+                    <constraint firstItem="HRS-AI-66N" firstAttribute="top" secondItem="78p-tN-zuH" secondAttribute="bottom" constant="2" id="LLq-pP-vxI"/>
+                    <constraint firstItem="ida-ZA-TNV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="Nkq-lm-WJM"/>
+                    <constraint firstItem="HK6-U6-rnK" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="QhP-Op-x5B"/>
+                    <constraint firstAttribute="bottom" secondItem="HK6-U6-rnK" secondAttribute="bottom" constant="8" id="TVy-UU-MhM"/>
+                    <constraint firstAttribute="trailing" secondItem="HRS-AI-66N" secondAttribute="trailing" constant="14" id="WUS-QB-c9G"/>
+                    <constraint firstItem="78p-tN-zuH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Y0l-Jr-XJf"/>
+                    <constraint firstItem="78p-tN-zuH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="jor-VL-Qji"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="remarkTextView" destination="78p-tN-zuH" id="U8M-8g-mgC"/>
+                <outlet property="voiceInputBtn" destination="HRS-AI-66N" id="WW7-0e-cgU"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="new_icon_voice" width="9" height="15"/>
+    </resources>
+</document>
